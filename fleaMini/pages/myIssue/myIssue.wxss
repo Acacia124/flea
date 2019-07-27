@@ -1,0 +1,22 @@
+
+.clear {
+  clear: both;
+  overflow: hidden;
+}
+
+navigator {
+  display: inline;
+}
+
+.list {
+   margin-top: 20rpx;
+  position: absolute;
+  width: 100%;
+  min-height:850rpx;
+   background-color: rgb(255, 255, 255);
+}
+
+.list .list_item {
+  margin-bottom:8rpx;
+}
+

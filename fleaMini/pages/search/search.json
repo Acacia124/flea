@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "物不如故交易网",
+  "navigationBarBackgroundColor": "#EC3F28",
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "van-card": "/vantui/dist/card/index",
+    "van-button": "/vantui/dist/button/index",
+    "van-tag": "/vantui/dist/tag/index",
+    "van-row": "/vantui/dist/row/index",
+    "van-col": "/vantui/dist/col/index",
+    "van-switch": "/vantui/dist/switch/index"
+  }
+}

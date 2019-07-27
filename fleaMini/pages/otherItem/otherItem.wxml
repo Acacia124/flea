@@ -1,0 +1,41 @@
+<view style="position: absolute;background-image: url('https://upload.flea.store/group1/M00/00/00/rBAbJluiQTyAE-VPAANJBzuf4Ag824.jpg');width:100%;height:310rpx;"> 
+  <view class="weui-panel__bd" style='margin:33rpx 30rpx 20rpx 30rpx;background-color:white;border-radius:25rpx;'>
+    <view>
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{avatarUrl}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{nickAme}}</view>
+          <view class="weui-media-box__desc">小仙{{gender}}一枚，于星际{{create}}加入物不如故大家庭</view>
+        </view>
+      </view>
+      <view style='margin-left:34rpx;margin-top:0' class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">该店主共发布了</view>
+        <view class="weui-media-box__info__meta">{{items.length}}件产品</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='hotSell'>
+    <block wx:for="{{items}}" wx:key="item">
+      <navigator wx:if="{{item.status==1 || item.status==2}}" url='../itemDetails/itemDetails?id={{item.itemId}}'>
+        <view class="hotSell-info" index="{{index}}">
+          <view style='width:100%;height:70%;margin-top: 5rpx;'>
+            <image mode="aspectFit" class="hotSell-info-list-photo" src="{{item.image}}" />
+          </view>
+          <view style='margin:10rpx;'>
+            <view class='title'>{{item.itemTitle}}
+            </view>
+            <view class='price'>{{item.price/100}}￥
+            </view>
+            <view class='address'>{{item.sellAddress}}
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+
+</view>

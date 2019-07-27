@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-cell": "/vantui/dist/cell/index",
+    "van-cell-group": "/vantui/dist/cell-group/index",
+    "van-field": "/vantui/dist/field/index",
+    "van-button": "/vantui/dist/button/index"
+  },
+  "navigationBarTitleText": "举报",
+  "disableScroll": true
+}

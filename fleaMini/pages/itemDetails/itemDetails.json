@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-goods-action": "/vantui/dist/goods-action/index",
+    "van-goods-action-icon": "/vantui/dist/goods-action-icon/index",
+    "van-goods-action-button": "/vantui/dist/goods-action-button/index",
+    "van-tag": "/vantui/dist/tag/index"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-button": "/vantui/dist/button/index",
+    "van-icon": "/vantui/dist/icon/index",
+    "van-tabbar": "/vantui/dist/tabbar/index",
+    "van-popup": "/vantui/dist/popup/index",
+    "van-tabbar-item": "/vantui/dist/tabbar-item/index",
+    "van-transition": "/vantui/dist/transition/index"
+  }
+}

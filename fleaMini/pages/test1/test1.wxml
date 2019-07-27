@@ -1,0 +1,27 @@
+<view class="tabTit box">
+  <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+    <text>{{item}}</text>
+    <image src="/images/down.png"></image>
+  </view>
+</view>
+<!--筛选项-->
+<view class="tabLayer" hidden="{{tab[0]}}">
+  <text class="tabLayerText {{cat_id==0?'active':''}}" data-id="0" data-index="0" data-txt="分类" bindtap="filter">不限</text>
+  <text class="tabLayerText {{cat_id==item.value?'active':''}}" wx:for="{{screenArray}}" wx:key="pp" wx:for-item="item" data-index="0" data-id="{{item.value}}" data-txt="{{item.title}}" bindtap="filter">{{item.title}}</text>
+</view>
+<view class="tabLayer" hidden="{{tab[1]}}">
+  <view class='priceArea'>
+    <text>筛选免费</text>
+    <van-switch checked="{{ checked }}"  bind:change="onChange" size="18px" />
+  </view>
+  <view class='priceArea'>
+    <input disabled='{{ checked }}' value='{{checked?0:lowerPrice}}' style='float:left;margin-left:2%;' bindinput='lowerPriceFun' placeholder="最低价" /> -
+    <input disabled='{{ checked }}' value='{{checked?0:highPrice}}' style='float:right;margin-right:2%;' bindinput='highPriceFun' placeholder="最高价" />
+  </view>
+  <van-button data-index="1"  style='float:right;margin-top:22rpx;margin-right:2%' bindtap="filter" size="small">确定</van-button>
+</view>
+<view class="tabLayer" hidden="{{tab[2]}}">
+  <text class="tabLayerText {{sort_id==0?'active':''}}" data-id="0" data-index="2" data-txt="综合排序" bindtap="filter">综合排序</text>
+  <text class="tabLayerText {{sort_id==1?'active':''}}" data-id="1" data-index="2" data-txt="价格 高-低" bindtap="filter">价格 高-低</text>
+  <text class="tabLayerText {{sort_id==2?'active':''}}" data-id="2" data-index="2" data-txt="价格 低-高" bindtap="filter">价格 低-高</text>
+</view>

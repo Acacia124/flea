@@ -1,0 +1,144 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+}
+
+.container {
+  min-height: 100%;
+  padding: 0;
+}
+
+.touch-item {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  margin-right: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  margin-left: -90px;
+}
+
+.del {
+  background-color: orangered;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.touch-move-active .content, .touch-move-active .del {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.list_item {
+  height: 180rpx;
+}
+
+.list_item .img {
+  float: left;
+  width: 200rpx;
+  height: 100%;
+  margin-top: 7rpx;
+}
+
+.list_item .img .image1 {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.list_item .info {
+  width: 540rpx;
+  float: right;
+  position: relative;
+  height: 190rpx;
+}
+
+.list_item .info .title {
+  color: rgb(15, 15, 15);
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list_item .info .point {
+  color: rgb(116, 100, 100);
+  height: 45%;
+  font-size: 12px;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+
+.list_item .info .price {
+  float: left;
+  width: 55%;
+}
+
+.list_item .info .address {
+  float: right;
+  width: 40%;
+  margin-right: 5%;
+  margin-top: 11rpx;
+}
+
+.list_item .info .new {
+  color: #ff2727;
+  font-size: 27rpx;
+}
+
+.list_item .info .original {
+  color: #747474;
+  margin-left: 10rpx;
+  font-size: 25rpx;
+  text-decoration: line-through;
+}
+
+.list_item .info .address {
+  color: rgb(180, 167, 167);
+  font-size: 10px;
+}
+
+.list_item .info .free {
+  float: right;
+  width: 80rpx;
+  background-color: red;
+  text-align: center;
+  margin-right: 20rpx;
+  border-radius: 14rpx;
+}
+
+.list_item .info .free text {
+  color: white;
+}
+
+.invalid {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  bottom: 185rpx;
+  margin-left: 75rpx;
+}

@@ -1,0 +1,16 @@
+/* pages/report/report.wxss */
+
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(229, 228, 230, 0.514);
+}
+
+.return {
+  position: fixed;
+  right: 20rpx;
+  bottom: 45rpx;
+  width: 80rpx;
+  height: 80rpx;
+}

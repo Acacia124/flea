@@ -1,0 +1,33 @@
+<view class="search-bar">
+  <view class="search-wrap">
+    <icon type="search" size="16" class="icon-search" />
+    <input type="text" autofocus="autofocus" confirm-type="search" placeholder="请输入搜索内容" class="search-input" name="searchKeyword" bindinput="bindKeywordInput" value="{{searchKeyword}}" bindconfirm='keywordSearch' bindfocus='getfocus' bindblur='blurfocus' />
+  </view>
+  <view class="search-cancel" bindtap="keywordSearch">搜索</view>
+</view>
+
+<view hidden="{{!inputShowed}}">
+  <view class='history'>
+    <view class='top-history'>
+      <text>历史搜索</text>
+      <image src='../../images/history-delete.png' bindtap='deleteHistory'></image>
+    </view>
+  </view>
+  <block wx:for='{{searchRecord}}' wx:key='id' wx:for-item="his">
+    <view class='history-body' bindtap='historySearch' data-history-keyword='{{his.value}}'>
+      <view class='history-border'>
+        <text style='margin-left:5px;'>{{his.value}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view hidden="{{!tipsShow}}">
+  <block wx:for='{{tips.result}}' wx:key='id' wx:for-item="tip">
+    <view class='history-body' bindtap='historySearch' data-history-keyword='{{tip[0]}}'>
+      <view class='history-border'>
+        <text style='margin-left:5px;'>{{tip[0]}}</text>
+      </view>
+    </view>
+  </block>
+</view>

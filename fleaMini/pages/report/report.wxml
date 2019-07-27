@@ -1,0 +1,37 @@
+<view wx:if="{{!isLast}}">
+  <view class='weui-media-box__desc' style='margin-top:20rpx;margin-bottom:20rpx;margin-left:15rpx;'>请选择举报原因</view>
+  <view wx:for="{{forList}}" wx:key="id" wx:for-index="index" wx:for-item="item">
+    <van-cell wx:if="{{!item.isLeaf}}" title="{{item.title}}" data-id="{{index}}" bindtap="changeCell" is-link />
+    <van-cell wx:if="{{item.isLeaf}}" title="{{item.title}}" data-title="{{item.title}}" bindtap="toReport" />
+  </view>
+</view>
+<view style='margin-top:10rpx;' wx:else>
+  <van-cell-group>
+  <van-field
+    value="{{title}}"
+    label="举报原因"
+    bind:input="getTitle"
+    disabled
+  />
+</van-cell-group>
+
+<view class='weui-media-box__desc' style='margin-top:17rpx;margin-bottom:20rpx;margin-left:24rpx;text-align:center;'>提供更多的证据有利于我们的判断（选填）</view>
+
+
+<van-cell-group>
+  <van-field
+    label="过程描述"
+    type="textarea"
+    placeholder="请尽可能详细描述您举报的原因"
+    bind:input="getContente"
+    autosize
+  />
+</van-cell-group>
+
+<van-button type="danger" style='margin-right:1%;border-radius:5px;margin-top:25px;float:right;' size="small" bind:click='sendMsg'>提交</van-button>
+</view>
+
+
+<view class='return' wx:if="{{!isFirst}}">
+  <image style='width: 80rpx;height: 80rpx' src='../../images/return.png' bindtap='returnCell'></image>
+</view>

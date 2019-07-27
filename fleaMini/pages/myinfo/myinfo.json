@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-button": "/vantui/dist/button/index",
+    "van-field": "/vantui/dist/field/index"
+  },
+  "navigationBarTitleText": "个人信息"
+}

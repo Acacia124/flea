@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我想要的",
+  "disableScroll": true,
+  "usingComponents": {
+    "van-tag": "/vantui//dist/tag/index",
+    "van-tab": "/vantui/dist/tab/index",
+    "van-tabs": "/vantui/dist/tabs/index"
+  }
+}

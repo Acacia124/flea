@@ -1,0 +1,38 @@
+/* pages/myinfo/myinfo.wxss */
+
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgba(229, 228, 230, 0.514);
+}
+
+.wechat {
+  background-color: white;
+  height: 205rpx;
+  width: 100%;
+  padding-left: 45rpx;
+  padding-top: 33rpx;
+}
+
+.wechat image {
+  width: 130rpx;
+  height: 130rpx;
+  float: left;
+  border-radius: 10rpx;
+  margin-right: 40rpx;
+}
+
+.name {
+  font-family: 华文楷体;
+}
+
+.score {
+  font-size: 27rpx;
+  margin-top: 5rpx;
+  font-family: 华文仿宋;
+}
+
+.other {
+  margin-top:20rpx;
+}

@@ -1,0 +1,120 @@
+/* pages/mine/mine.wxss */
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ff2727;
+  width: 100%;
+  height: 410rpx;
+}
+
+.userinfo-avatar {
+  width: 108rpx;
+  height: 108rpx;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
+.button-wrap {
+  margin-top: 17%;
+  border: 1px solid #e3e3e3;
+  display: inline-block;
+  padding: 10px;
+  background: linear-gradient(#f2f2f2, #fff);
+  border-radius: 200px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.button-raised.button-primary {
+  border-color: #ff2727;
+  background: linear-gradient(#eb5122bb, #ff2727);
+}
+
+.button-raised {
+  border-style: solid;
+  border-width: 1px;
+  line-height: 38px;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.button-circle, .button-box, .button-square {
+  padding: 0 !important;
+  width: 44px;
+}
+
+.button-circle {
+  border-radius: 100%;
+}
+
+.button {
+  color: #fff;
+  font-size: 16px;
+}
+
+.button:visited {
+  color: #666;
+}
+
+.button:hover, .button:focus {
+  background-color: #f6f6f6;
+  text-decoration: none;
+  outline: none;
+}
+
+.button:active, .button.active, .button.is-active {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  background-color: #eee;
+  border-color: #cfcfcf;
+  color: #d4d4d4;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.login {
+  font-size: 14px;
+}
+
+/* 列表 */
+
+.person-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 10px;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+  margin-top: 10px;
+}
+
+.item-image {
+  width: 71rpx;
+  height: 71rpx;
+  margin: 20px;
+}
+
+.item-text {
+  color: gray;
+  font-size: 13px;
+  margin-left: 20rpx;
+}
+
+.person-line {
+  width: 81%;
+  margin-top: 10px;
+  height: 2rpx;
+  background: lightgray;
+  margin-left: 139rpx;
+}

@@ -1,0 +1,79 @@
+<van-tabs type="line">
+  <van-tab title="在卖宝贝">
+    <view class="container">
+      <view wx:if="{{item.item.collectStatus==1||item.item.collectStatus==2}}" class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" wx:for="{{items}}" wx:key="">
+
+        <view class="content">
+          <navigator class="list_item" url='../itemDetails/itemDetails?id={{item.item.itemId}}'>
+            <view class='img'>
+              <image class='image1' src="{{imghref}}{{item.item.collectImage}}" mode="aspectFit" />
+            </view>
+            <view class='info'>
+              <view class='title'>{{item.item.collectName}}</view>
+              <view class='point'>{{item.item.collectSellPoint}}</view>
+              <view style='float: left;width:70%;'>
+                <text class='new'>￥{{item.item.collectPrice/100}}</text>
+                <text class='original'>￥{{item.item.collectOriginalPrice/100}}</text>
+              </view>
+              <view>
+                <van-tag color="#7232dd" plain>{{item.item.collectNewnessRate/10}}成新</van-tag>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="失效宝贝">
+    <view class="container">
+
+      <view wx:if="{{item.item.collectStatus==3 || item.item.collectStatus==4}}" class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="">
+
+        <view class="content">
+          <view class="list_item">
+            <view class='img' style='background: #C0C0C0;border-radius:5px;'>
+              <image class='image1' style='opacity:0.5; filter: alpha(opacity=60);' src="{{imghref}}{{item.item.collectImage}}" mode="aspectFill" />
+              <image class='invalid' src='../../images/Invalid.png'></image>
+            </view>
+            <view class='info'>
+              <view class='title'>{{item.item.collectName}}</view>
+              <view class='point'>{{item.item.collectSellPoint}}</view>
+              <view class='price'>
+                <view >
+                  <text class='new'>￥{{item.item.collectPrice/100}}</text>
+                  <text class='original'>￥{{item.item.collectOriginalPrice/100}}</text>
+                </view>
+              </view>
+              <view class='address'>
+                <view >
+                  <text>地址 | {{item.item.collectSellSchool}}</text>
+                </view>
+                <view class='free' wx:if="{{item.item.collectStatus==2}}">
+                  <text>免费</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="del" catchtap="del" data-id='{{item.item.collectId}}' data-index="{{index}}">删除</view>
+
+      </view>
+
+    </view>
+  </van-tab>
+</van-tabs>
+
+<!--导航条-->
+<!-- <view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view> -->
+
+<!--首页-->
+<!-- <view hidden="{{currentTab!==0}}">
+  
+</view>
+
+<view hidden="{{currentTab!==1}}">
+  
+</view> -->

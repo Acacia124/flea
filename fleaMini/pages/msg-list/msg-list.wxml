@@ -1,0 +1,41 @@
+<van-tabs type="line">
+  <van-tab title="聊天消息">
+    <view class="container">
+      <view style='width:100%' wx:for="{{chatMsgList}}" wx:for-index ='index' wx:for-item="chat"wx:key="*this">
+        <view class="user" bindtap='toChatPage' data-index='{{index}}'>
+          <van-icon wx:if="{{chat.msgNum>0}}" class='img' custom-style="border-radius: 10rpx;" size="133rpx" name="{{chat.imgUrl}}" info="." />
+          <van-icon wx:else class='img' custom-style="border-radius: 10rpx;" size="133rpx" name="{{chat.imgUrl}}"/>
+          <view class='info'>
+            <view style='height:85rpx;margin-left:19rpx;'>
+              <view class='name'>
+                {{chat.nickName}}
+              </view>
+              <view class='time'>
+                {{chat.lastDate}}
+              </view>
+            </view>
+            <view class='msg'>
+              <text wx:if='{{chat.msgNum>0}}'>[{{chat.msgNum}}条]</text>{{chat.lastMsg}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="系统消息" info='{{sysSum==0?null:sysSum}}'>
+    <view class="container">
+      <view style='width:100%' wx:for="{{sysMsgList}}" wx:for-index ='index' wx:for-item="smsg"wx:key="*this">
+        <view class="message" bindtap='viewMsg' data-id='{{index}}'>
+          <image wx:if="{{smsg.status==null}}" src='/images/noRead.png'></image>
+          <image wx:if="{{smsg.status}}" src='/images/read.png'></image>
+          <view style='margin-top:26rpx'>
+            <view style='font-size:26rpx;font-family:仿宋;float:left;width:65%;margin-top:-2rpx;'>{{smsg.title}}</view>
+            <view style='font-size:20rpx;margin-top:18rpx;'>{{smsg.datetime}}</view>
+          </view>
+        </view>
+        <view class='geli'></view>
+      </view>
+      <van-dialog id="van-dialog" />
+    </view>
+  </van-tab>
+</van-tabs>

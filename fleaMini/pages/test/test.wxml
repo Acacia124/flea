@@ -1,0 +1,84 @@
+<view>
+  <scroll-view scroll-y scroll-into-view='{{toView}}' style='height: {{scrollHeight}};'>
+    <block wx:key wx:for='{{msgList}}' wx:for-index="index">
+
+      <!--时间-->
+      <view wx:if='{{item.format}}' style='width: 100%;text-align: center'>
+        <text class='time'>{{item.time}}</text>
+      </view>
+
+      <!-- 单个消息1 客服发出（左） -->
+      <view wx:if='{{item.sendTo != itemInfo.openid}}' id='msg-{{index}}' style='display: flex; padding: 2vw 11vw 2vw 2vw;'>
+
+        <view style='width: 11vw; height: 11vw;'>
+          <image style='width: 11vw; height: 11vw; border-radius: 10rpx;' src='{{itemInfo.avatarUrl}}'></image>
+        </view>
+        <view style='width: 4vw; height: 11vw; margin-left: 0.5vw; display: flex; align-items: center; z-index: 9;'>
+          <image style='width: 4vw;' src='../../images/left_msg.png' mode='widthFix'></image>
+        </view>
+        <view wx:if='{{item.msgType == 1}}' class='leftMsg'>{{item.content}}</view>
+
+        <view wx:if='{{item.msgType == 3}}' class='productShow' style='background-color: #96EB6A;'>
+          <image src='{{fn.split(item.content)[1]}}'></image>
+          <view style='height:100%'>
+            <view class='item.content.title'>{{fn.split(item.content)[2]}}</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 单个消息2 用户发出（右） -->
+      <view wx:else id='msg-{{index}}' style='display: flex; justify-content: flex-end; padding: 2vw 2vw 2vw 11vw;'>
+
+        <view wx:if='{{item.msgType == 1}}' class='rightMsg'>{{item.content}}</view>
+
+        <view wx:if='{{item.msgType == 3}}' class='productShow' style='background-color: #96EB6A;'>
+          <image src='{{fn.split(item.content)[1]}}'></image>
+          <view style='height:100%'>
+            <view class='item.content.title'>{{fn.split(item.content)[2]}}</view>
+          </view>
+        </view>
+
+        <view style='width: 4vw; height: 11vw; margin-right: 0.5vw; display: flex; align-items: center; z-index: 9;'>
+          <image style='width: 4vw;' src='../../images/right_msg.png' mode='widthFix'></image>
+        </view>
+        <view style='width: 11vw; height: 11vw;'>
+          <image style='width: 11vw; height: 11vw; border-radius: 10rpx;' src='{{cusHeadIcon}}'></image>
+        </view>
+      </view>
+
+      <!-- 商品信息 -->
+      <view wx:if='{{itemInfo.id!=null && index==his_index}}' style='width: 100%;text-align: center'>
+        <text class='time'>{{today}}</text>
+      </view>
+      <view wx:if='{{itemInfo.id!=null && index==his_index}}' class='product'>
+        <image src='{{itemInfo.img}}'></image>
+        <view style='height:100%'>
+          <view class='title'>{{itemInfo.title}}</view>
+          <view class='price'>￥{{itemInfo.price/100}}</view>
+          <view>
+            <van-button bindtap='sendItem' style='float: right' round type="danger" size="mini">发送商品</van-button>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- 占位 -->
+    <view style='width: 100%; height: 18vw;'></view>
+  </scroll-view>
+
+  <view class='inputRoom' style='bottom: {{inputBottom}}'>
+    <image style='width: 7vw; margin-left: 3.2vw;' src='../../images/addImage.png' mode='widthFix'></image>
+    <input confirm-hold="true" bindconfirm='sendClick' adjust-position='{{false}}' value='{{inputVal}}' confirm-type='send' bindfocus='focus' bindblur='blur'></input>
+  </view>
+</view>
+
+
+
+
+<wxs module="fn">
+  module.exports = {
+    split: function(str) {
+      return str.split('_#_');
+    }
+  }
+</wxs>

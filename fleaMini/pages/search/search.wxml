@@ -1,0 +1,97 @@
+<view class="search">
+  <view class="search-bar">
+    <view class="search-wrap">
+      <icon type="search" size="16" class="icon-search" />
+      <input type="text" confirm-type="search" placeholder="请输入搜索内容" class="search-input" value="{{searchKeyword}}" bindfocus='getfocus' />
+    </view>
+  </view>
+
+  <!--筛选-->
+  <view class="tabTit box">
+    <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+      <text>{{item}}</text>
+      <image src="/images/down.png"></image>
+    </view>
+  </view>
+  <!--筛选项-->
+  <view class="tabLayer" hidden="{{tab[0]}}">
+    <text class="tabLayerText {{cat_id==0?'active':''}}" data-id="0" data-index="0" data-txt="分类" bindtap="filter">不限</text>
+    <text class="tabLayerText {{cat_id==item.value?'active':''}}" wx:for="{{screenArray}}" wx:key="pp" wx:for-item="item" data-index="0" data-id="{{item.value}}" data-txt="{{item.title}}" bindtap="filter">{{item.title}}</text>
+  </view>
+  <view class="tabLayer" hidden="{{tab[1]}}">
+    <view class='priceArea'>
+      <text>筛选免费</text>
+      <van-switch checked="{{ checked }}" bind:change="onChange" size="15px" />
+    </view>
+    <view class='priceArea'>
+      <input disabled='{{ checked }}' value='{{checked?0:lowerPrice}}' style='float:left;margin-left:2%;' bindinput='lowerPriceFun' placeholder="最低价" /> -
+      <input disabled='{{ checked }}' value='{{checked?0:highPrice}}' style='float:right;margin-right:2%;' bindinput='highPriceFun' placeholder="最高价" />
+    </view>
+    <van-button data-index="1" style='float:right;margin-top:22rpx;margin-right:2%' bindtap="filter" size="mini">确定</van-button>
+  </view>
+  <view class="tabLayer" hidden="{{tab[2]}}">
+    <text class="tabLayerText {{sort_id==0?'active':''}}" data-id="0" data-index="2" data-txt="综合排序" bindtap="filter">综合排序</text>
+    <text class="tabLayerText {{sort_id==1?'active':''}}" data-id="1" data-index="2" data-txt="价格 高-低" bindtap="filter">价格 高-低</text>
+    <text class="tabLayerText {{sort_id==2?'active':''}}" data-id="2" data-index="2" data-txt="价格 低-高" bindtap="filter">价格 低-高</text>
+  </view>
+
+  <view class="search-result">
+    <scroll-view scroll-y="true" class="y" bindscrolltolower="searchScrollLower">
+      <view class='list'>
+        <view wx:for="{{searchSongList}}" wx:key="id" data-data="{{item}}">
+
+          <!-- 普通产品 -->
+          <view class="list_item">
+            <van-card wx:if="{{item.status==1}}" num="{{item.newnessRate/10}}成新" price="{{item.price/100}}" origin-price="{{item.originalPrice/100}}" desc="{{item.sellPoint}}" title="{{item.title}}" thumb="{{ item.image }}" currency="￥" thumb-link="../itemDetails/itemDetails?id={{item.id}}">
+              <view slot="tags">
+                <van-row>
+                  <van-col span="8">
+                    <van-tag color="#f2826a"> {{item.categoryName}}</van-tag>
+                  </van-col>
+                  <van-col span="10" offset="2">
+                    <van-tag color="#ffe1e1" text-color="#ad0000">{{item.consignmentAddress}}</van-tag>
+                  </van-col>
+                </van-row>
+              </view>
+            </van-card>
+
+            <!-- 免费产品 -->
+            <van-card wx:if="{{item.status==2}}" num="{{item.newnessRate/10}}成新" tag="免费" price="{{item.price/100}}" origin-price="{{item.originalPrice/100}}" desc="{{item.sellPoint}}" title="{{item.title}}" currency="￥" thumb="{{ item.image }}" thumb-link="../itemDetails/itemDetails?id={{item.id}}">
+              <view slot="tags">
+                <van-row>
+                  <van-col span="8">
+                    <van-tag color="#f2826a"> {{item.categoryName}}</van-tag>
+                  </van-col>
+                  <van-col span="10" offset="2">
+                    <van-tag color="#ffe1e1" text-color="#ad0000">{{item.consignmentAddress}}</van-tag>
+                  </van-col>
+                </van-row>
+              </view>
+            </van-card>
+
+            <!-- 直营产品 -->
+            <van-card wx:if="{{item.status==5}}" num="{{item.newnessRate/10}}成新" tag="直营" price="{{item.price/100}}" currency="￥" origin-price="{{item.originalPrice/100}}" desc="{{item.sellPoint}}" title="{{item.title}}" thumb="{{ item.image }}" thumb-link="../itemDetails/itemDetails?id={{item.id}}">
+              <view slot="tags">
+                <van-row>
+                  <van-col span="8">
+                    <van-tag color="#f2826a"> {{item.categoryName}}</van-tag>
+                  </van-col>
+                  <van-col span="10" offset="2">
+                    <van-tag color="#ffe1e1" text-color="#ad0000">{{item.consignmentAddress}}</van-tag>
+                  </van-col>
+                </van-row>
+              </view>
+            </van-card>
+          </view>
+        </view>
+
+      </view>
+      <view hidden='{{!searchLoading}}' class="loading">
+        <image class='mage' src='../../images/icon-loading.png'></image>
+        <text>正在载入更多...</text>
+      </view>
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">--- 已加载全部 ---</view>
+    </scroll-view>
+  </view>
+
+</view>

@@ -1,0 +1,37 @@
+<view class='wechat'>
+  <image src='{{userInfo.avatarUrl}}'></image>
+
+  <view class='info'>
+    <view style='float: left'>
+      <view class='name'>{{userInfo.nickName}}</view>
+      <view class='score'>积分： {{userInfo.score}}</view>
+    </view>
+    <view style='float:right;margin-right:40px;margin-top:35px;'>
+      <van-button style='width:100%' type="primary" size="mini" bindtap='changeNameAndAva'>同步昵称头像</van-button>
+    </view>
+  </view>
+</view>
+
+<view class='other'>
+  <view style='margin-left: 10rpx;font-size:29rpx;font-family:华文细黑;'> 邮箱绑定</view>
+  <van-cell-group wx:if="{{!mailflag}}">
+    <van-field value="{{userInfo.email}}" label="邮箱" disabled use-button-slot>
+      <van-button slot="button" size="small" type="primary" bindtap='changeMail'>更改邮箱</van-button>
+    </van-field>
+  </van-cell-group>
+  <van-cell-group wx:if="{{mailflag}}">
+    <van-field value="{{ mail }}" bind:input="getmail" required clearable label="邮箱" placeholder="请输入邮箱名" />
+
+    <van-field value="{{ code }}" required center clearable label="邮箱验证码" bind:input="getcode" placeholder="请输入邮箱验证码" border="{{ false }}" use-button-slot>
+      <van-button slot="button" size="small" type="primary" disabled='true'>发送验证码</van-button>
+    </van-field>
+  </van-cell-group>
+</view>
+
+<view class='other'>
+  <van-cell-group>
+    <van-field value="{{ userInfo.sdasd }}" bind:input="getmsg" label="个性签名" type="textarea" placeholder="起个令人耳目一新的签名" autosize border="{{ false }}" />
+  </van-cell-group>
+</view>
+
+<view style='margin-left: 585rpx;margin-top:50rpx'><van-button size="small" type="danger" bindtap='updateOther'>确定修改</van-button></view>

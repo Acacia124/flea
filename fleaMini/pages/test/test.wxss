@@ -1,0 +1,146 @@
+/* pages/contact/contact.wxss */
+
+page {
+  background-color: #f1f1f1;
+}
+
+.inputRoom {
+  width: 100vw;
+  height: 16vw;
+  border-top: 1px solid #cdcdcd;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+input {
+  width: 76vw;
+  height: 9.33vw;
+  background-color: #fff;
+  border-radius: 40rpx;
+  margin-left: 2vw;
+  padding: 0 3vw;
+  font-size: 28rpx;
+  color: #444;
+}
+
+.leftMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #fff;
+  margin-left: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}
+
+.rightMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #96eb6a;
+  margin-right: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}
+
+.noread {
+  width: 28%;
+  height: 45rpx;
+  background-color: #f5f5f5;
+  position: fixed;
+  right: 0;
+  border-radius: 50rpx 0px 0px 50rpx;
+  top: 40rpx;
+  padding: 10rpx;
+  padding-left: 20rpx;
+  font-size: 29rpx;
+  z-index: 100;
+  color: #0c0;
+  font-family: STHeiti;
+  border: 0.5rpx solid #e8e8e8;
+  border-right: 0;
+}
+
+.time {
+  text-align: center;
+  padding: 5rpx 20rpx 5rpx 20rpx;
+  width: 200rpx;
+  font-size: 26rpx;
+  background-color: #e8e8e8;
+}
+
+/*商品展示*/
+
+.product {
+  border-radius: 15rpx;
+  width: 80%;
+  height: 170rpx;
+  background-color: white;
+  margin-left: 8%;
+  margin-top: 15rpx;
+  padding: 20rpx;
+}
+
+.productShow {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  margin-right: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+  height: 130rpx;
+  width: 55%;
+}
+
+.product image {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-right: 20rpx;
+  border-radius: 15rpx;
+}
+
+.productShow .title {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 30rpx;
+  height: 50%;
+}
+
+.productShow image {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+}
+
+.product .title {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 35rpx;
+  height: 50%;
+  margin-top: 10rpx;
+}
+
+.product .price {
+  height: 15%;
+  color: red;
+  font-weight: 60%;
+  font-size: 36rpx;
+}

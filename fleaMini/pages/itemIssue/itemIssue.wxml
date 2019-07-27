@@ -1,0 +1,153 @@
+<!--pages/itemIssue/itemIssue.wxml-->
+<view class='issue'>
+  <form bindsubmit="formSubmit">
+    <view class="weui-cells__title">商品图片</view>
+    <view class="picture_list">
+      <view wx:for="{{upload_picture_list}}" class="picture_item" wx:key="{{index}}">
+        <image wx:if="{{item.upload_percent < 100}}" src="{{item.path}}" mode="aspectFill"></image>
+        <image wx:if="{{item.upload_percent == 100}}" src="{{item.path_server}}" mode="aspectFill"></image>
+        <view class="upload_progress" wx:if="{{item.upload_percent < 100}}" data-index="{{index}}" bindtap="previewImg">{{item.upload_percent}}%</view>
+        <text class='del' bindtap='deleteImg' data-src='{{image}}' style='display:{{isDel}}' data-index="{{index}}">×</text>
+      </view>
+
+      <view class='picture_item'>
+        <view class="add-image" bindtap='uploadpic'>
+          <image style='width:60px;height:60px;margin-top:16rpx;margin-left:16rpx;' mode='aspectFill' src='../../images/issue-camera.png'></image>
+        </view>
+      </view>
+    </view>
+
+    <view hidden='{{upload_picture_list.length===0}}' style='background-color:white;'>
+      <button bindtap='uploadimage' type="warn" plain="true" style='font-size:24rpx;margin-left:70rpx;margin-right:70rpx;bottom:20rpx;'>上传</button>
+    </view>
+
+    <view class="page__bd">
+      <view class="weui-cells__title">基本描述</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" name='title' placeholder="在此填写宝贝名称，如iPhoneX" />
+          </view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" name='sellPoint' maxlength="200" bindinput="inputTypingDesc" placeholder="在此描述你的宝贝：如品牌、规格、购买渠道、转手原因" style="height: 3.3em" />
+            <view class="weui-textarea-counter">{{sell_point.length}}/200</view>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">新旧度</view>
+          </view>
+          <view class="weui-cell__bd">
+            <slider style='margin-left: 0rpx;' name="newnessRate" show-value value='{{newness_rate}}'></slider>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">购买日期</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker mode="date" value='{{buy_tiem}}' name="buyTiem"  start="2015-09-01" end="{{newDate}}" bindchange="bindDateChange">
+              <view class="weui-input">{{buy_tiem}}</view>
+            </picker>
+          </view>   
+        </view>
+      </view>
+
+      <view class="weui-cells__title">联系方式（QQ、电话、微信必填其一）</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input weui-cell">
+          <view class="weui-cell__hd">
+            <view class="weui-label">QQ</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="qq" type="number" placeholder="请输入QQ" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell">
+          <view class="weui-cell__hd">
+            <view class="weui-label">手机号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="phone" type="number"  placeholder="请输入手机号" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell">
+          <view class="weui-cell__hd">
+            <view class="weui-label">微信</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="wechat" placeholder="请输入微信号" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__hd weui-cell__hd_in-select-after">
+            <view class="weui-label">寄卖学校</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindAddressChange" name="consignmentAddress" value="{{consignment_addressIndex}}" range="{{consignment_address}}" range-key='schoolName'>
+              <view class="weui-select weui-select_in-select-after">{{consignment_address[consignment_addressIndex].schoolName}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells__title">选择分类价格以及售卖方式</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view bindtap = "chooseCat" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__bd">宝贝分类</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access">{{catText}}</view>
+        </view>
+
+        <view class="weui-cell weui-cell_access">
+          <block style="width:50%">
+            <view class="weui-cell__bd">售价</view>
+            <input style='margin-left: 50rpx' name="price" type='digit' maxlength="8" placeholder="00.00￥" value='{{price}}' disabled='{{free}}'/>
+          </block>
+          <block style="width:50%">
+            <view class="weui-cell__bd">原价</view>
+            <input style='margin-left: 50rpx' name="originalPrice" type='digit' maxlength="8" placeholder="00.00￥" />
+          </block>
+        </view>
+
+        <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__hd weui-cell__hd_in-select-after">
+            <view class="weui-label">售卖方式</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindStatusChange" name="status" value="{{statusIndex}}" range="{{status}}">
+              <view class="weui-select weui-select_in-select-after">{{status[statusIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+
+
+      </view>
+
+      <checkbox-group bindchange="bindAgreeChange">
+        <label class="weui-agree" for="weuiAgree">
+          <view class="weui-agree__text">
+            <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+            <view class="weui-agree__checkbox-icon">
+              <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+            </view>
+            阅读并同意
+            <navigator url="" hover-class="none" class="weui-agree__link">《相关条款》</navigator>
+          </view>
+        </label>
+      </checkbox-group>
+
+
+    </view>
+
+
+
+    <view class='issue-button' style='padding-bottom: 18rpx;'>
+      <view class="weui-btn-area">
+        <button formType="submit" disabled="{{!isAgree}}" class="weui-btn" type="warn">发布</button>
+      </view>
+    </view>
+
+  </form>
+</view>

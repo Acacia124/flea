@@ -1,0 +1,71 @@
+<!-- banner -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage" mode="aspectFit"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--商品描述-->
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <view>
+      <van-tag wx:if="{{item.status==2}}" style="float:left;margin-left:12rpx;" color="#f2826a">免费</van-tag>
+      <text class="title">{{item.itemTitle}}</text>
+    </view>
+
+    <view class='SchAndColl'>
+      <view style='float:left'>
+        <image src='../../images/consignment_address.png'></image>
+      </view>
+      <view class='school'>{{item.sellAddress}}</view>
+      <view class='collect'>{{item.collectNum}}人想买</view>
+    </view>
+
+    <view class='NewAndBuy'>
+      <view class='new'>成新率： {{item.newnessRate}}%</view>
+      <view class='buy'>购于 {{item.buyTime}}</view>
+    </view>
+
+    <view class='desc'>
+      <text>{{item.sellPoint}}</text>
+    </view>
+
+    <view style='margin-top: 15rpx;'>
+      <view style='float:left;margin-left:20rpx'>
+        <text style='font-size:45rpx;color:red'>￥{{item.price/100}}</text><text style='font-size: 35rpx;color: #747474;text-decoration: line-through;'>￥{{item.originalPrice/100}}</text>
+      </view>
+      <navigator url='../report/report?itemId={{item.itemId}}&itemName={{item.itemTitle}}&userId={{item.openid}}&userName={{userInfo.nickName}}' class='weui-media-box__desc' style='float:right;margin-right:40rpx;margin-top:20rpx;'>举报</navigator>
+    </view>
+  </view>
+
+  <view class="weui-panel__bd">
+    <navigator url="../otherItem/otherItem?nickAme={{userInfo.nickName}}&gender={{gender}}&avatarUrl={{userInfo.avatarUrl}}&openid={{item.openid}}&create={{userInfo.userCreated}}" hover-class="weui-cell_active">
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{userInfo.avatarUrl}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">{{userInfo.nickName}}（{{gender}}）</view>
+          <view class="weui-media-box__desc">想了解关于他的更多出售商品吗？立即点击查看</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </view>
+    </navigator>
+  </view>
+
+  <!--留言-->
+  <view class='message'>
+
+  </view>
+  <view class='temp'></view>
+</scroll-view>
+
+<!-- 底部悬浮栏 -->
+<van-goods-action>
+  <van-goods-action-icon open-type="share" icon="share" text="分享" />
+  <van-goods-action-icon icon="point-gift-o" text="心愿单" bindtap="toMyLove" />
+  <van-goods-action-icon bindtap="addLike" icon="like"  color="{{isLike?'red':'black'}}" text="收藏" />
+  <van-goods-action-button url="../chat/chat?id={{item.itemId}}&title={{item.itemTitle}}&price={{item.price}}&img={{imgUrls[0]}}&openid={{item.openid}}&avatarUrl={{userInfo.avatarUrl}}&wechat={{item.sellWechat}}&phone={{item.sellPhone}}&qq={{item.sellQq}}" text="即时沟通" type="warning" />
+</van-goods-action>

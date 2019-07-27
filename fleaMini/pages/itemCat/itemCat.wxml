@@ -1,0 +1,22 @@
+<view class="classify">
+
+  <!--分类导航栏-->
+  <scroll-view class='left-navbar' scroll-y="true">
+    <view wx:for="{{screenArray}}" class="{{ currentTab == index ? 'active' : '' }}" wx:key="item" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.value}}">{{item.title}}
+    </view>
+  </scroll-view>
+
+  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}">
+    <!--顶部图片-->
+    <view class="goods-banner">
+      <image class="img-banner" src="{{imageUrl}}" wx:if="{{imageUrl}}" mode="scaleToFill"></image>
+    </view>
+    <!--商品展示-->
+    <view class="goods-list" wx:for="{{childrenArray}}" wx:key="item">
+      <view bindtap='returnIssue' data-cat-id="{{item.value}}"  data-cat-text="{{item.title}}">
+        <view class="goods-title">{{item.title}}</view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

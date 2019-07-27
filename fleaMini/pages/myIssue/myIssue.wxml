@@ -1,0 +1,88 @@
+<view style="position: absolute;background-image: url('https://upload.flea.store/group1/M00/00/00/rBAbJluiQTyAE-VPAANJBzuf4Ag824.jpg');width:100%;height:310rpx;">
+  <view class="weui-panel__bd" style='margin:33rpx 30rpx 20rpx 30rpx;background-color:white;border-radius:25rpx;'>
+    <view>
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{avatarUrl}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title">你好： {{nickAme}}</view>
+        </view>
+      </view>
+      <view style='margin-left:34rpx;margin-top:0' class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">您在该平台共发布了</view>
+        <view class="weui-media-box__info__meta">{{items.length}}件产品</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='list'>
+    <view wx:for="{{items}}" wx:for-index="index" wx:key="itemId" data-data="{{item}}">
+      <!-- 普通产品 -->
+          <view class="list_item">
+            <van-card wx:if="{{item.status==1}}"
+              num="{{item.newnessRate/10}}成新"
+              price="{{item.price/100}}"
+              origin-price="{{item.originalPrice/100}}"
+              desc="{{item.sellPoint}}"
+              title="{{item.itemTitle}}"
+              currency="￥"
+              thumb="{{ item.image }}"
+              thumb-link="../itemDetails/itemDetails?id={{item.itemId}}"
+            >
+             <view slot="footer">
+                <van-button style="margin-right:20rpx;" type="primary" size="mini">更改信息</van-button>
+                <van-button size="mini" type="danger"  bindtap='banItem' data-index='{{index}}' data-id="{{item.itemId}}" data-title="{{item.itemTitle}}" data-openid='{{item.openid}}'>下架产品</van-button>
+              </view>
+            </van-card>
+
+            <!-- 免费产品 -->
+            <van-card wx:if="{{item.status==2}}"
+              num="{{item.newnessRate/10}}成新"
+              tag="免费"
+              price="{{item.price/100}}"
+              origin-price="{{item.originalPrice/100}}"
+              desc="{{item.sellPoint}}"
+              title="{{item.itemTitle}}"
+              currency="￥"
+              thumb="{{ item.image }}"
+              thumb-link="../itemDetails/itemDetails?id={{item.itemId}}"
+            >
+             <view slot="footer">
+                 <van-button style="margin-right:20rpx;" type="primary" size="mini">更改信息</van-button>
+                <van-button size="mini" type="danger"  bindtap='banItem' data-index='{{index}}' data-id="{{item.itemId}}" data-title="{{item.itemTitle}}" data-openid='{{item.openid}}'>下架产品</van-button>
+              </view>
+            </van-card>
+
+            <!-- 已下架 -->
+            <van-card wx:if="{{item.status==3}}"
+              num="{{item.newnessRate/10}}成新"
+              tag="已下架"
+              price="{{item.price/100}}"
+              origin-price="{{item.originalPrice/100}}"
+              desc="{{item.sellPoint}}"
+              title="{{item.itemTitle}}"
+              currency="￥"
+              thumb="{{ item.image }}"
+              thumb-link="../itemDetails/itemDetails?id={{item.itemId}}"
+            >
+            </van-card>
+
+             <!-- 违规强制下架 -->
+            <van-card wx:if="{{item.status==4}}"
+              num="{{item.newnessRate/10}}成新"
+              tag="违规强制下架"
+              price="{{item.price/100}}"
+              origin-price="{{item.originalPrice/100}}"
+              desc="{{item.sellPoint}}"
+              title="{{item.itemTitle}}"
+              currency="￥"
+              thumb="{{ item.image }}"
+              thumb-link="../itemDetails/itemDetails?id={{item.itemId}}"
+            >
+            </van-card>
+      </view>
+    </view>
+  </view>
+
+</view>

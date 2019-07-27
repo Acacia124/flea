@@ -1,0 +1,174 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* 直接设置swiper属性 */
+
+swiper {
+  height: 500rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+}
+
+.line_flag {
+  width: 80rpx;
+  height: 1rpx;
+  display: inline-block;
+  margin: 20rpx auto;
+  background-color: gainsboro;
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  height: 2rpx;
+  display: inline-block;
+  margin: 20rpx 0rpx;
+  background-color: gainsboro;
+  text-align: center;
+}
+
+.detail-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100rpx;
+}
+
+.button-red {
+  background-color: #f44336; /* 红色 */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30rpx;
+  border-radius: 0rpx;
+  width: 50%;
+  height: 100%;
+  line-height: 100rpx;
+}
+
+.share {
+  width: 150rpx;
+  height: 100rpx;
+  border: 0px solid white;
+}
+.share image{
+  width: 74rpx;
+  height: 61rpx;
+}
+
+.image_detail {
+  width: 100%;
+}
+
+.detail-nav image {
+  width: 74rpx;
+  height: 61rpx;
+  margin: 20rpx 40rpx;
+}
+
+.line_nav {
+  width: 4rpx;
+  height: 100%;
+  background-color: gainsboro;
+}
+
+/* 占位 */
+
+.temp {
+  height: 100rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.SchAndColl {
+  font-size: 35rpx;
+  margin-left: 15rpx;
+  margin-top: 10rpx;
+}
+
+.free {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.SchAndColl image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.school {
+  text-align: center;
+  border-radius: 50px;
+  width: 50%;
+  height: 52rpx;
+  background-color: rgb(212, 211, 211);
+  margin-left: 10rpx;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.collect {
+  float: right;
+  margin-right: 40rpx;
+}
+
+.desc {
+  font-size: 33rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 13rpx;
+}
+
+.weui-panel__bd {
+  margin: 16rpx;
+  box-shadow: 4px 4px 10px #ccc;
+}
+
+.NewAndBuy {
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  border-bottom: 1rpx;
+}
+
+.new {
+  float: left;
+  color: rgb(11, 131, 187);
+}
+
+.buy {
+  float: right;
+  margin-right: 40rpx;
+}

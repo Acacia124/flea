@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-icon": "/vantui/dist/icon/index",
+    "van-tag": "/vantui//dist/tag/index",
+    "van-tab": "/vantui/dist/tab/index",
+    "van-tabs": "/vantui/dist/tabs/index",
+    "van-cell": "/vantui/dist/cell/index",
+    "van-cell-group": "/vantui/dist/cell-group/index",
+    "van-dialog": "/vantui/dist/dialog/index"
+  },
+  "navigationBarTitleText": "我的消息"
+}

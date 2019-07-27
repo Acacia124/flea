@@ -1,0 +1,275 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*搜索*/
+
+.search {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.search-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15rpx;
+  background: #f4f4f4;
+}
+
+.search-wrap {
+  position: relative;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  height: 70rpx;
+  padding: 0 20rpx;
+  background: #fff;
+  border-radius: 6rpx;
+}
+
+.search-wrap .icon-search {
+  margin-right: 10rpx;
+}
+
+.search-wrap .search-input {
+  flex: auto;
+  font-size: 28rpx;
+}
+
+.search-cancel {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
+
+/*搜索结果*/
+
+.search-result {
+  flex: auto;
+  position: relative;
+}
+
+.search-result scroll-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.result-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 45rpx 0 20rpx 110rpx;
+  overflow: hidden;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+
+.result-item .media {
+  position: absolute;
+  left: 16rpx;
+  top: 16rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 999rpx;
+}
+
+.result-item .title, .result-item .subtitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 36rpx;
+}
+
+.result-item .title {
+  margin-bottom: 4rpx;
+  color: #000;
+}
+
+.result-item .subtitle {
+  color: #808080;
+  font-size: 24rpx;
+}
+
+.result-item:first-child .subtitle text {
+  margin-right: 20rpx;
+}
+
+.result-item:not(:first-child) .subtitle text:not(:first-child):before {
+  content: '/';
+  margin: 0 8rpx;
+}
+
+.loading {
+  color: rgb(194, 192, 192);
+  padding: 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.mage {
+  padding-top: 1rpx;
+  width: 28rpx;
+  height: 28rpx;
+  animation: headRotate 1s linear infinite;
+}
+
+@keyframes headRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading.complete:before {
+  display: none;
+}
+
+/*历史记录*/
+
+.history {
+  font-size: 14px;
+  margin-left: 4%;
+  margin-top: 13px;
+  margin-right: 4%;
+  border-bottom: 0.5px solid rgb(168, 168, 168);
+}
+
+.top-history {
+  margin-bottom: 8px;
+}
+
+.top-history image {
+  float: right;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.history-body {
+  font-size: 13px;
+  color: rgb(155, 151, 151);
+  margin-left: 4%;
+  margin-top: 13px;
+  margin-right: 4%;
+  border-bottom: 0.5px dotted rgb(168, 168, 168);
+}
+
+.history-border {
+  margin-bottom: 5px;
+}
+
+/*商品列表*/
+
+.y ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.tabTit {
+  height: 75rpx;
+  line-height: 75rpx;
+  border-bottom: solid 1px #eee;
+  width: 750rpx;
+  z-index: 1;
+  background: #fff;
+  font-size: 26rpx;
+  text-align: center;
+}
+
+.tabTit .active {
+  color: #e64340;
+  background: #fff;
+}
+
+.tabTit .active image {
+  transform: rotate(180deg);
+  background: none;
+}
+
+.tabTit image {
+  width: 20rpx;
+  height: 20rpx;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-top: -5rpx;
+}
+
+.tabLayer {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  width: 750rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 180rpx;
+  z-index: 1;
+  background: #fff;
+  padding-bottom:30rpx;
+  border-bottom: solid 1px #eee;
+  text-align: center;
+}
+
+.tabLayerText {
+  width: 115rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  border: solid 1px #eee;
+  margin: 20rpx 0 0 26rpx;
+  font-size: 25rpx;
+}
+
+.tabLayer .active {
+  color: #e64340;
+  border-color: #e64340;
+}
+
+.flex1 {
+  flex: 1;
+  overflow: hidden;
+  display: block;
+}
+
+/*弹性盒模型*/
+
+.box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+navigator {
+  display: inline;
+}
+
+.priceArea {
+  width: 100%;
+  font-size: 25rpx;
+  margin-top: 15rpx;
+}
+
+.priceArea input {
+  background-color: #f5f8fb;
+  border-radius: 2%;
+  width: 45%;
+}
+
+.priceArea text {
+  float: left;
+  margin-left: 3%;
+  width: 45%;
+  font-size: 25rpx;
+}

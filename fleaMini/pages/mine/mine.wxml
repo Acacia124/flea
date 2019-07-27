@@ -1,0 +1,36 @@
+<view class="userinfo">
+  <span wx:if="{{!hasUserInfo && canIUse}}" class="button-wrap">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="button button-circle button-raised button-primary">
+      <i class="login">login</i>
+    </button>
+  </span>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+
+</view>
+
+<view class="person-list">
+  <navigator url='../mylove/mylove' hover-class="none" class="list-item">
+    <image class="item-image" src="../../images/me-love.png"></image>
+    <text class="item-text">我的喜欢</text>
+  </navigator>
+  <view class="list-item" style='margin-top:0rpx;'>
+    <navigator url='../myIssue/myIssue?nickAme={{userInfo.nickName}}&avatarUrl={{userInfo.avatarUrl}}' hover-class="none" class="list-item">
+      <image class="item-image" src="../../images/me-issue.png"></image>
+      <text class="item-text">我发布的</text>
+    </navigator>
+  </view>
+
+  <navigator  url='../msg-list/msg-list' hover-class="none" class="list-item">
+    <image class="item-image" src="../../images/me-mess.png"></image>
+    <van-badge style="margin-left:-10rpx;background-color:white;" title="我的消息" info="{{count>0?count:''}}" />
+  </navigator>
+  <view class="person-line"></view>
+  
+  <navigator url='../myinfo/myinfo' hover-class="none" class="list-item">
+    <image class="item-image" src="../../images/my.png"></image>
+    <text class="item-text">个人信息</text>
+  </navigator>
+</view>

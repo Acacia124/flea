@@ -1,0 +1,342 @@
+/* pages/header/header.wxss */
+
+/*顶部*/
+
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  line-height: 80rpx;
+  box-shadow: 0px 2px 4px #888;
+  flex: none;
+  background: #fff;
+  top: 0
+}
+
+.navbar image {
+  margin-top: 7px;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 500px;
+  box-shadow: 3px 1px 1px #ccc;
+}
+
+.topleft {
+  margin-left: 14%;
+  margin-right: 3%;
+}
+
+.topright {
+  margin-right: 12%;
+  margin-left: 3%;
+}
+
+.navbar .item {
+  width: 25%;
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  position: relative;
+  flex: auto;
+}
+
+.navbar .item.active {
+  color: #ec3f28;
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  border-bottom: 5rpx solid #ec3f28;
+}
+
+/*手机卡片*/
+
+.sell1 {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.shuleft {
+  float: left;
+  padding-top: 5px;
+}
+
+.shu {
+  height: 18px;
+  width: 5px;
+  background-color: #ff2727;
+}
+
+.shu2right {
+  margin-bottom: -5px;
+}
+
+.shu2 {
+  font-size: 17px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.card {
+  border: 2px solid white;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px #ccc;
+  margin: 8px;
+  position: relative;
+}
+
+.topphone {
+  width: 20px;
+  height: 21px;
+  margin-bottom: -5px;
+}
+
+.title {
+  width: 53%;
+  float: left;
+  font-size: 16px;
+  color: rgb(146, 143, 143);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.phone {
+  width: 46%;
+  font-size: 17px;
+  color: red;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.weui-btn {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  margin-top: 22px;
+  margin-bottom: 13px;
+}
+
+.test {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(229, 228, 230, 0.514);
+}
+
+/*卖推荐入口*/
+
+.recommend {
+  height: 440rpx;
+  background: #fff;
+}
+
+.plate-item {
+  display: flex;
+  float: left;
+  position: relative;
+  width: 140rpx;
+  height: 180rpx;
+  margin-top: 38rpx;
+  margin-left: 6%;
+}
+
+.plate-img image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.plate-info {
+  position: absolute;
+  height: 69rpx;
+  font-size: 30rpx;
+  font-family: '微软雅黑';
+  bottom: 55rpx;
+  left: -10rpx;
+}
+
+/*热卖*/
+
+.hotSell {
+  margin-top: 20rpx;
+}
+
+.hoSell-text {
+  width: 45%;
+  float: left;
+}
+
+.hoSell-text button {
+  font-size: 19rpx;
+  width: 81%;
+  color: red;
+  border: 1rpx solid rgb(233, 61, 61);
+  background: none;
+  margin-top: 90rpx;
+  margin-left: 30rpx;
+}
+
+.hotSell-info {
+  border-radius: 5px;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+  width: 350rpx;
+  height: 250rpx;
+  background-color: rgb(245, 241, 241);
+}
+
+.hotSell-info-list-photo {
+  width: 100%;
+}
+
+.hotSell-info-list-desc {
+  border-radius: 3px;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  width: 94%;
+  text-align: center;
+  font-size: 25rpx;
+  padding: 10rpx;
+  opacity: 0.7;
+}
+
+/*=========================淘好货=========================*/
+
+/*轮播图*/
+
+.swiper2 {
+  height: 318rpx;
+  width: 100%;
+}
+
+.swiper-image {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-image {
+  height: 100%;
+  width: 100%;
+}
+
+/* 图片容器的样式 */
+.items {
+  height: 100%;
+  background-color: #f3f4f6;
+}
+.img_item {
+  width: 48.5%;
+  margin: 2px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  font-size: 24rpx;
+}
+
+.tit {
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.item_info {
+   margin-top: 10rpx;
+}
+
+.product-name {
+  color: #000;
+  text-align: left;
+  margin: 0px 5px;
+  margin-bottom: 5px;
+  font-size: 30rpx;
+}
+
+.product-price-wrap .product-price-new {
+  color: #e80080;
+  margin-left: 5px;
+  font-weight: 900;
+  font-size: 30rpx;
+}
+
+.product-price-wrap .product-price-old {
+  color: #888;
+  text-decoration: line-through;
+  padding-left: 2px;
+  font-size: 25rpx;
+}
+
+.product-price-wrap .discount {
+  float: right;
+  margin-right: 20rpx;
+  font-size: 25rpx;
+}
+
+/*底部*/
+
+.mybottom {
+  z-index: 1px;
+  position: fixed;
+  bottom: 70rpx;
+  right: 20rpx;
+}
+
+.rocket image {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.issuetext {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -15px;
+  font-weight: bold;
+}
+.free {
+  float: right;
+  width: 80rpx;
+  background-color: red;
+  text-align: center;
+  margin-right: 20rpx;
+  border-radius: 14rpx;
+}
+.free text{
+  color: white;
+}
+/*浮窗返回顶部*/
+
+.backTop {
+  width: 75rpx;
+  height: 75rpx;
+  background: #fff;
+  position: fixed;
+  right: 20rpx;
+  bottom: 70rpx;
+  border-radius: 40rpx;
+  box-shadow: 0px 0px 1px #000;
+  line-height: 60rpx;
+}
+
+.backTop image {
+  width: 75rpx;
+  height: 75rpx;
+}
