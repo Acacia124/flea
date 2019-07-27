@@ -1,0 +1,256 @@
+<page-header [content]="content" [extra]="extra">
+
+  <ng-template #content>
+    <div class="content">
+      <div class="avatar">
+        <nz-avatar nzSrc="{{img}}"></nz-avatar>
+      </div>
+      <div class="desc">
+        <div class="desc-title">早安，山治，我要吃肉！</div>
+        <div>山治 | 地球－伟大航道－黄金梅丽号－厨房</div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #extra>
+    <div class="page-extra">
+      <div>
+        <p>Tomcat服务器</p>
+        <p>5</p>
+      </div>
+      <div>
+        <p>Nginx服务器</p>
+        <p>1</p>
+      </div>
+      <div>
+        <p>Solr检索</p>
+        <p>1</p>
+      </div>
+      <div>
+        <p>Redis、Mysql</p>
+        <p>1</p>
+      </div>
+    </div>
+  </ng-template>
+</page-header>
+
+
+<nz-modal [nzWidth]="700" [(nzVisible)]="isVisible" [nzBodyStyle]="{padding: '0'}" [nzTitle]="logName" nzClosable="true"
+  (nzOnCancel)="closeSocket()" [nzFooter]="null" nzMaskClosable="false">
+
+  <div #scrollMe style="background-color: #0C606B;color:#d6d0d0;height: 400px;overflow-y: auto;font-size: 16px;
+      font-family: inherit;">
+
+    <div style="margin: 10px;">
+      <div *ngFor="let log of receivedMessages">
+        <span *ngIf="log.level==='PROMPT'" style="color: #6eff00">{{log.body}}</span>
+        <p *ngIf="log.level!=='PROMPT'">
+            {{log.timestamp | date:'yyyy-MM-dd HH:mm:ss'}} [Thread: {{log.threadName}}] [Class: {{log.className}}]
+            <br />
+            <span *ngIf="log.level==='INFO' || log.level==='DEBUG'" style="color: #A9C137">{{log.level}}</span>
+            <span *ngIf="log.level==='WARN'" style="color: #BD8738">{{log.level}}</span>
+            <span *ngIf="log.level==='ERROR'" style="color: #ef3d38">{{log.level}}</span>
+            <span> {{log.body}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</nz-modal>
+
+
+<div nz-row [nzGutter]="24">
+  <div nz-col nzXs="24" nzSm="24" nzMd="16">
+    <nz-card nzTitle="运行中的Tomcat服务器" [nzExtra]="ingExtra" [nzBordered]="false" [nzLoading]="loading"
+      class="ant-card__body-nopadding mb-lg project-list">
+      <ng-template #ingExtra>
+        <a >管理云服务器</a>
+      </ng-template>
+      <div *ngFor="let item of notice; let i = index" nz-card-grid class="project-grid">
+        <nz-card [nzBordered]="false" class="ant-card__body-nopadding mb0">
+          <nz-card-meta [nzTitle]="noticeTitle" [nzDescription]="item.description">
+            <ng-template #noticeTitle>
+              <div class="card-title">
+                <a >{{item.title}}</a>
+                <span class="aperate">
+                  <i nzTitle="实时日志" nz-icon type="laptop" (click)="realTimeLog(i)" theme="outline" nz-tooltip></i>
+                  <i nzTitle="日志列表" (click)="toLog(i)" nz-icon type="exception" theme="outline" nz-tooltip></i>
+                </span>
+              </div>
+            </ng-template>
+          </nz-card-meta>
+          <div class="project-item">
+            <a>
+              <nz-badge style="margin-bottom: 5px;" nzStatus="processing"></nz-badge><span>运行中</span>
+            </a>
+            <span class="datetime">
+              {{item.ip}}
+            </span>
+          </div>
+        </nz-card>
+      </div>
+    </nz-card>
+    <nz-card id="logList" nzTitle="服务器日志" [nzBordered]="false" [nzLoading]="loading"
+      class="ant-card__body-nopadding mb-lg active-card">
+      <nz-tabset style="height:220px;" [nzTabPosition]="'left'" [(nzSelectedIndex)]="selectedIndex"
+        (nzSelectChange)="logList(selectedIndex)">
+        <nz-tab *ngFor="let tab of tabs" [nzTitle]="tab.name">
+          <div class="log">
+            <div *ngFor="let log of tab.content">
+              <i nz-icon type="paper-clip" theme="outline"></i><a (click)="download(log)"> {{ log }}</a>
+            </div>
+          </div>
+        </nz-tab>
+      </nz-tabset>
+    </nz-card>
+
+    <nz-card [nzBordered]="false" [nzTitle]="redisTemplate" class="ant-card__body-nopadding mb-lg active-card"
+      style="padding:10px">
+      <nz-card nzType="inner" [nzTitle]="'Redis INFO'" style="width:100%;">
+        <nz-table #smallTable nzVirtualScroll [nzScroll]="{ y: '250px' }" [nzFrontPagination]="false"
+          [nzShowPagination]="false" nzSize="small" [nzData]="redisInfoList">
+          <thead>
+            <tr>
+              <th>key</th>
+              <th>desctiption</th>
+              <th>value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of smallTable.data">
+              <td>{{ data.key }}</td>
+              <td>{{ data.desctiption }}</td>
+              <td>{{ data.value }}</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-card>
+
+      <nz-card nzType="inner" [nzTitle]="redislogTitle" style="width:100%;" [nzExtra]="cleanRedisLogs">
+        <nz-table #redisLogTable nzVirtualScroll [nzScroll]="{ y: '250px' }" [nzFrontPagination]="false"
+          [nzShowPagination]="false" nzSize="small" [nzData]="redisLogList">
+          <thead>
+            <tr>
+              <th nzWidth="60px">id</th>
+              <th nzWidth="200px">查询时间</th>
+              <th nzWidth="150px">查询耗时</th>
+              <th>查询命令</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of redisLogTable.data">
+              <td>{{ data.id }}</td>
+              <td>{{ data.executeTime }}</td>
+              <td>{{ data.usedTime }}</td>
+              <td>{{ data.args }}</td>
+            </tr>
+          </tbody>
+        </nz-table>
+      </nz-card>
+      <nz-card nzType="inner" [nzTitle]="'Redis 内存实时占用情况'">
+         <div #memory echarts [options]="option"></div>
+      </nz-card>
+      <!-- <nz-card nzType="inner" [nzTitle]="'Redis Keys实时数目'">
+          <div #rediskeys echarts [options]="option2"></div>
+       </nz-card> -->
+      <ng-template #redislogTitle>
+        <p>Redis SloWLog 共({{redisLogLen}})条</p>
+      </ng-template>
+      <ng-template #cleanRedisLogs>
+        <a nz-popconfirm nzTitle="确定删除Redis SlowLog?" (nzOnConfirm)="cleanRedisLog()" >删除日志</a>
+      </ng-template>
+    </nz-card>
+    <ng-template #redisTemplate>
+        Redis服务器信息
+    </ng-template>
+
+  </div>
+  <div nz-col nzXs="24" nzSm="24" nzMd="8">
+    <nz-card nzTitle="Solr检索服务" [nzBordered]="false" class="ant-card__body-nopadding mb-lg">
+      <div class="links">
+        <button nz-popconfirm nzTitle="确定导入？" (nzOnConfirm)="importSolr()" style="width: 90%;" nz-button
+          [nzType]="'dashed'">
+          <i nz-icon type="plus"></i>
+          <span>导入所有商品至Solr库</span>
+        </button>
+        <br />
+        <br />
+        <button nz-popconfirm nzTitle="确定删除？" nz-popconfirm (nzOnConfirm)="deleteSolr()"
+          style="margin-top: 15px;width: 90%;" nz-button [nzType]="'dashed'">
+          <i nz-icon type="delete"></i>
+          <span>删除Solr库中所有商品</span>
+        </button>
+      </div>
+    </nz-card>
+
+    <nz-card nzTitle="JWT密钥管理" [nzBordered]="false" [nzBodyStyle]="{'padding-top.px': 12, 'padding-bottom.px': 12 }"
+      class="mb-lg">
+      <div class="members">
+        <div nz-row [nzGutter]="48">
+          <div style="margin-left: 20px;margin-right: 20px;">
+
+            <nz-steps [nzCurrent]="current" nzSize="small">
+              <nz-step nzTitle="身份校验"></nz-step>
+              <nz-step nzTitle="令牌校验"></nz-step>
+              <nz-step nzTitle="修改令牌"></nz-step>
+            </nz-steps>
+
+            <div style="margin: 10px 10px 10px 10px;">
+              <div *ngIf="current==0">
+                <video id="video" style="    border-radius: 10px;
+                        width: 46%;
+                        height: 156px;
+                        border: 1px solid #F44336;
+                        margin: 0px 10px 5px 1%;" autoplay="autoplay"></video>
+                <div style="  
+                        overflow: hidden;  border-radius: 10px;
+                        margin: 0 3% 5px 0%;
+                        border: 1px solid #F44336;
+                        height: 156px;
+                        width: 46%;
+                        float: right;">
+                  <canvas id="canvas" style="height: 100%;    border-radius: 10px;"></canvas>
+                </div>
+                <button nz-button nzType="primary" style="width: 48%" (click)="clickVideo()">开启摄像头</button>
+                <button nz-button nzType="primary" style="width: 48%" (click)="takePhoto()">点击拍照</button>
+              </div>
+              <!-- <div *ngIf="current==1">
+                      <nz-input-group style="width: 100%" nzSearch  [nzSuffix]="suffixButton">
+                          <input type="text" nz-input placeholder="输入邮箱验证码">
+                      </nz-input-group>
+                      <ng-template #suffixButton>
+                        <button nz-button nzType="primary"  (click)="getCaptcha()" [disabled]="count"  nzSearch>{{ count ? count + 's' : '获取验证码' }}</button>
+                      </ng-template>
+                  </div> -->
+              <div *ngIf="current==1">
+                <nz-input-group style="width: 100%">
+                  <input type="password" nz-input placeholder="输入修改之前的令牌密钥">
+                </nz-input-group>
+              </div>
+              <div *ngIf="current==2">
+                <nz-input-group style="width: 100%">
+                  <input type="password" nz-input placeholder="输入令牌密钥">
+                </nz-input-group>
+                <br />
+                <nz-input-group style="width: 100%">
+                  <input type="password" nz-input placeholder="再次输入令牌密钥">
+                </nz-input-group>
+              </div>
+            </div>
+            <div style="margin: 10px;">
+              <button nz-button nzType="dashed" (click)="pre()" *ngIf="current > 0">
+                <i nz-icon type="left"></i>
+                <span>Previous</span>
+              </button>
+              <button nz-button nzType="dashed" (click)="next()" *ngIf="current < 2">
+                <span>Next</span>
+                <i nz-icon type="right"></i>
+              </button>
+              <button nz-button nzType="dashed" (click)="done()" *ngIf="current === 2">
+                <span>更改密钥</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nz-card>
+  </div>
+</div>

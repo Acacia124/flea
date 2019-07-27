@@ -1,0 +1,32 @@
+<sv-container layout="vertical">
+  <sv label="内容标题" type="primary" >
+    {{record.contentTitle}}
+  </sv>
+  <sv label="发布时间" type="primary" >
+    {{record.contentCreate | date : 'yyyy-MM-dd HH:mm:ss'}}
+  </sv>
+  <sv label="内容副标题" type="primary" col="1">
+    {{record.subTitle}}
+  </sv>
+  <sv label="标题描述" type="primary" col="1">
+    {{record.titleDesc}}
+  </sv>
+
+  <sv label="内容导航的Url" type="primary" >
+    {{record.contentUrl}}
+  </sv>
+
+
+  <sv label="发布图片" type="primary" col="1">
+      <div *ngFor="let img of imgList">
+        <img src="{{img}}" >
+      </div>
+  </sv>
+
+  <sv label="内容" col="1">
+    <div [innerHTML]="record.content | html"></div>
+  </sv>
+
+  
+</sv-container>
+

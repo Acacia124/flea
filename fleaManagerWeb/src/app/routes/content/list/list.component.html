@@ -1,0 +1,100 @@
+<div class="alain-default__content-title" style="margin-bottom: 0px;">
+    <h1>
+      商城内容管理
+      <small>对商城内容进行管理，用于给用户展示</small>
+    </h1>
+  </div>
+<div nz-row nzGutter="24" class="py-lg">
+    <div nz-col nzMd="24" nzLg="7">
+      <nz-card [nzBordered]="false" nzTitle="内容分类树" class="mb-lg" [nzLoading]="!nodesflag">
+        <ng-container *ngIf="nodesflag">
+            <nz-tree
+            [nzData]="nodes"
+            nzAsyncData="true"
+            (nzClick)="loadContent($event)"
+            (nzExpandChange)="nzEvent($event)">
+          </nz-tree>
+        </ng-container>
+      </nz-card>
+    </div>
+
+    <!--新增商品模态框-->
+    <nz-modal  *ngIf="isVisible" [nzMaskClosable]="'false'" [nzStyle]="{ top: '20px' }" [(nzVisible)]="isVisible" nzTitle="新增内容 ( 类别：{{category}} ) " (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+      <form  #scrollMe  nz-form [nzLayout]="'vertical'" [formGroup]="validateForm">
+        <input hidden="true" formControlName="conCatId">
+        <nz-form-item>
+          <nz-form-label [nzSpan]="4">内容标题</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input nz-input formControlName="contentTitle" placeholder="内容标题">
+            <nz-form-explain *ngIf="validateForm.get('contentTitle').dirty && validateForm.get('contentTitle').errors">标题不可为空</nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="4">内容副标题</nz-form-label>
+          <nz-form-control [nzSpan]=" 14">
+            <input nz-input formControlName="subTitle" placeholder="内容副标题">
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]=" 4">标题描述</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input nz-input formControlName="titleDesc" placeholder="标题描述">
+          </nz-form-control>
+        </nz-form-item>
+      
+        <nz-form-item>
+          <nz-form-label [nzSpan]="14">商品图片</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+            <input hidden="true" nz-input formControlName="contentPic">
+            <div class="clearfix">
+                <nz-upload
+                  nzListType="picture-card"
+                  nzAction="https://www.flea.store/api/user/pic/upload"
+                  [nzName]="'uploadFile'"
+                  [nzAccept]="'image/gif, image/jpeg, image/jpg, image/bmp, image/png'"
+                  [nzRemove]= "removeFile"
+                  [(nzFileList)]="fileList"
+                  [nzShowButton]="fileList?.length < 3"
+                  [nzPreview]="handlePreview">
+                    <i nz-icon type="plus"></i>
+                    <div class="ant-upload-text">Upload</div>
+                </nz-upload>
+                <nz-modal [nzVisible]="previewVisible" [nzContent]="modalContent" [nzFooter]="null" (nzOnCancel)="previewVisible=false">
+                  <ng-template #modalContent>
+                    <img [src]="previewImage" [ngStyle]="{ 'width': '100%' }" />
+                  </ng-template>
+                </nz-modal>
+              </div>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSpan]="4">内容导航的Url</nz-form-label>
+          <nz-form-control [nzSpan]="14">
+              <nz-input-group nzAddOnBefore="Http://" >
+                <input  nz-input formControlName="contentUrl" placeholder="内容导航的Url">
+              </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        
+        <nz-form-item>
+          <nz-form-label [nzSpan]="4">内容信息</nz-form-label>
+          <nz-form-control [nzSpan]=" 14">
+              <tinymce  formControlName="content"></tinymce>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+    </nz-modal>
+
+    <div nz-col nzMd="24" nzLg="17">
+      <nz-card class="tabsCard" [nzBordered]="false" [nzTitle]="title">
+        <ng-template  #title>
+              <button (click)="showModel()" nz-button>新增</button>
+              <button (click)="deleteContentList()" nz-button>删除</button>
+        </ng-template>
+    
+        <st #st [bordered]="'true'" [data]="url" [ps]="'5'" [req]="{ reName: {list: 'rows',pi: 'page',ps: 'rows' }, params: params }" [res]="{ reName: {list: 'rows' } }"
+      [columns]="columns" [scroll]="scroll" (change)="change($event)"></st>
+      </nz-card>
+    </div>
+  </div>
+  

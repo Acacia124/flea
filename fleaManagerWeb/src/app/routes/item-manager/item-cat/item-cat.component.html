@@ -1,0 +1,67 @@
+<div class="alain-default__content-title">
+  <h1>
+    商品分类树管理
+    <small>对商品分类进行增删改</small>
+  </h1>
+</div>
+<nz-card [nzTitle]="nztitle">
+  <ng-template #nztitle>
+    <div class="text-center " style="width: 100%; ">
+      <nz-input-group [nzSuffix]="suffixIcon" style="width: 50%; ">
+        <input type="text" nz-input placeholder="Search" [(ngModel)]="searchValue">
+      </nz-input-group>
+      <ng-template #suffixIcon>
+        <i nz-icon type="search"></i>
+      </ng-template>
+    </div>
+  </ng-template>
+  <nz-skeleton [nzLoading]="loading" [nzActive]="true" [nzAvatar]="false" [nzTitle] = "false" [nzParagraph]="{ rows: 12,width: [500, 500,500, 500,500, 500,500, 500,500, 500,500, 500] }">
+    <nz-tree #treeCom [nzSearchValue]="searchValue" (nzSearchValueChange)="nzEvent()"  [nzData]="nodes" nzMultiple="true"
+      (nzClick)="activeNode($event)" (nzDblClick)="openFolder($event)">
+
+      <ng-template #contextTemplate>
+        <ul nz-menu nzInDropDown>
+          <li nz-menu-item (click)="createBlankNode()">新建节点</li>
+          <li nz-menu-item (click)="updateNode()">修改节点</li>
+        </ul>
+      </ng-template>
+      <ng-template #contextTemplate2>
+        <ul nz-menu nzInDropDown>
+          <li nz-menu-item (click)="updateNode()">修改节点</li>
+          <li nz-menu-item nzType="info" (click)="showModal()">删除节点</li>
+        </ul>
+        <nz-modal [(nzVisible)]="isVisible" nzTitle="分类节点删除操作" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" [nzOkLoading]="isOkLoading">
+          <p>是否删除节点
+            <font style="color: fuchsia">{{node.title}}</font>
+          </p>
+        </nz-modal>
+      </ng-template>
+
+      <ng-template #nzTreeTemplate let-node>
+        <span class="custom-node" [class.active]="activedNode?.key===node.key">
+          <span *ngIf="!node.isLeaf && !node.origin.edit" (contextmenu)="contextMenu($event,contextTemplate,node)">
+            <i style='margin-left: -5px;margin-top: 6px;' nz-icon [type]="node.isExpanded ? 'folder-open' : 'folder'" (click)="openFolder(node)"></i>
+            <span class="folder-name" [class.search]="searchTree.indexOf(node.title)>=0"> {{node.title}}</span>
+          </span>
+          <span *ngIf="!node.isLeaf && node.origin.edit">
+            <i style='margin-left: -5px;margin-top: 6px;' nz-icon [type]="node.isExpanded ? 'folder-open' : 'folder'" (click)="openFolder(node)"></i>
+            <input style="width: 100px;margin-left: 2px;" [value]="node.title" #nodeName nz-input placeholder="分类名" nzSize="small">&nbsp;&nbsp;
+            <i nz-icon type="close-circle" [theme]="'twotone'" [twoToneColor]="'#eb2f96'" (click)="cancelNode(node)"></i> &nbsp;
+            <i nz-icon [type]="'check-circle'" [theme]="'twotone'" [twoToneColor]="'#52c41a'" (click)="addNode(node,nodeName.value)"></i>
+          </span>
+        </span>
+        <span *ngIf="node.isLeaf && !node.origin.edit" (contextmenu)="contextMenu($event,contextTemplate2,node)">
+          <i style='margin-left: -5px; margin-top: 6px;' nz-icon type="file"></i>
+          <span class="file-name" [class.search]="searchTree.indexOf(node.title)>=0"> {{node.title}}</span>
+        </span>
+        <span *ngIf="node.isLeaf && node.origin.edit">
+          <i style='margin-left: -5px; margin-top: 6px;' nz-icon type="file"></i>
+          <input style="width: 100px;margin-left: 2px;" [value]="node.title" #nodeName nz-input placeholder="分类名" nzSize="small">&nbsp;&nbsp;
+          <i nz-icon type="close-circle" [theme]="'twotone'" [twoToneColor]="'#eb2f96'" (click)="cancelNode(node)"></i> &nbsp;
+          <i nz-icon [type]="'check-circle'" [theme]="'twotone'" [twoToneColor]="'#52c41a'" (click)="addNode(node,nodeName.value)"></i>
+        </span>
+      </ng-template>
+
+    </nz-tree>
+  </nz-skeleton>
+</nz-card>

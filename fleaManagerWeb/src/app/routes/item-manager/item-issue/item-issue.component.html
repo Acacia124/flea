@@ -1,0 +1,86 @@
+<page-header [title]="'商品发布'">
+  管理员可发布官方直营商品
+</page-header>
+<nz-card [nzBordered]="false">
+  <form nz-form [formGroup]="form" (ngSubmit)="submit()" se-container="3" labelWidth="200">
+    <se label="商品标题" error="请输入标题" [col]="'1'" required>
+      <input nz-input formControlName="itemTitle" placeholder="给商品起个名字">
+    </se>
+    <se label="商品描述" error="请输入描述信息" [col]="'1'" required>
+      <textarea nz-input formControlName="itemTitle" [nzAutosize]="{minRows: 4}" placeholder="商品描述，可从规格等说起"></textarea>
+    </se>
+    <se label="商品售价" error="请输入售价" required>
+      <nz-input-group nzAddOnAfter="元">
+        <nz-input-number nz-input formControlName="price"></nz-input-number>
+      </nz-input-group>
+    </se>
+    <se label="商品原价" error="请输入原价" required>
+      <nz-input-group nzAddOnAfter="元">
+        <nz-input-number nz-input formControlName="originalPrice"></nz-input-number>
+      </nz-input-group>
+    </se>
+    <se label="商品出售类型" required>
+      <nz-radio-group formControlName="status">
+        <label nz-radio [nzValue]="1">普通出售</label>
+        <label nz-radio [nzValue]="2">免费出售</label>
+      </nz-radio-group>
+    </se>
+    <se label="商品分类" error="请输入商品类型" required>
+      <nz-tree-select style="width: 250px" nzPlaceHolder="Please select" [nzDropdownMatchSelectWidth]="true" [nzDropdownStyle]="{ 'max-height': '300px' }"
+        formControlName="catId" [nzNodes]="nodes" [nzAsyncData]="true" (nzExpandChange)="onExpandChange($event)">
+      </nz-tree-select>
+    </se>
+    <se label="发布地址" error="请输入地址信息" required>
+      <nz-select style="width: 100%;" formControlName="sellAddress" nzShowSearch nzPlaceHolder="Select address" nzAllowClear>
+        <nz-option *ngFor="let o of addressList" [nzValue]="o.schoolId" [nzLabel]="o.schoolName"></nz-option>
+      </nz-select>
+    </se>
+    <se label="商品购买时间" error="请输入商品购买时间" required>
+      <nz-date-picker nzFormat="yyyy-MM-dd" formControlName="buyTime" [nzDisabledDate]="disabledDate">
+      </nz-date-picker>
+    </se>
+    <se label="联系电话">
+      <nz-input-group [nzAddOnAfter]="phone">
+        <input nz-input formControlName="buyTime">
+      </nz-input-group>
+      <ng-template #phone>
+        <i nz-icon type="phone"></i>
+      </ng-template>
+    </se>
+    <se label="联系QQ">
+      <nz-input-group [nzAddOnAfter]="qq">
+        <input nz-input formControlName="buyTime">
+      </nz-input-group>
+      <ng-template #qq>
+        <i nz-icon type="qq"></i>
+      </ng-template>
+    </se>
+    <se label="联系微信">
+      <nz-input-group [nzAddOnAfter]="wechat">
+        <input nz-input formControlName="buyTime">
+      </nz-input-group>
+      <ng-template #wechat>
+        <i nz-icon type="wechat"></i>
+      </ng-template>
+    </se>
+    <se label="商品图片" [col]="'2'">
+      <input hidden="true" nz-input formControlName="itemImage">
+      <div class="clearfix">
+        <nz-upload nzListType="picture-card" nzAction="https://www.flea.store/api/user/pic/upload" [nzName]="'uploadFile'" [nzAccept]="'image/gif, image/jpeg, image/jpg, image/bmp, image/png'"
+          [nzRemove]="removeFile" [(nzFileList)]="fileList" [nzShowButton]="fileList?.length < 5" [nzPreview]="handlePreview">
+          <i nz-icon type="plus"></i>
+          <div class="ant-upload-text">Upload</div>
+        </nz-upload>
+        <nz-modal [nzVisible]="previewVisible" [nzContent]="modalContent" [nzFooter]="null" (nzOnCancel)="previewVisible=false">
+          <ng-template #modalContent>
+            <img [src]="previewImage" [ngStyle]="{ 'width': '100%' }" />
+          </ng-template>
+        </nz-modal>
+      </div>
+    </se>
+    <se label="商品新旧度">
+        <nz-slider formControlName="newnessRate" ></nz-slider>
+    </se>
+    <button style="width: 88%;margin-left: 10%;" nz-button nzType="primary" nzBlock>发布</button>
+  </form>
+</nz-card>

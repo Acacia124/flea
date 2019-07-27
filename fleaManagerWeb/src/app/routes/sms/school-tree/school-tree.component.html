@@ -1,0 +1,46 @@
+<div class="alain-default__content-title">
+    <h1>
+      学校列表
+      <small>对用户学校地址进行增删改</small>
+    </h1>
+</div>
+<nz-card [nzTitle]="title">
+
+    <ng-template #title>
+      <button [(nzLoading)]="loding" nz-button nzType="primary" (click)="showModal2()"><i nz-icon type="plus"></i>增加学校地址</button>
+    </ng-template>
+  <div class="gutter-example">
+    <div *ngFor="let school of schoolList" nz-col class="gutter-row" nzSpan="6" style="margin-bottom: 30px">
+      <nz-dropdown-button [nzClickHide]="false" [nzTrigger]="'click'">
+        {{school.schoolName}}
+        <ul nz-menu style="text-align: center">
+          <li [(nzDisabled)]="school.deStatus" nz-menu-item nz-popconfirm nzTitle="确定删除改地址?" (nzOnConfirm)="deletaSchool(school)" nzPlacement="rightTop" >
+            <label>删除地址 </label>&nbsp;
+            <i nz-icon [type]="'edit'"></i>
+          </li>
+          <li nz-menu-item  (click)="showModal(school)">
+            <label>修改地址 </label>&nbsp;
+            <i nz-icon [type]="'delete'"></i>
+          </li>
+        </ul>
+      </nz-dropdown-button>
+
+    </div>
+
+    <nz-modal [(nzVisible)]="isVisible" nzTitle="键入要修改的值" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" [nzOkLoading]="isOkLoading">
+      <nz-input-group [nzSuffix]="suffixTemplate">
+        <input type="text" nz-input  [(ngModel)]="upSchool.schoolName">
+      </nz-input-group>
+      <ng-template #suffixTemplate><i nz-icon type="close-circle" (click)="upSchool.schoolName=null" *ngIf="upSchool.schoolName"></i></ng-template>
+    </nz-modal>
+
+
+    <nz-modal [(nzVisible)]="isVisible2" nzTitle="键入要增加的值" (nzOnCancel)="handleCancel2()" (nzOnOk)="handleOk2()" [nzOkLoading]="isOkLoading2">
+      <nz-input-group [nzSuffix]="suffixTemplate">
+        <input type="text" nz-input placeholder="学校地址" [(ngModel)]="addSchoolName">
+      </nz-input-group>
+      <ng-template #suffixTemplate><i nz-icon type="close-circle" (click)="addSchoolName=null" *ngIf="addSchoolName"></i></ng-template>
+    </nz-modal>
+  </div>
+
+</nz-card>

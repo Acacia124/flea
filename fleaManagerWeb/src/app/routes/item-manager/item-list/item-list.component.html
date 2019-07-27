@@ -1,0 +1,141 @@
+<page-header [title]="'商品搜索列表'">
+  <div class="text-center">
+    <nz-input-group nzSearch nzSize="large" [nzSuffix]="suffixButton" style="width: 520px;">
+      <input type="text" nz-input placeholder="商品标题" [(ngModel)]="params.itemName" name="itemName">
+      <ng-template #suffixButton>
+        <button nz-button nzType="primary" nzSize="large" (click)="searchItemList()" nzSearch>Search</button>
+      </ng-template>
+    </nz-input-group>
+  </div>
+</page-header>
+
+<nz-card [nzBordered]="false">
+  <form nz-form se-container="1" size="compact" gutter="32" [labelWidth]="null">
+    <se label="发布地址" line>
+      <tag-select>
+        <nz-tag *ngFor="let i of schoolList; let idx = index" nzMode="checkable" [nzChecked]="i.value"
+          (nzCheckedChange)="changeSchoolList($event, idx)">
+          {{i.schoolName}}
+        </nz-tag>
+      </tag-select>
+    </se>
+    <se>
+      <div class="ant-form ant-form-inline">
+        <nz-form-item>
+          <nz-form-label nzFor="rate">用户标识</nz-form-label>
+          <nz-form-control>
+            <input nz-input style="width: 180px" placeholder="userId" [(ngModel)]="params.userId" name="userId">
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-label nzFor="rate">商品分类</nz-form-label>
+          <nz-form-control>
+            <nz-tree-select style="width: 250px" nzPlaceHolder="不限" [nzDropdownMatchSelectWidth]="true"
+              [nzDropdownStyle]="{ 'max-height': '300px' }" [(ngModel)]="params.catId" name="catId"
+              [nzNodes]="catLists">
+            </nz-tree-select>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-label nzFor="rate">商品状态</nz-form-label>
+          <nz-form-control>
+            <nz-select [nzMaxMultipleCount]="3" nzMode="multiple" style="width: 400px" [(ngModel)]="params.status"
+              name="status" [nzPlaceHolder]="'不限'" [nzShowSearch]="true">
+              <nz-option [nzLabel]="'正常商品'" [nzValue]="'1'"></nz-option>
+              <nz-option [nzLabel]="'免费商品'" [nzValue]="'2'"></nz-option>
+              <nz-option [nzLabel]="'下架商品'" [nzValue]="'3'"></nz-option>
+              <nz-option [nzLabel]="'违规商品'" [nzValue]="'4'"></nz-option>
+            </nz-select>
+          </nz-form-control>
+        </nz-form-item>
+
+      </div>
+    </se>
+    <se line>
+      <div class="ant-form ant-form-inline">
+
+        <nz-form-item>
+          <nz-form-label nzFor="rate">价格区间</nz-form-label>
+          <nz-form-control>
+            <nz-input-number style="width: 130px" [(ngModel)]="params.startPrice" name="startPrice" [nzMin]="0"
+              (ngModelChange)="checkEndPrice()" [nzStep]="10" nzSize="default"></nz-input-number>
+            至
+            <nz-input-number style="width: 130px" [(nzMin)]="params.startPrice" [(ngModel)]="params.endPrice"
+              name="endPrice" [nzStep]="10" nzSize="default"></nz-input-number>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label nzFor="rate">出售日期</nz-form-label>
+          <nz-form-control>
+            <nz-range-picker name="Date" [nzFormat]="'yyyy/MM/dd'" [(ngModel)]="params.Date"></nz-range-picker>
+          </nz-form-control>
+        </nz-form-item>
+
+      </div>
+    </se>
+  </form>
+</nz-card>
+<nz-list [nzLoadMore]="loadMore" [nzLoading]="loading" [nzRenderItem]="item" [nzDataSource]="list"
+  [nzGrid]="{gutter: 24, lg: 6, md: 8, sm: 12, xs: 24 }">
+  <ng-template #item let-item>
+    <nz-list-item>
+      <nz-card style="    width: 100%;" nzHoverable [nzCover]="cover">
+        <ng-template #cover>
+          <img style="height: 250px;width: 250px" *ngIf="item.itemImage!=''" alt="{{item.itemTitle}}"
+            src="{{item.itemImage.split(',')[0]}}">
+          <img style="height: 250px;width: 250px" *ngIf="item.itemImage ==''" alt="{{item.itemTitle}}"
+            src="https://upload.flea.store/group1/M00/00/00/rBAbJlvpMUuAbTuHAABnR1njb8E416.png">
+        </ng-template>
+        <nz-card-meta [nzTitle]="nzTitle" [nzDescription]="sellPoint">
+          <ng-template #nzTitle>
+            <div nz-row>
+              <div nz-col nzSpan="15">
+                <ellipsis lines="1" tooltip style="width: 100%">
+                  <a (click)="clickLookOrEditItem(item.itemId)">{{item.itemTitle}}</a>
+                </ellipsis>
+              </div>
+              <div nz-col nzSpan="7" nzOffset="1">
+                <nz-tag *ngIf="item.status===4" [nzColor]="'red'">违规下架</nz-tag>
+                <nz-tag *ngIf="item.status===2" [nzColor]="'lime'">免费产品</nz-tag>
+                <nz-tag *ngIf="item.status===1" [nzColor]="'cyan'">普通产品</nz-tag>
+                <nz-tag *ngIf="item.status===3" [nzColor]="'purple'">正常下架</nz-tag>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template #sellPoint>
+            <ellipsis [lines]="'2'">
+              {{item.sellPoint}}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </ellipsis>
+          </ng-template>
+        </nz-card-meta>
+        <div class="card-item-content">
+          <span class="text-grey">{{item.itemCreated | _date:'fn'}}</span>
+          <avatar-list style="float: right" size="mini">
+            <avatar-list-item *ngIf="item.sellQq"
+              [src]="'https://upload.flea.store/group1/M00/00/00/rBAbJlvpJDKAJZizAAAc0jR-P6g061.png'"
+              [tips]="item.sellQq"></avatar-list-item>
+            <avatar-list-item *ngIf="item.sellWechat"
+              [src]="'https://upload.flea.store/group1/M00/00/00/rBAbJlvpJDKAOJY0AAAhmUzK7LM255.png'"
+              [tips]="item.sellWechat"></avatar-list-item>
+            <avatar-list-item *ngIf="item.sellPhone"
+              [src]="'https://upload.flea.store/group1/M00/00/00/rBAbJlvpJDOAWVtVAAAQD9WCIUA339.png'"
+              [tips]="item.sellPhone"></avatar-list-item>
+          </avatar-list>
+        </div>
+      </nz-card>
+    </nz-list-item>
+  </ng-template>
+  <ng-template #loadMore>
+    <div class="loadmore">
+      <button nz-button *ngIf="!loadingMore" (click)="onLoadMore()" nzBlock>loading more</button>
+    </div>
+  </ng-template>
+</nz-list>
+
+<nz-back-top [nzVisibilityHeight]="'300'"></nz-back-top>

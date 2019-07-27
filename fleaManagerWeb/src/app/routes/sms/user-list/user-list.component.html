@@ -1,0 +1,67 @@
+<div class="alain-default__content-title">
+  <h1>
+    用户列表
+    <small>可对所有用户进行微信名称模糊查询，配合学校地址，用户状态进行组合查询。</small>
+  </h1>
+</div>
+<full-content class="full" (fullscreenChange)="fullChange($event)">
+  <nz-card>
+    <div nz-row class="mb-md">
+      <div nz-row [nzGutter]="{ xs: 8, sm: 8, md: 8, lg: 8, xl: 8, xxl: 8 }">
+        <div nz-col class="gutter-row" nzSpan="18">
+          <form nz-form [nzLayout]="'inline'">
+            <div nz-row>
+              <div nz-col nzSpan='24'>
+                <nz-form-item style="width: 100%">
+                  <nz-form-label nzFor="tags">学校地址</nz-form-label>
+                  <nz-form-control style="width: 80%">
+                    <nz-select [(ngModel)]="params.schoolList" name="schoolList" [nzSize]="size" nzMode="multiple" nzPlaceHolder="Please select">
+                      <nz-option *ngFor="let option of schoolList" [nzLabel]="option.schoolName" [nzValue]="option.schoolName"></nz-option>
+                    </nz-select>
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+            </div>
+            <div nz-row>
+              <div nz-col class="gutter-row" nzSpan="16">
+                <nz-form-item>
+                  <nz-form-label nzFor="nickName">用户昵称</nz-form-label>
+                  <nz-form-control>
+                    <input nz-input [(ngModel)]="params.nickName" name="nickName" id="nickName">
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+              <div nz-col class="gutter-row" nzSpan="8">
+                <nz-form-item style="margin-left: 11%">
+                  <nz-form-control >
+                    <button nz-button [nzType]="'primary'" (click)="st.load()" [nzLoading]="http.loading">Search</button>
+                    <button nz-button (click)="params.nickName = '';params.schoolList = []; st.reset()" [disabled]="http.loading">Clear</button>
+                  </nz-form-control>
+                </nz-form-item>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div nz-col class="gutter-row" nzSpan="6">
+          <div class="text-right">
+            <nz-dropdown>
+              <button nz-button nz-dropdown>
+                <span>Export</span>
+                <i nz-icon type="down"></i>
+              </button>
+              <ul nz-menu>
+                <li nz-menu-item>Excel</li>
+                <li nz-menu-item>JSON</li>
+                <li nz-menu-item>PNG</li>
+              </ul>
+            </nz-dropdown>
+            <button nz-button [nzType]="'default'" full-toggle class="ml-sm">Full</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <st #st [data]="url" [req]="{ reName: {list: 'rows',pi: 'page',ps: 'rows' }, params: params }" [res]="{ reName: {list: 'rows' } }"
+      [columns]="columns" [scroll]="scroll">
+    </st>
+  </nz-card>
+</full-content>

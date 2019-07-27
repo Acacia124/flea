@@ -1,0 +1,85 @@
+<page-header [title]="record.openid" [logo]="logo">
+  <ng-template #logo>
+    <img src="{{record.avatarUrl}}">
+  </ng-template>
+</page-header>
+
+<nz-card [nzBordered]="false" nzTitle="用户信息" class="mb-lg">
+  <sv-container class="mb-lg">
+    <sv style="width: 50%" label="用户昵称">
+      <ellipsis [lines]="'1'">{{record.nickName}}</ellipsis>
+    </sv>
+    <sv style="width: 50%" label="用户积分">
+      <ellipsis [lines]="'1'">{{record.score}}</ellipsis>
+    </sv>
+    <br/>
+    <sv style="width: 50%" label="所在学校">
+      <ellipsis [lines]="'1'">{{record.userSchool}}</ellipsis>
+    </sv>
+    <sv style="width: 50%" label="联系方式">
+      <ellipsis [lines]="'1'">{{record.userPhone}}</ellipsis>
+    </sv>
+    <br/>
+    <sv style="width: 50%" label="用户创建时间">
+      <ellipsis [lines]="'1'">{{record.userCreated}}</ellipsis>
+    </sv>
+    <sv style="width: 50%" label="用户状态">
+      <nz-badge *ngIf="record.userStatus === 1" [nzStatus]="'processing'" [nzText]="'普通用户'"></nz-badge>
+      <nz-badge *ngIf="record.userStatus === 2" [nzStatus]="'default'" [nzText]="'已被封号'"></nz-badge>
+      <nz-badge *ngIf="record.userStatus === 3" [nzStatus]="'success'" [nzText]="'管理员'"></nz-badge>
+    </sv>
+  </sv-container>
+
+  <nz-card nzType="inner" nzTitle="商品发布记录">
+    <div *ngIf=" itemList?.rows.length == 0" class="no-data">
+      <i nz-icon type="frown"></i>暂无其他商品数据
+    </div>
+    <nz-list *ngIf=" itemList?.rows.length > 0" [nzDataSource]="itemList?.rows" [nzItemLayout]="'vertical'" [nzRenderItem]="item"
+      [nzPagination]="pagination">
+      <ng-template #item let-item>
+        <nz-list-item [nzExtra]="extra">
+          <nz-list-item-meta [nzTitle]="nzTitle" [nzDescription]="nzDescription">
+            <ng-template #nzTitle>
+              <a (click)="msg.info('商品主键标识：'+ item.itemId )">{{item.itemTitle}}</a>
+            </ng-template>
+            <ng-template #nzDescription>
+              <ellipsis style="height: 50px;" [lines]="'2'">
+                {{item.sellPoint}}
+              </ellipsis>
+              <span style="color: black">发布时间：{{item.itemCreated}}</span>
+              <span style="float: right">
+                <nz-tag *ngIf="item.status===4" [nzColor]="'red'">违规下架</nz-tag>
+                <nz-tag *ngIf="item.status===2" [nzColor]="'lime'">免费产品</nz-tag>
+                <nz-tag *ngIf="item.status===1" [nzColor]="'cyan'">普通产品</nz-tag>
+                <nz-tag *ngIf="item.status===3" [nzColor]="'purple'">正常下架</nz-tag>
+              </span>
+            </ng-template>
+          </nz-list-item-meta>
+          <ng-template #extra>
+            <img *ngIf="item.itemImage!=''" width="130" height="130" alt="logo" src="{{item.itemImage.split(',')[0]}}">
+            <img *ngIf="item.itemImage ==''" width="130" height="130" alt="logo" src="https://upload.flea.store/group1/M00/00/00/rBAbJlvpMUuAbTuHAABnR1njb8E416.png">
+          </ng-template>
+        </nz-list-item>
+      </ng-template>
+
+      <ng-template #pagination>
+        <nz-pagination [(nzPageIndex)]="params.page" name="params" [nzShowTotal]="totalTemplate" [nzPageSize]="params.rows" (nzPageIndexChange)="changeIndex()"
+          [nzTotal]="itemList.total"></nz-pagination>
+        <ng-template #totalTemplate let-total>
+          共 {{total}} 条数据
+        </ng-template>
+      </ng-template>
+
+    </nz-list>
+  </nz-card>
+</nz-card>
+<!-- 
+  <nz-card [nzBordered]="false" nzTitle="操作日志">
+    <st [columns]="" [data]="">
+      
+    </st>
+  </nz-card>
+   -->
+<div class="modal-footer">
+  <button nz-button type="button" (click)="close()">关闭</button>
+</div>

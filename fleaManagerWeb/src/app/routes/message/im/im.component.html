@@ -1,0 +1,133 @@
+<div nz-row class="im">
+  <div class="head"></div>
+  <div nz-col nzSpan="7" class="left">
+    <div class="top">
+      <!-- <nz-input-group style="width: 100%;" [nzSuffix]="suffixIconSearch">
+        <input type="text" nz-input [(ngModel)]="searchValue" placeholder="搜索联系人(用户名需全符合)" (change)="filterUserList()"/>
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <i nz-icon type="search"></i>
+      </ng-template> -->
+
+      <nz-select style="width: 100%;" [(ngModel)]="selectedUser" nzPlaceHolder="Select users" nzAllowClear nzShowSearch
+        [nzServerSearch]="true" (nzOnSearch)="onSearch($event)" (ngModelChange)="changeUser($event)">
+        <ng-container *ngFor="let o of optionList">
+          <nz-option *ngIf="!isLoading" [nzValue]="o" [nzLabel]="o.nickName"></nz-option>
+        </ng-container>
+        <nz-option *ngIf="isLoading" nzDisabled nzCustomContent>
+          <i nz-icon type="loading" class="loading-icon"></i> Loading Data...
+        </nz-option>
+      </nz-select>
+    </div>
+    <div class="userList">
+      <div *ngFor="let user of userList">
+        <div nz-row (click)="clickUser(user)" class="user {{i==user.openId?'active':''}}">
+          <div nz-col nzSpan="5">
+            <nz-badge [nzCount]="user.msgNum">
+              <nz-avatar [nzSize]="'large'" [nzSrc]="user.imgUrl"></nz-avatar>
+            </nz-badge>
+          </div>
+          <div nz-col nzSpan="18" nzOffset="1">
+            <div nz-row>
+              <ellipsis nz-col nzSpan="14" lines="1" style="font-weight: 600;font-size: 15px;margin-bottom: -2px;"
+                tooltip>
+                {{user.nickName}}</ellipsis>
+              <ellipsis nz-col nzSpan="10" lines="1" style="font-weight: 100;    font-size: 12px;margin-top: 3px;"
+                tooltip>
+                {{user.lastDate | date:'MM-dd HH:mm'}}</ellipsis>
+            </div>
+            <ellipsis lines="1" style="width:100%">{{user.lastMsg}}</ellipsis>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div nz-col nzSpan="17" class="right">
+    <div class="con-top">
+      <a *ngIf="chatUser!=null">{{chatUser.nickName}}</a>
+    </div>
+    <div #chatList class="content">
+      <div *ngFor="let msg of msgList" class="bubble {{chatUser.openId === msg.createBy?'you' : 'me'}}">
+
+        <nz-card (click)="showItemDetail(msg.content.split('_#_')[0])" *ngIf="msg.msgType==3" nzHoverable
+          style="width: 180px;margin: -10px;" [nzCover]="coverTemplate">
+          <nz-card-meta [nzTitle]="msg.content.split('_#_')[2]"></nz-card-meta>
+        </nz-card>
+        <ng-template #coverTemplate>
+          <img alt="{{msg.content.split('_#_')[2]}}" src="{{msg.content.split('_#_')[1]}}" />
+        </ng-template>
+
+        <div *ngIf="msg.msgType==1" style="width: 100%;word-break: break-word;">
+          {{msg.content}}
+        </div>
+
+        <div *ngIf="msg.msgType==2" style="width: 100%;word-break: break-word;text-align: center">
+          <!-- <div *ngIf="isSpinning" style="width: 100%;margin-top: 110px;position: absolute;text-align: center;">
+            <nz-spin nzSimple></nz-spin>
+          </div> -->
+          <img style=" width: 250px;margin: -7px;border-radius: 4px;" src="{{msg.content}}" />
+        </div>
+      </div>
+      <!-- <div class="conversation-start">
+        <span>Today, 5:38 PM</span>
+      </div> -->
+    </div>
+    <div class="write">
+      <nz-input-group nzSearch nzSize="large" [nzSuffix]="suffixButton" style="width: 100%;">
+        <textarea style="resize:none" rows="3" nz-input [(ngModel)]="inputValue"
+          (keyup.enter)="sendMessage()"></textarea>
+        <ng-template #suffixButton>
+          <nz-upload style="margin-top: 35%;margin-right: 5px;"
+            [nzShowUploadList]="false"
+            [nzAccept]="'image/gif, image/jpeg, image/jpg, image/bmp, image/png'" 
+            (nzChange)="uploadFile($event)"
+            nzAction="https://www.flea.store/api/user/qiniu/upload" 
+            [nzName]="'uploadFile'" nzSearch>
+            <button style="color: black;font-family: 宋体;border-radius: 10px;" nz-button nzType="dashed" nzGhost><i
+                nz-icon nzType="upload"></i><span>图片</span></button>
+          </nz-upload>
+          <button style="margin-top: 35%;margin-right: 5px;color: black;font-family: 宋体;border-radius: 10px;" nz-button
+            nzType="dashed" nzGhost (click)="sendMessage()" nzSearch>发送</button>
+        </ng-template>
+      </nz-input-group>
+    </div>
+  </div>
+</div>
+
+<nz-modal *ngIf="isVisible" [(nzVisible)]="isVisible" (nzOnCancel)="handleCancel()" nzTitle="商品详情" [nzFooter]="null">
+  <div nz-row>
+    <div nz-col nzSpan="12">
+      <nz-tabset [nzTabBarGutter]="'0'" [nzTabPosition]="'bottom'" [(nzSelectedIndex)]="selectedIndex">
+        <nz-tab *ngFor="let tab of item_imgs;let i=index" [nzTitle]="titleTemplate">
+          <ng-template #titleTemplate>
+            <img src="{{tab}}" style="margin:-2px -6px;" width="40" height="40" (mouseover)="changeSelectedIndex(i)" />
+          </ng-template>
+          <img src="{{tab}}" width="240" height="240" />
+        </nz-tab>
+      </nz-tabset>
+    </div>
+    <div nz-col nzSpan="11" nzOffset="1">
+      <div class="item_user">
+        <nz-avatar nzIcon="anticon anticon-user" [nzSrc]="user.avatarUrl"></nz-avatar>
+        <a style="margin-left: 10px" nz-tooltip [nzTitle]="user.openid">{{user.nickName}} </a>发布
+      </div>
+      <div class="iteminfo">
+        <ellipsis nz-tooltip nzPlacement="rightBottom" [nzTitle]="item.itemId" lines="2" tooltip
+          style="width: 100%;margin-bottom: 10px;">
+          <span style="font-size: 16px;font-weight: 600;">{{item.itemTitle}}</span>
+        </ellipsis>
+        <ellipsis lines="3" tooltip style="width: 100%">
+          <nz-tag *ngIf="item.status==2" [nzColor]="'gold'">免费</nz-tag>
+          <nz-tag *ngIf="item.status==3" [nzColor]="'blue'">已下架</nz-tag>
+          <nz-tag *ngIf="item.status==4" [nzColor]="'magenta'">强制下架</nz-tag>
+          <span style="">{{item.sellPoint}}</span>
+        </ellipsis>
+        <nz-slider [nzTipFormatter]="formatter" [nzDefaultValue]="item.newnessRate" [nzDisabled]="true"></nz-slider>
+        <span style="font-size: 21px;font-weight: 700;color: red;">￥{{item.price/100}}
+        </span><s>￥{{item.originalPrice/100}}</s>
+      </div>
+    </div>
+  </div>
+
+
+</nz-modal>

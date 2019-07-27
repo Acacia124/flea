@@ -1,0 +1,258 @@
+@import '~@delon/theme/styles/default';
+:host ::ng-deep {
+  .content {
+    display: flex;
+    .avatar {
+      flex: 0 1 72px;
+      margin-bottom: 8px;
+      .ant-avatar {
+        border-radius: 72px;
+        display: block;
+        width: 72px;
+        height: 72px;
+      }
+    }
+    .desc {
+      position: relative;
+      top: 4px;
+      margin-left: 24px;
+      flex: 1 1 auto;
+      color: @text-color-secondary;
+      line-height: 22px;
+      .desc-title {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        color: @heading-color;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .page-extra {
+    .clearfix();
+    float: right;
+    white-space: nowrap;
+    & > div {
+      padding: 0 32px;
+      position: relative;
+      display: inline-block;
+      & > p:first-child {
+        color: @text-color-secondary;
+        font-size: @font-size-base;
+        line-height: 22px;
+        margin-bottom: 4px;
+      }
+      & > p {
+        color: @heading-color;
+        font-size: 30px;
+        line-height: 38px;
+        margin: 0;
+        & > span {
+          color: @text-color-secondary;
+          font-size: 20px;
+        }
+      }
+      &:after {
+        background-color: @border-color-split;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 1px;
+        height: 40px;
+        content: '';
+      }
+    }
+    & > div:last-child {
+      padding-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .project-list {
+    .ant-card-meta-description {
+      color: @text-color-secondary;
+      height: 44px;
+      line-height: 22px;
+      overflow: hidden;
+    }
+    .card-title {
+      a {
+        color: @heading-color;
+        line-height: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: @font-size-base;
+        &:hover {
+          color: @primary-color;
+        }
+      }
+      .aperate {
+        flex: 0 0 auto;
+        float: right;
+
+        i {
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .project-grid {
+      width: 50%;
+    }
+    .project-item {
+      display: flex;
+      margin-top: 8px;
+      overflow: hidden;
+      font-size: 12px;
+      height: 20px;
+      line-height: 20px;
+      .textOverflow();
+      a {
+        color: @text-color-secondary;
+        display: inline-block;
+        flex: 1 1 0;
+        .textOverflow();
+        &:hover {
+          color: @primary-color;
+        }
+      }
+      .datetime {
+        color: @disabled-color;
+        flex: 0 0 auto;
+        float: right;
+      }
+    }
+  }
+  .controller {
+    height: 400px;
+    overflow-y: auto
+  }
+  .activities {
+    padding: 0 24px 8px;
+    .username {
+      color: @text-color;
+    }
+    .event {
+      font-weight: normal;
+    }
+  }
+  .log {
+    margin-top: 15px; 
+    height: 205px;
+    overflow-y:auto;
+      &::-webkit-scrollbar{
+      width:4px;
+      height:4px;
+      }
+      &::-webkit-scrollbar-track{
+      background: #f6f6f6;
+      border-radius:2px;
+      }
+      &::-webkit-scrollbar-thumb{
+      background: #aaa;
+      border-radius:2px;
+      }
+      &::-webkit-scrollbar-thumb:hover{
+      background: #747474;
+      }
+      &::-webkit-scrollbar-corner{
+      background: #f6f6f6;
+      }
+      a {
+        color: @text-color-secondary;
+        flex: 1 1 0;
+        .textOverflow();
+        &:hover {
+          color: @primary-color;
+        }
+      }
+  }
+  .datetime {
+    color: @disabled-color;
+  }
+  .links {
+    padding: 20px 0 8px 24px;
+    font-size: 0;
+    > a {
+      color: @text-color;
+      display: inline-block;
+      font-size: @font-size-base;
+      margin-bottom: 13px;
+      width: 25%;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+
+  @media screen and (max-width: @screen-xl) and (min-width: @screen-lg) {
+    .active-card {
+      margin-bottom: 24px;
+    }
+    .members {
+      margin-bottom: 0;
+    }
+    .page-extra {
+      margin-left: -44px;
+      & > div {
+        padding: 0 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: @screen-lg) {
+    .active-card {
+      margin-bottom: 24px;
+    }
+    .members {
+      margin-bottom: 0;
+    }
+    .page-extra {
+      float: none;
+      margin-right: 0;
+      & > div {
+        padding: 0 16px;
+        text-align: left;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: @screen-md) {
+    .page-extra {
+      margin-left: -16px;
+    }
+    .project-list {
+      .project-grid {
+        width: 50%;
+      }
+    }
+  }
+
+  @media screen and (max-width: @screen-sm) {
+    .content {
+      display: block;
+      .desc {
+        margin-left: 0;
+      }
+    }
+    .page-extra {
+      & > div {
+        float: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: @screen-xs) {
+    .project-list {
+      .project-grid {
+        width: 100%;
+      }
+    }
+  }
+  
+}

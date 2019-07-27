@@ -1,0 +1,72 @@
+<nz-steps [nzCurrent]="current">
+  <nz-step nzTitle="邮箱验证"></nz-step>
+  <nz-step nzTitle="更新邮箱"></nz-step>
+</nz-steps>
+
+<div class="steps-content">
+  <div *ngIf="current==0">
+    <nz-form-item>
+      <nz-form-control>
+        <nz-input-group nzPrefixIcon="anticon anticon-user">
+          <input nz-input [(ngModel)]="emailOld" disabled>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control>
+        <nz-row [nzGutter]="8">
+          <nz-col [nzSpan]="16">
+            <nz-input-group nzPrefixIcon="anticon anticon-mail">
+              <input nz-input [(ngModel)]="codeFirst" placeholder="验证码">
+            </nz-input-group>
+          </nz-col>
+          <nz-col [nzSpan]="8">
+            <button nz-button (click)="getCaptcha(emailOld)" [disabled]="count"
+              nzBlock>{{ count ? count + 's' : '获取验证码' }}</button>
+          </nz-col>
+        </nz-row>
+      </nz-form-control>
+    </nz-form-item>
+  </div>
+  <div *ngIf="current==1">
+    <form nz-form [formGroup]="form" (ngSubmit)="done()" role="form">
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group nzPrefixIcon="anticon anticon-user">
+            <input nz-input formControlName="mail" placeholder="邮箱">
+          </nz-input-group>
+          <nz-form-explain *ngIf="mail.dirty && mail.errors">请输入正确的邮箱号！</nz-form-explain>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <nz-row [nzGutter]="8">
+            <nz-col [nzSpan]="16">
+              <nz-input-group nzPrefixIcon="anticon anticon-mail">
+                <input nz-input formControlName="captcha" placeholder="验证码">
+              </nz-input-group>
+              <nz-form-explain *ngIf="captcha.dirty && captcha.errors">
+                请输入规范的验证码！
+              </nz-form-explain>
+            </nz-col>
+            <nz-col [nzSpan]="8">
+              <button nz-button (click)="getCaptcha(mail.value)" [disabled]="count2"
+                nzBlock>{{ count2 ? count2 + 's' : '获取验证码' }}</button>
+            </nz-col>
+          </nz-row>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </div>
+</div>
+<div class="steps-action">
+  <button nz-button nzType="default" (click)="pre()" *ngIf="current > 0">
+    <span>Previous</span>
+  </button>
+  <button nz-button nzType="default" (click)="next()" *ngIf="current < 1">
+    <span>Next</span>
+  </button>
+  <button nz-button nzType="primary" type="submit" (click)="done()" *ngIf="current === 1">
+    <span>确定更改</span>
+  </button>
+</div>

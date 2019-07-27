@@ -1,0 +1,34 @@
+<nz-spin [nzSpinning]="userLoading">
+  <div class="main" *ngIf="user">
+    <div class="left">
+      <form nz-form nzLayout="vertical" #f="ngForm" (submit)="save()" se-container="1">
+        <se label="昵称" error="请输入您的昵称!">
+          <input nz-input [(ngModel)]="user.nickName" name="nickName" required>
+        </se>
+        <se label="个人简介">
+          <textarea nz-input [(ngModel)]="user.sdasd" name="sdasd" [nzAutosize]="{ minRows: 4, maxRows: 10 }"
+                    placeholder="个人简介"></textarea>
+        </se>
+        <se label="隶属学校" error="请输入您的学校名称!">
+          <input nz-input [(ngModel)]="user.userSchool" name="userSchool" >
+        </se>
+        <se label="联系电话" error="请输入您的联系电话!">
+          <input nz-input [(ngModel)]="user.userPhone" name="userPhone" required>
+        </se>
+        <se>
+          <button nz-button nzType="primary" [disabled]="f.invalid">更新基本信息</button>
+        </se>
+      </form>
+    </div>
+    <div class="right">
+      <div class="avatar_title">Avatar</div>
+      <div class="avatar"><img src="{{user.avatarUrl}}" alt="Avatar"></div>
+      <nz-upload nzAction="/user/pic/upload" [nzName]="'uploadFile'" (nzChange)="handleChange($event)" [nzAccept]="'image/gif, image/jpeg, image/jpg, image/bmp, image/png'" [nzShowUploadList]="false">
+        <button nz-button class="button_view">
+          <i nz-icon type="upload"></i>
+          <span>更换头像</span>
+        </button>
+      </nz-upload>
+    </div>
+  </div>
+</nz-spin>

@@ -1,0 +1,117 @@
+<nz-card>
+  <nz-tabset [(nzSelectedIndex)]="selectedIndex" (nzSelectChange)="changeMessage(selectedIndex)" [nzAnimated]="true">
+    <nz-tab nzTitle="未读信息">
+      <div class="mb-md">
+        <button nz-button>批量已读</button>
+      </div>
+      <st #st [data]="users" [columns]="columns" [rowClickTime]="0" (change)="_click($event)"></st>
+    </nz-tab>
+    <nz-tab nzTitle="已读信息">
+      <div class="mb-md">
+        <button nz-button>批量删除</button>
+      </div>
+      <st #st [data]="users" [columns]="columns" [rowClickTime]="0" (change)="_click($event)"></st>
+    </nz-tab>
+    <nz-tab nzTitle="发送消息">
+      <form nz-form nzLayout="vertical" >
+        <nz-form-item>
+          <nz-form-label>快速指定收件人：</nz-form-label>
+          <nz-form-control>
+            <nz-radio-group [(ngModel)]="userPrincipal" name="userPrincipal"	>
+              <label nz-radio nzValue="A" [nzDisabled]="true">所有用户</label>
+              <label nz-radio nzValue="B" [nzDisabled]="true">所有管理员</label>
+              <label nz-radio nzValue="C" [nzDisabled]="true">所有普通会员</label>
+              <label nz-radio nzValue="D">指定用户</label>
+            </nz-radio-group>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item *ngIf="userPrincipal==='D'">
+          <nz-form-label>选择收件人：</nz-form-label>
+          <nz-form-control>
+            <nz-select style="width: 100%" nzMode="multiple" [(ngModel)]="listOfSelectedValue" nzAllowClear nzShowSearch [nzServerSearch]="true"
+              nzPlaceHolder="Select users" (nzOnSearch)="onSearch($event)" name="listOfSelectedValue">
+              <ng-container *ngFor="let o of listOfOption">
+                  <nz-option *ngIf="!isLoading" [nzValue]="o.openId" [nzLabel]="o.nickName"></nz-option>
+                </ng-container>
+                <nz-option *ngIf="isLoading" nzDisabled nzCustomContent>
+                  <i nz-icon type="loading" class="loading-icon"></i> Loading Data...
+                </nz-option>
+            </nz-select>
+            <nz-form-explain style="color:red" *ngIf="userPrincipal === 'D' && listOfSelectedValue.length===0 && a">
+                指定用户下收件人不可为空！
+            </nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+        <div nz-row>
+          <div nz-col nzSpan="16">
+            <nz-form-item>
+              <nz-form-label>消息标题：</nz-form-label>
+              <nz-form-control>
+                <input nz-input [(ngModel)]="msgTitle" name="msgTitle" placeholder="input placeholder" />
+                <nz-form-explain style="color:red" *ngIf="(msgTitle === '' || msgTitle === undefined) && b">
+                    消息标题不可为空！
+                </nz-form-explain>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div nz-col nzSpan="6" nzOffset="2">
+            <nz-form-item>
+              <nz-form-label>消息类型：</nz-form-label>
+              <nz-form-control>
+                <nz-select style="width: 200px;" [(ngModel)]="msgType" name="msgType">
+                  <nz-option nzLabel="消息" nzValue="消息" select></nz-option>
+                  <nz-option nzLabel="通知" nzValue="通知"></nz-option>
+                  <nz-option nzLabel="警告" nzValue="警告"></nz-option>
+                </nz-select>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+        <nz-form-item>
+          <nz-form-label>消息内容：</nz-form-label>
+          <nz-form-control>
+            <tinymce [(ngModel)]="msgContent" name="msgContent"></tinymce>
+            <nz-form-explain style="color:red" *ngIf="(msgContent === '' || msgContent === undefined) && c">
+                消息内容不可为空！
+            </nz-form-explain>
+          </nz-form-control>
+        </nz-form-item>
+        <div nz-row>
+          <div nz-col nzSpan="6">
+            <nz-form-item>
+              <nz-form-control>
+                  使用系统账号发送：<nz-switch [(ngModel)]="msgMail" name="msgMail" nzSize="small" ></nz-switch>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+          <div nz-col nzSpan="3">
+            <nz-form-item>
+              <nz-form-control>
+                <button nz-button nzType="primary" (click)="submitForm()">Submit</button>
+              </nz-form-control>
+            </nz-form-item>
+          </div>
+        </div>
+      </form>
+    </nz-tab>
+  </nz-tabset>
+</nz-card>
+
+
+<nz-modal [nzStyle]="{top: '65px' }" [(nzVisible)]="isVisible" [nzTitle]="nztitle" [nzFooter]="footerButton"
+  (nzOnCancel)="handleCancel()">
+  <ng-template style="text-align:center" #nztitle>
+    <nz-avatar nzSize="small" [nzSrc]="message?.messageOperatorAvater"></nz-avatar>
+    <span style="margin-left:10px;font-size: 10px;">{{message?.messageOperatorNick}}</span>
+  </ng-template>
+  <div>
+    标题：{{message?.messageTitle}}
+    <br />
+    <br />
+    <div [innerHTML]="message?.messageTxt | html"></div>
+  </div>
+  <ng-template style="text-align:center" #footerButton>
+    <!-- <button nz-button nzType="danger" (click)="deleteMessage(message)">删除</button> -->
+    <button nz-button (click)="reply(message)" [disabled]="message?.messageOperator==='001'?true:false">回复</button>
+  </ng-template>
+</nz-modal>

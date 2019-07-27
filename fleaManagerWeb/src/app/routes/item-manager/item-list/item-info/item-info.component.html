@@ -1,0 +1,198 @@
+<form nz-form [nzLayout]="'horizontal'" #myForm="ngForm">
+  <nz-card [nzBordered]="false" [nzTitle]="nzTitle">
+    <ng-template #nzTitle>
+      <span>商品详情</span>
+      <nz-button-group style="margin-left: 73%">
+        <button nz-button nzType="primary" (click)="clickEdit()">{{edit}}</button>
+        <button nz-button nzType="primary" [disabled]="!saveStatus" (click)="saveForm(myForm.value,myForm.pristine)" [nzLoading]="loding">保存</button>
+      </nz-button-group>
+    </ng-template>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>商品标识ID</nz-form-label>
+      <nz-form-control [nzSm]="17" [nzXs]="24">
+        <input nz-input ngModel="{{itemId}}" name="itemId" disabled>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>商品标题</nz-form-label>
+      <nz-form-control [nzSm]="17" [nzXs]="24">
+        <input nz-input ngModel="{{itemInfo?.itemTitle}}" name="itemTitle" [disabled]="!myselfPermission">
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>商品描述</nz-form-label>
+      <nz-form-control [nzSm]="17" [nzXs]="24">
+        <textarea nz-input rows="2" ngModel="{{itemInfo?.sellPoint}}" name="sellPoint" [disabled]="!myselfPermission"></textarea>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzRequired>售价</nz-form-label>
+      <nz-form-control [nzSm]="5" [nzXs]="24">
+        <nz-input-number [nzMin]="1" [nzMax]="10" [nzStep]="1" ngModel="{{itemInfo?.price}}" name="price" [disabled]="!myselfPermission"></nz-input-number>&nbsp;&nbsp;
+        <del>{{itemInfo?.originalPrice/100}}￥</del>
+      </nz-form-control>
+
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzRequired>商品状态</nz-form-label>
+      <nz-form-control [nzSm]="8" [nzXs]="24">
+        <nz-select style="width: 100%;" nzAllowClear ngModel="{{itemInfo?.status}}" name="status" [disabled]="!adminPermission">
+          <nz-option nzValue="1" nzLabel=正常出售></nz-option>
+          <nz-option nzValue="2" nzLabel="免费产品" disabled></nz-option>
+          <nz-option nzValue="3" nzLabel="正常售出" disabled></nz-option>
+          <nz-option nzValue="4" nzLabel="违规下架"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="5" [nzXs]="24">收藏数</nz-form-label>
+      <nz-form-control [nzSm]="6" [nzXs]="24">
+
+        <nz-badge nzCount="{{itemInfo?.collectNum}}">
+          <i nz-icon type="star" theme="outline"></i>
+        </nz-badge>
+      </nz-form-control>
+
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzRequired>发布地址</nz-form-label>
+      <nz-form-control [nzSm]="7" [nzXs]="24">
+        <input nz-input ngModel="{{itemInfo?.sellAddress}}" nzSize="default" name="sellAddress" [disabled]="!myselfPermission">
+      </nz-form-control>
+
+      
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzRequired>所属类目</nz-form-label>
+      <nz-form-control [nzSm]="5" [nzXs]="24">
+        <nz-tree-select style="width: 80%" [(nzNodes)]="catLists" [(ngModel)]="catId" [nzDropdownMatchSelectWidth]="true" [nzDropdownStyle]="{ 'max-height': '300px' }"
+          name="catId" [disabled]="!myselfPermission">
+        </nz-tree-select>
+      </nz-form-control>
+
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzRequired>新旧度</nz-form-label>
+      <nz-form-control [nzSm]="8" [nzXs]="24">
+        <nz-slider [nzDefaultValue]="30" ngModel="{{itemInfo?.newnessRate}}" name="newnessRate" [disabled]="!myselfPermission"></nz-slider>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="4" [nzXs]="24">商品图片</nz-form-label>
+      <nz-form-control [nzSm]="19" [nzXs]="24">
+        <div class="clearfix">
+            <nz-upload
+              nzListType="picture-card"
+              [nzAccept]="'image/gif, image/jpeg, image/jpg, image/bmp, image/png'"
+              [nzRemove]= "removeFile"
+              [nzDisabled]="true"
+              [(nzFileList)]="fileList"
+              [nzShowButton]=" myselfPermission && fileList?.length < 5"
+              [nzPreview]="handlePreview">
+                <i nz-icon type="plus"></i>
+                <div class="ant-upload-text">Upload</div>
+            </nz-upload>
+            <nz-modal [nzVisible]="previewVisible" [nzContent]="modalContent" [nzFooter]="null" (nzOnCancel)="previewVisible=false">
+              <ng-template #modalContent>
+                <img [src]="previewImage" [ngStyle]="{ 'width': '100%' }" />
+              </ng-template>
+            </nz-modal>
+          </div>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="5" [nzXs]="24" nzRequired>购买日期</nz-form-label>
+      <nz-form-control [nzSm]="6" [nzXs]="24">
+        <nz-date-picker nzFormat="yyyy-MM-dd" ngModel="{{itemInfo?.buyTime}}" name="buyTime" [nzDisabledDate]="disabledDate" [disabled]="!myselfPermission">
+        </nz-date-picker>
+      </nz-form-control>
+
+      <nz-form-label [nzSm]="5" [nzXs]="24">发布时间</nz-form-label>
+      <nz-form-control [nzSm]="7" [nzXs]="24">
+        <nz-date-picker ngModel="{{itemInfo?.itemCreated}}" name="itemCreated" disabled></nz-date-picker>
+      </nz-form-control>
+    </nz-form-item>
+
+    <div nz-row [nzGutter]="24">
+      <div nz-col [nzSpan]="8">
+        <nz-form-item nzFlex>
+          <nz-form-label>电话</nz-form-label>
+          <nz-form-control>
+            <input nz-input ngModel="{{itemInfo?.sellPhone}}" name="sellPhone" [disabled]="!myselfPermission">
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div nz-col [nzSpan]="8">
+        <nz-form-item nzFlex>
+          <nz-form-label>微信</nz-form-label>
+          <nz-form-control>
+            <input nz-input ngModel="{{itemInfo?.sellWechat}}" name="sellWechat" [disabled]="!myselfPermission">
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+      <div nz-col [nzSpan]="8">
+        <nz-form-item nzFlex>
+          <nz-form-label>QQ</nz-form-label>
+          <nz-form-control>
+            <input nz-input ngModel="{{itemInfo?.sellQq}}" name="sqllQq" [disabled]="!myselfPermission">
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+    </div>
+
+  </nz-card>
+</form>
+
+  <nz-card  [nzBordered]="false" [nzTitle]="nzTitle2" [nzExtra]="extraTemplate">
+    <ng-template #nzTitle2>
+      <nz-avatar [nzShape]="'square'" [nzSize]="'large'" [nzSrc]="user?.avatarUrl"></nz-avatar>
+      <span style="margin-left: 10px;">{{user?.openid}}</span>
+    </ng-template>
+
+    <ng-template #extraTemplate>
+        <nz-badge *ngIf="user?.userStatus === 1" [nzStatus]="'processing'" [nzText]="'普通用户'"></nz-badge>
+        <nz-badge *ngIf="user?.userStatus === 2" [nzStatus]="'default'" [nzText]="'已被封号'"></nz-badge>
+        <nz-badge *ngIf="user?.userStatus === 3" [nzStatus]="'success'" [nzText]="'管理员'"></nz-badge>
+    </ng-template>
+
+      <div *ngIf=" itemList?.rows.length <= 1" class="no-data">
+        <i nz-icon type="frown"></i>暂无其他商品数据
+      </div>
+      <nz-list *ngIf=" itemList?.rows.length > 1" [nzDataSource]="itemList?.rows" [nzItemLayout]="'vertical'" [nzRenderItem]="item" [nzPagination]="pagination">
+        <ng-template #item let-item>
+          <nz-list-item [nzExtra]="extra" *ngIf="item.itemId !== itemId">
+            <nz-list-item-meta  [nzTitle]="nzTitle" [nzDescription]="nzDescription">
+              <ng-template #nzTitle>
+                <a (click)="msg.info('商品主键标识：'+ item.itemId )">{{item.itemTitle}}</a>
+              </ng-template>
+              <ng-template #nzDescription>
+                <ellipsis style="height: 55px;" [lines]="'2'">
+                  {{item.sellPoint}}
+                </ellipsis>
+                <span style="color: black">发布时间：{{item.itemCreated}}</span>
+                <span style="float: right">
+                    <nz-tag *ngIf="item.status===4" [nzColor]="'red'">违规下架</nz-tag>
+                    <nz-tag *ngIf="item.status===2" [nzColor]="'lime'">免费产品</nz-tag>
+                    <nz-tag *ngIf="item.status===1" [nzColor]="'cyan'">普通产品</nz-tag>
+                    <nz-tag *ngIf="item.status===3" [nzColor]="'purple'">正常下架</nz-tag>
+                </span>
+              </ng-template>
+            </nz-list-item-meta>
+            <ng-template #extra>
+              <img *ngIf="item.itemImage!=''" width="130" height="130" alt="logo" src="{{item.itemImage.split(',')[0]}}">
+              <img *ngIf="item.itemImage ==''" width="130" height="130" alt="logo" src="https://upload.flea.store/group1/M00/00/00/rBAbJlvpMUuAbTuHAABnR1njb8E416.png">
+            </ng-template>
+          </nz-list-item>
+        </ng-template>
+  
+        <ng-template #pagination>
+          <nz-pagination [(nzPageIndex)]="params.page" name="params" [nzShowTotal]="totalTemplate" [nzPageSize]="params.rows" (nzPageIndexChange)="changeIndex()" [nzTotal]="itemList.total"></nz-pagination>
+          <ng-template #totalTemplate let-total>
+            共 {{total}} 条数据
+          </ng-template>
+        </ng-template>
+  
+      </nz-list>
+  </nz-card>
