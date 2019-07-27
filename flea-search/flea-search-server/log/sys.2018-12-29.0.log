@@ -1,0 +1,8 @@
+2018-12-29 22:04:54,294 INFO (StartupInfoLogger.java:48)- Starting App on PC-20170415YQBG with PID 8028 (G:\work-jsp\flea-search\flea-search-server\target\classes started by Administrator in G:\work-jsp\flea-search\flea-search-server)
+2018-12-29 22:04:54,315 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-12-29 22:04:54,316 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-12-29 22:05:06,802 INFO (StartupInfoLogger.java:57)- Started App in 13.365 seconds (JVM running for 14.367)
+2018-12-29 22:06:19,312 INFO (StartupInfoLogger.java:48)- Starting App on PC-20170415YQBG with PID 4712 (G:\work-jsp\flea-search\flea-search-server\target\classes started by Administrator in G:\work-jsp\flea-search\flea-search-server)
+2018-12-29 22:06:19,319 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-12-29 22:06:19,320 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-12-29 22:06:28,931 INFO (StartupInfoLogger.java:57)- Started App in 10.359 seconds (JVM running for 11.198)

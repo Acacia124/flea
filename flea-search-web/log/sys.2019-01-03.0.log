@@ -1,0 +1,76 @@
+2019-01-03 14:57:50 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 5864 (G:\work-jsp\flea-search-web\target\classes started by Administrator in G:\work-jsp\flea-search-web)
+2019-01-03 14:57:50 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 14:57:50 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 14:57:58 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 57 ]
+INFO:Started App in 9.52 seconds (JVM running for 10.243)
+2019-01-03 14:58:58 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(1)
+2019-01-03 14:59:10 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(2)
+2019-01-03 15:04:01 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(2)
+2019-01-03 15:04:19 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.search.controller.LogController >> Method: 65 ]
+INFO:==> Request parameter: host(2),fileName(ServechController.txt)
+2019-01-03 15:04:27 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(1)
+2019-01-03 15:04:42 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.search.controller.LogController >> Method: 65 ]
+INFO:==> Request parameter: host(1),fileName(searchService.txt)
+2019-01-03 15:05:06 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 8868 (G:\work-jsp\flea-search-web\target\classes started by Administrator in G:\work-jsp\flea-search-web)
+2019-01-03 15:05:06 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 15:05:06 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 15:05:13 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 8196 (G:\work-jsp\flea-search-web\target\classes started by Administrator in G:\work-jsp\flea-search-web)
+2019-01-03 15:05:13 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 15:05:13 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 15:05:25 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 57 ]
+INFO:Started App in 12.45 seconds (JVM running for 13.053)
+2019-01-03 15:05:28 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(1)
+2019-01-03 15:05:44 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.search.controller.LogController >> Method: 65 ]
+INFO:==> Request parameter: host(1),fileName(searchService.txt)
+2019-01-03 15:08:58 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 5100 (G:\work-jsp\flea-search-web\target\classes started by Administrator in G:\work-jsp\flea-search-web)
+2019-01-03 15:08:58 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 15:08:58 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 15:09:07 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 57 ]
+INFO:Started App in 10.373 seconds (JVM running for 10.977)
+2019-01-03 15:10:02 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(2)
+2019-01-03 15:10:16 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(2)
+2019-01-03 15:10:21 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(2)
+2019-01-03 15:10:23 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(1)
+2019-01-03 15:12:32 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(1)
+2019-01-03 15:13:27 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 8888 (G:\work-jsp\flea-search-web\target\classes started by Administrator in G:\work-jsp\flea-search-web)
+2019-01-03 15:13:27 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 15:13:27 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 15:13:51 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 1932 (G:\work-jsp\flea-search-web\target\classes started by Administrator in G:\work-jsp\flea-search-web)
+2019-01-03 15:13:51 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 15:13:51 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 15:13:59 下午 [Thread: main][ Class:site.acacia.flea.search.App >> Method: 57 ]
+INFO:Started App in 9.128 seconds (JVM running for 9.683)
+2019-01-03 15:14:08 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(1)
+2019-01-03 15:14:12 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(1)
+2019-01-03 15:14:16 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.search.controller.LogController >> Method: 53 ]
+INFO:==> Request parameter: host(2)

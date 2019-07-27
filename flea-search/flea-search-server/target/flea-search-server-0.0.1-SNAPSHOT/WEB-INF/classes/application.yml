@@ -1,0 +1,33 @@
+server:
+ port: 8080
+logging:
+ config: classpath:logback-boot.xml
+
+spring:
+ activemq:
+  brokerUrl: tcp://101.200.56.187:61616
+  in-memory: true
+  pool:
+   enabled: false
+  
+ http:
+  encoding:
+   force: true
+ datasource:
+  username: root
+  password: root
+  url: jdbc:mysql://101.200.56.187:3306/flea?useUnicode=true&characterEncoding=utf-8
+  driver-class-name: com.mysql.jdbc.Driver
+  initialSize: 5
+  minIdle: 5
+  maxActive: 20 
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+ data:
+  solr:
+   host: http://101.200.56.187:8983/solr/fleaCore
+###################################
+###Mapper.xml
+################################### 
+mybatis:
+ mapperLocations: classpath:mapper/*.xml

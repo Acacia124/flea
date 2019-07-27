@@ -1,0 +1,9 @@
+server:
+ port: 8081
+logging:
+ config: classpath:logback-boot.xml
+##\u6ce8\u610f \u6709\u53ef\u80fd\u8fd4\u56de\u4e71\u7801\uff0c\u7531\u4e8efastJson\u9ed8\u8ba4utf-8\uff0c\u6240\u4ee5\u4e0d\u662ffastjson\u95ee\u9898
+spring:
+ http:
+  encoding:
+   force: true

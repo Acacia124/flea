@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.search.mapper.SolrMapper">
+
+	<select id="getSearchItemList" resultType="site.acacia.flea.pojo.SearchItem">
+		SELECT
+			a.`item_id` id,
+			a.`item_title` title,
+			a.`sell_point` sellPoint,
+			a.price,
+			a.`original_price` originalPrice,
+			a.`newness_rate` newnessRate,
+			a.`item_image` image,
+			b.`cat_name` categoryName,
+			b2.`cat_name` fatherCategoryName,
+			a.`sell_address` consignmentAddress,
+			a.`status`
+		FROM `tb_item` a
+		LEFT JOIN tb_item_cat b ON a.`cat_id` = b.`cat_id`
+		LEFT JOIN tb_item_cat b2 ON b.`parent_id` = b2.`cat_id`
+		WHERE (a.`status`=1 OR a.`status`=2)
+	</select>
+
+	<select id="getItemById" parameterType="String" resultType="site.acacia.flea.pojo.SearchItem">
+		SELECT
+			a.`item_id` id,
+			a.`item_title` title,
+			a.`sell_point` sellPoint,
+			a.price,
+			a.`original_price` originalPrice,
+			a.`newness_rate` newnessRate,
+			a.`item_image` image,
+			b.`cat_name` categoryName,
+			b2.`cat_name` fatherCategoryName,
+			a.`sell_address` consignmentAddress,
+			a.`status`
+		FROM `tb_item` a
+		LEFT JOIN tb_item_cat b ON a.`cat_id` = b.`cat_id`
+		LEFT JOIN tb_item_cat b2 ON b.`parent_id` = b2.`cat_id`
+		WHERE (a.`status`=1 OR a.`status`=2)
+		AND a.`item_id` = #{itemId}
+	</select>
+</mapper>
