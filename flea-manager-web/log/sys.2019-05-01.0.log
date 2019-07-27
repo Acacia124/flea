@@ -1,0 +1,1448 @@
+2019-05-01 09:21:56 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 5736 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 09:21:56 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 09:21:56 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 09:22:12 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 16.749 seconds (JVM running for 17.346)
+2019-05-01 09:22:12 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:14 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:17 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:17 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:22 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:22 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:27 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:27 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:32 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:32 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:37 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:37 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 09:22:41 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:22:41 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:22:41 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:22:47 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 09:22:47 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 09:22:47 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 70 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:22:53 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/k
+2019-05-01 09:22:54 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/k
+2019-05-01 09:23:03 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/k
+2019-05-01 09:23:07 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%8D%A1
+2019-05-01 09:23:07 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%8D%A1
+2019-05-01 09:23:14 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%93%A6i
+2019-05-01 09:23:14 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%93%A6i
+2019-05-01 09:23:15 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%93%A6
+2019-05-01 09:23:15 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%93%A6
+2019-05-01 09:23:19 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%8F%AF
+2019-05-01 09:23:19 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%8F%AF
+2019-05-01 09:23:24 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%B7%B2
+2019-05-01 09:23:24 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%B7%B2
+2019-05-01 09:23:27 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E4%B8%80
+2019-05-01 09:23:27 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E4%B8%80
+2019-05-01 09:23:31 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%88%99
+2019-05-01 09:23:31 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%88%99
+2019-05-01 09:23:38 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E6%B3%BD
+2019-05-01 09:23:38 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E6%B3%BD
+2019-05-01 09:25:59 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:25:59 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:25:59 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:25:59 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:25:59 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:26:22 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:26:22 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:29:45 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:29:45 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:29:45 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:29:45 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:29:52 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:37:08 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:37:08 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:37:08 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:37:08 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:37:08 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:37:08 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:37:15 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:37:15 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:37:21 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:38:52 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:38:52 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:38:52 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:38:52 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:39:01 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:39:46 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:39:46 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:39:47 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:39:47 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:44:34 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:44:34 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:44:34 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:44:34 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:44:43 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:46:29 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:46:29 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:46:30 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:46:30 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:47:00 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:56:26 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:56:26 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:56:26 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:56:26 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:56:26 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:56:26 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:56:29 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 09:56:29 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 09:56:29 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 81 ]
+INFO:==> Request parameter messageInfoId(1)
+2019-05-01 09:56:37 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 09:56:37 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 09:56:37 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 70 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:56:42 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:56:42 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:58:37 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:58:37 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:58:37 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:58:37 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:58:43 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 09:59:31 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 09:59:31 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:59:32 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 09:59:32 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 09:59:37 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:02:36 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 10:02:36 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:02:36 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:02:36 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:02:42 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:05:54 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 10:05:54 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:05:54 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:05:54 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:06:01 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/he1
+2019-05-01 10:06:01 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/he1
+2019-05-01 10:06:03 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:06:45 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 10:06:45 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:06:46 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 10:06:46 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:06:46 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:06:46 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:07:05 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:07:05 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:09:04 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/content/category/list
+2019-05-01 10:09:04 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/content/query/list
+2019-05-01 10:09:04 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/content/category/list
+2019-05-01 10:09:04 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.ContentCategoryController >> Method: 34 ]
+INFO:==> Request parameter: parentId(0)
+2019-05-01 10:09:04 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/content/query/list
+2019-05-01 10:09:04 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.ContentController >> Method: 44 ]
+INFO:==> Request parameter: categoryId(1), page: (1) , rows: (5) 
+2019-05-01 10:10:05 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/content/query/list
+2019-05-01 10:10:05 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.ContentController >> Method: 44 ]
+INFO:==> Request parameter: categoryId(1), page: (1) , rows: (5) 
+2019-05-01 10:10:05 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/content/category/list
+2019-05-01 10:10:05 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.ContentCategoryController >> Method: 34 ]
+INFO:==> Request parameter: parentId(0)
+2019-05-01 10:10:05 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:10:05 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:10:37 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/content/query/list
+2019-05-01 10:10:37 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.ContentController >> Method: 44 ]
+INFO:==> Request parameter: categoryId(1), page: (1) , rows: (5) 
+2019-05-01 10:11:10 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/content/save
+2019-05-01 10:11:10 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/content/save
+2019-05-01 10:11:10 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.ContentController >> Method: 37 ]
+INFO:==> Request parameter: content(site.acacia.flea.pojo.TbContent@33a7a6f7)
+2019-05-01 10:13:31 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 5264 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:13:31 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:13:31 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:13:47 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 16.4 seconds (JVM running for 16.955)
+2019-05-01 10:16:30 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/content/query/list
+2019-05-01 10:16:30 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/content/category/list
+2019-05-01 10:16:30 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.ContentCategoryController >> Method: 34 ]
+INFO:==> Request parameter: parentId(0)
+2019-05-01 10:16:30 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.ContentController >> Method: 44 ]
+INFO:==> Request parameter: categoryId(1), page: (1) , rows: (5) 
+2019-05-01 10:16:30 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:16:30 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:16:39 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 10:16:39 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:16:44 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:16:55 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:16:55 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:16:55 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: Failed to instantiate [java.util.List]: Specified class is an interface
+2019-05-01 10:17:27 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 10:17:27 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:17:27 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 10:17:27 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 59 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:17:27 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 10:17:27 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 47 ]
+INFO:==> Request parameter Empty
+2019-05-01 10:17:39 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:17:39 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 10:17:51 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:17:51 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: Failed to instantiate [java.util.List]: Specified class is an interface
+2019-05-01 10:19:36 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 2416 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:19:36 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:19:36 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:20:14 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6364 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:20:14 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:20:14 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:20:28 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 14.78 seconds (JVM running for 15.348)
+2019-05-01 10:20:42 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:20:42 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: Required request body is missing: public site.acacia.flea.pojo.WeResult site.acacia.flea.controller.MessageController.sendMessage(site.acacia.flea.pojo.MessageInfo,java.util.List<java.lang.String>,javax.servlet.http.HttpServletRequest) throws site.acacia.flea.exception.Unauthorized
+2019-05-01 10:27:20 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 3900 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:27:20 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:27:20 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:27:35 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 15.694 seconds (JVM running for 16.281)
+2019-05-01 10:28:15 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:28:15 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:28:16 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 115 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:28:16 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: com.alibaba.fastjson.JSONObject cannot be cast to site.acacia.flea.pojo.MessageInfo
+2019-05-01 10:33:00 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 3220 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:33:00 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:33:00 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:33:24 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 24.445 seconds (JVM running for 27.568)
+2019-05-01 10:35:15 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:35:15 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 115 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:35:15 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: com.alibaba.fastjson.JSONObject cannot be cast to site.acacia.flea.pojo.MessageInfo
+2019-05-01 10:36:08 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7288 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:36:08 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:36:08 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:36:25 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 18.049 seconds (JVM running for 18.894)
+2019-05-01 10:36:44 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:37:02 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 115 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:38:46 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7048 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:38:46 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:38:46 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:39:06 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 21.17 seconds (JVM running for 21.959)
+2019-05-01 10:39:26 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:39:27 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:43:39 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6932 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:43:39 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:43:39 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:45:39 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 8168 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:45:39 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:45:39 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:45:54 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 16.113 seconds (JVM running for 16.688)
+2019-05-01 10:45:57 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:45:57 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:45:57 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: com.alibaba.fastjson.JSONObject cannot be cast to java.lang.String
+2019-05-01 10:46:23 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 3668 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:46:23 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:46:23 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:46:39 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 16.958 seconds (JVM running for 17.717)
+2019-05-01 10:46:42 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:47:21 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:48:57 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 4892 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:48:57 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:48:57 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:49:25 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 28.631 seconds (JVM running for 29.499)
+2019-05-01 10:49:31 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:49:31 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:49:35 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 115 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:50:48 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 3336 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:50:48 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:50:48 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:51:04 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 17.718 seconds (JVM running for 18.554)
+2019-05-01 10:51:21 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:51:31 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 115 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:57:01 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6468 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:57:01 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:57:01 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:57:09 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7596 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:57:09 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:57:09 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:57:32 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 23.648 seconds (JVM running for 24.366)
+2019-05-01 10:57:48 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:57:51 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:58:03 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: com.alibaba.fastjson.JSONObject cannot be cast to java.lang.String
+2019-05-01 10:58:12 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7632 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:58:13 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:58:13 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:58:38 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 26.097 seconds (JVM running for 26.816)
+2019-05-01 10:58:42 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:58:45 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 10:59:24 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6412 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 10:59:24 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 10:59:24 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 10:59:44 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 20.875 seconds (JVM running for 21.576)
+2019-05-01 10:59:48 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:59:48 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 10:59:51 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-057404749a41481d81cd8483d18426fb","T-31ee2265069b4568afc7f86274219504","T-44f1c4e96d534564820973641ea14d39"], info={"messageTxt":"<p>哒哒哒我</p>","messageType":"消息","messageTitle":"测试鼻头爱11"}})
+2019-05-01 11:01:06 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6644 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:01:06 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:01:06 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:01:53 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 1220 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:01:53 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:01:53 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:02:10 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 17.315 seconds (JVM running for 18.047)
+2019-05-01 11:02:11 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 11:02:11 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 11:02:16 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 11:02:23 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:02:27 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-44f1c4e96d534564820973641ea14d39","T-31ee2265069b4568afc7f86274219504","T-057404749a41481d81cd8483d18426fb"], info={"messageTitle":"测试鼻头爱11","messageTxt":"<div style=\"color: #d4d4d4; background-color: #1e1e1e; font-family: Consolas, 'Courier New', monospace; line-height: 19px; white-space: pre;\"><span style=\"color: #9cdcfe;\">info</span></div>","messageType":"消息"}})
+2019-05-01 11:03:21 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 5384 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:03:21 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:03:21 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:03:36 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 16.207 seconds (JVM running for 16.761)
+2019-05-01 11:03:49 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:03:49 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-44f1c4e96d534564820973641ea14d39","T-31ee2265069b4568afc7f86274219504","T-057404749a41481d81cd8483d18426fb"], info={"messageTitle":"测试鼻头爱11","messageTxt":"<div style=\"color: #d4d4d4; background-color: #1e1e1e; font-family: Consolas, 'Courier New', monospace; line-height: 19px; white-space: pre;\"><span style=\"color: #9cdcfe;\">info</span></div>","messageType":"消息"}})
+2019-05-01 11:03:49 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'message_operator_avater' at row 1
+### The error may involve site.acacia.flea.mapper.MessageInfoMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into message_info      ( message_title,                       message_txt,                              message_push_time,                       message_operator,                       message_operator_nick,                       message_operator_avater,                       message_type )       values ( ?,                       ?,                              ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'message_operator_avater' at row 1
+; SQL []; Data truncation: Data too long for column 'message_operator_avater' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'message_operator_avater' at row 1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'message_operator_avater' at row 1
+### The error may involve site.acacia.flea.mapper.MessageInfoMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into message_info      ( message_title,                       message_txt,                              message_push_time,                       message_operator,                       message_operator_nick,                       message_operator_avater,                       message_type )       values ( ?,                       ?,                              ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'message_operator_avater' at row 1
+; SQL []; Data truncation: Data too long for column 'message_operator_avater' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'message_operator_avater' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:102)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy76.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy84.insertSelective(Unknown Source)
+	at site.acacia.flea.service.impl.MessageServiceImpl.addMessageInfo(MessageServiceImpl.java:47)
+	at com.alibaba.dubbo.common.bytecode.Wrapper16.invokeMethod(Wrapper16.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:70)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:132)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:113)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'message_operator_avater' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2487)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:494)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy104.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy102.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 34 more
+
+2019-05-01 11:11:43 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:11:43 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:11:43 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-44f1c4e96d534564820973641ea14d39","T-31ee2265069b4568afc7f86274219504","T-057404749a41481d81cd8483d18426fb"], info={"messageTitle":"测试鼻头爱11","messageTxt":"<div style=\"color: #d4d4d4; background-color: #1e1e1e; font-family: Consolas, 'Courier New', monospace; line-height: 19px; white-space: pre;\"><span style=\"color: #9cdcfe;\">info</span></div>","messageType":"消息"}})
+2019-05-01 11:11:45 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 31 ]
+ERROR:Global exception interception: null
+2019-05-01 11:19:54 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 1492 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:19:54 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:19:54 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:20:08 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 15.353 seconds (JVM running for 15.911)
+2019-05-01 11:20:29 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:20:29 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-44f1c4e96d534564820973641ea14d39","T-31ee2265069b4568afc7f86274219504","T-057404749a41481d81cd8483d18426fb"], info={"messageTitle":"测试鼻头爱11","messageTxt":"<div style=\"color: #d4d4d4; background-color: #1e1e1e; font-family: Consolas, 'Courier New', monospace; line-height: 19px; white-space: pre;\"><span style=\"color: #9cdcfe;\">info</span></div>","messageType":"消息"}})
+2019-05-01 11:22:16 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:22:16 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:22:17 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:22:17 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 62 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:22:17 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:22:17 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.MessageController >> Method: 50 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:27:14 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7824 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:27:14 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:27:14 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:28:02 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:28:02 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:28:02 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 73 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:28:06 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:28:06 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 62 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:28:07 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:28:07 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 73 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:28:12 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:28:12 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.MessageController >> Method: 62 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:28:13 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:28:13 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 73 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:28:24 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 11:28:25 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getUserLike/%E5%92%8C
+2019-05-01 11:28:47 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:28:47 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:28:47 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 117 ]
+INFO:==> Request parameter map({openIds=["T-e97368d7c2814f1fb96d5ca0aa047e60"], info={"messageTitle":"测","messageTxt":"<p>i架敌机</p>","messageType":"消息"}})
+2019-05-01 11:29:52 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:29:52 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 62 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:29:52 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:29:52 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 50 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:40:43 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7396 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:40:43 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:40:43 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:44:10 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 3900 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:44:10 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:44:10 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:48:25 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7088 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:48:25 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:48:25 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:49:48 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7136 (G:\work-jsp\flea-manager-web\target\classes started by Administrator in G:\work-jsp\flea-manager-web)
+2019-05-01 11:49:48 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-01 11:49:48 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-01 11:50:04 上午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 16.024 seconds (JVM running for 16.598)
+2019-05-01 11:50:26 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:50:26 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:50:27 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:50:27 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:50:27 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:50:27 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:50:46 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:50:46 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:50:46 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:51:48 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:51:48 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/send
+2019-05-01 11:53:38 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:53:38 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:53:38 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:53:38 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:54:11 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/all/sendByStatus
+2019-05-01 11:54:11 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/message/all/sendByStatus
+2019-05-01 11:54:11 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 151 ]
+INFO:==> Request parameter map({isSystem=true, status=B, info={"messageTitle":"测试怕全部用户","messageTxt":"<div style=\"color: #d4d4d4; background-color: #1e1e1e; font-family: Consolas, 'Courier New', monospace; line-height: 19px; white-space: pre;\"><span style=\"color: #9cdcfe;\">系统将在5月2日早晨1点维护</span>，<span style=\"color: #9cdcfe;\">请做好准备</span>！</div>","messageType":"消息"}})
+2019-05-01 11:54:18 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:54:18 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:54:19 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:54:19 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:54:30 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 11:54:30 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 11:54:30 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 83 ]
+INFO:==> Request parameter messageInfoId(9)
+2019-05-01 11:56:30 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:56:30 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:56:33 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:56:33 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:56:37 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 11:56:37 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 83 ]
+INFO:==> Request parameter messageInfoId(9)
+2019-05-01 11:56:40 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:56:40 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:56:41 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:56:41 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:57:04 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:57:04 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:57:05 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:57:05 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:57:20 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 11:57:20 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 11:57:20 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 83 ]
+INFO:==> Request parameter messageInfoId(2)
+2019-05-01 11:57:22 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:57:22 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:57:24 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:57:24 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:57:39 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/info
+2019-05-01 11:57:39 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.MessageController >> Method: 83 ]
+INFO:==> Request parameter messageInfoId(9)
+2019-05-01 11:59:08 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:59:08 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:59:09 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:59:09 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:59:12 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:59:12 上午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:59:14 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 11:59:14 上午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:59:15 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 11:59:15 上午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 11:59:20 上午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/IM/list
+2019-05-01 11:59:20 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/IM/list
+2019-05-01 11:59:20 上午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 194 ]
+INFO:==> Request parameter NULL
+2019-05-01 11:59:41 上午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/my
+2019-05-01 11:59:41 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 11:59:41 上午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 11:59:43 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 11:59:43 上午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 11:59:55 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 11:59:55 上午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 11:59:55 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 11:59:55 上午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:00:25 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:00:25 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:00:25 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:00:25 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:00:35 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:00:35 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:00:36 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:00:36 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:00:36 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:00:36 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:00:38 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:00:38 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:00:40 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:00:40 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:00:43 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:00:43 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:01:15 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:01:15 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:01:15 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:01:15 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:01:15 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:01:24 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:01:24 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:01:25 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:01:25 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:02:51 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:02:51 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:02:51 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:02:51 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:03:03 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:03:03 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:03:03 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:03:03 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:03:13 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:03:13 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:03:13 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:03:13 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:06:50 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:06:50 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:06:50 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:06:50 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:08:12 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:08:12 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:08:12 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:08:12 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:08:55 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:08:55 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:08:55 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:08:55 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:09:34 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:09:34 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:09:34 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:09:34 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:10:13 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:10:14 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:10:14 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:10:14 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:10:14 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:10:34 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:10:34 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:10:34 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:10:34 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:10:51 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:10:51 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:10:51 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:10:51 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:11:23 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:11:23 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:11:23 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:11:23 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:11:23 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:11:39 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:11:39 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:11:39 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:11:39 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:13:24 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:13:24 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:13:24 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:24 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:26 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:26 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:27 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:27 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:28 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:28 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:29 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:29 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:29 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:29 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:31 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:31 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:32 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:32 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:33 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:33 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:49 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:49 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:49 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:13:49 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:13:57 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:13:57 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:13:57 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:13:57 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:14:00 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:14:00 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:14:00 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:14:00 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:14:03 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:14:03 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:14:04 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:14:04 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:14:17 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:14:17 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:14:17 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:14:17 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:14:35 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:14:35 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:14:35 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:14:35 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:15:38 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/IM/list
+2019-05-01 12:15:38 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/IM/list
+2019-05-01 12:15:38 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 194 ]
+INFO:==> Request parameter NULL
+2019-05-01 12:15:39 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 12:15:39 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 12:15:39 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:15:45 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 12:15:45 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 12:15:45 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:15:57 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 12:15:57 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:15:58 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/read
+2019-05-01 12:15:58 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.MessageController >> Method: 72 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:16:02 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message/noread
+2019-05-01 12:16:02 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.MessageController >> Method: 61 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:16:04 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:16:04 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:16:05 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:16:05 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:16:06 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:16:06 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:17:26 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:17:26 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:17:26 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:17:27 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:17:27 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:17:27 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@4f1123c)
+2019-05-01 12:18:43 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:18:43 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:18:43 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:18:43 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:22:54 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:22:54 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:22:54 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:22:54 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:22:54 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:22:54 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:24:25 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:24:25 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:24:26 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:24:26 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@53bcb176)
+2019-05-01 12:26:35 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:26:35 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:26:36 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:26:36 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:26:42 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:26:42 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@61f04b98)
+2019-05-01 12:27:04 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:27:04 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:27:04 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:27:04 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:27:14 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:27:14 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@6224783)
+2019-05-01 12:29:31 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:29:31 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:29:31 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:29:31 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:29:56 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:29:56 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:29:56 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:29:56 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:29:58 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:29:58 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:29:58 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@70936119)
+2019-05-01 12:29:59 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemory/5
+2019-05-01 12:29:59 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/log/manager/list/1
+2019-05-01 12:29:59 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/redisMonitor
+2019-05-01 12:29:59 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/log/manager/list/1
+2019-05-01 12:29:59 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.LogController >> Method: 63 ]
+INFO:==> Request parameter: host(1), server(manager)
+2019-05-01 12:29:59 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/redisMonitor
+2019-05-01 12:29:59 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemory/5
+2019-05-01 12:30:04 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 12:30:04 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 12:30:09 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 12:30:09 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 12:30:14 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 12:30:14 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/getMemeryInfo
+2019-05-01 12:30:14 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:30:14 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:30:27 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:30:27 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:30:27 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:30:27 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:30:32 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:30:32 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@10845699)
+2019-05-01 12:30:43 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:30:43 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:30:43 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:30:44 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:30:44 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@a5f157f)
+2019-05-01 12:30:54 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:30:54 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:30:55 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:30:55 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@6057256e)
+2019-05-01 12:31:33 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:31:33 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:31:33 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:31:33 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:31:45 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:31:45 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:31:45 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:31:45 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@2d13af39)
+2019-05-01 12:33:54 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:33:54 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:33:54 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:33:54 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:33:54 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:33:54 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:34:01 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:34:01 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:34:02 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:34:02 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@501fd316)
+2019-05-01 12:35:02 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:35:02 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:35:02 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:35:02 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:35:06 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:35:06 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:35:07 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:35:07 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@58793828)
+2019-05-01 12:35:46 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:35:46 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:35:46 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:35:46 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:35:49 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:35:49 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:35:49 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:35:50 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@44567dd1)
+2019-05-01 12:35:56 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:35:56 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:35:59 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:35:59 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:36:32 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.ItemSchoolController >> Method: 38 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:36:32 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.ItemCatController >> Method: 39 ]
+INFO:==> Request parameter: parentId(0)
+2019-05-01 12:38:39 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.controller.ItemSchoolController >> Method: 38 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:38:39 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.ItemCatController >> Method: 39 ]
+INFO:==> Request parameter: parentId(0)
+2019-05-01 12:38:40 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:38:40 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:38:43 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:38:43 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:38:46 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:38:46 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:38:47 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:38:47 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@18d36363)
+2019-05-01 12:39:40 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/message
+2019-05-01 12:39:40 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.MessageController >> Method: 49 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:39:40 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/my
+2019-05-01 12:39:40 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.UserController >> Method: 127 ]
+INFO:==> Request parameter is Null
+2019-05-01 12:39:50 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:39:50 下午 [Thread: http-nio-8081-exec-4][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:39:50 下午 [Thread: http-nio-8081-exec-1][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/pic/delete
+2019-05-01 12:39:50 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:39:50 下午 [Thread: http-nio-8081-exec-6][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@6edfca04)
+2019-05-01 12:39:50 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/pic/delete
+2019-05-01 12:39:50 下午 [Thread: http-nio-8081-exec-7][ Class:site.acacia.flea.controller.PictureController >> Method: 61 ]
+INFO:==> Request parameter: deleteFile
+2019-05-01 12:39:57 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/pic/upload
+2019-05-01 12:39:57 下午 [Thread: http-nio-8081-exec-10][ Class:site.acacia.flea.controller.PictureController >> Method: 35 ]
+INFO:==> Request parameter: uploadFile
+2019-05-01 12:39:57 下午 [Thread: http-nio-8081-exec-5][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 51 ]
+INFO:USER(Null) Request address：  [OPTIONS] http://192.168.0.104:8081/api/user/pic/delete
+2019-05-01 12:39:58 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [POST] http://192.168.0.104:8081/api/user/reset
+2019-05-01 12:39:58 下午 [Thread: http-nio-8081-exec-9][ Class:site.acacia.flea.controller.UserController >> Method: 138 ]
+INFO:==> Request parameter is tbUser(site.acacia.flea.pojo.TbUser@2b1edc49)
+2019-05-01 12:39:58 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.interceptor.LoginIntercepter >> Method: 70 ]
+INFO:USER(o-RcB5YS1uHpo7XCwboVqE3yutAE) Request address：  [GET] http://192.168.0.104:8081/api/user/pic/delete
+2019-05-01 12:39:58 下午 [Thread: http-nio-8081-exec-8][ Class:site.acacia.flea.controller.PictureController >> Method: 61 ]
+INFO:==> Request parameter: deleteFile
+2019-05-01 12:40:15 下午 [Thread: http-nio-8081-exec-3][ Class:site.acacia.flea.controller.ItemSchoolController >> Method: 38 ]
+INFO:==> Request parameter Empty
+2019-05-01 12:40:15 下午 [Thread: http-nio-8081-exec-2][ Class:site.acacia.flea.controller.ItemCatController >> Method: 39 ]
+INFO:==> Request parameter: parentId(0)

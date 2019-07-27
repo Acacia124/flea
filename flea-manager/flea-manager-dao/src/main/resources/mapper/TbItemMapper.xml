@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.mapper.TbItemMapper">
+	<resultMap id="BaseResultMap" type="site.acacia.flea.pojo.TbItem">
+		<id column="item_id" property="itemId" jdbcType="VARCHAR" />
+		<result column="cat_id" property="catId" jdbcType="INTEGER" />
+		<result column="openid" property="openid" jdbcType="VARCHAR" />
+		<result column="item_title" property="itemTitle" jdbcType="VARCHAR" />
+		<result column="sell_point" property="sellPoint" jdbcType="VARCHAR" />
+		<result column="price" property="price" jdbcType="BIGINT" />
+		<result column="original_price" property="originalPrice"
+			jdbcType="BIGINT" />
+		<result column="newness_rate" property="newnessRate" jdbcType="DOUBLE" />
+		<result column="item_image" property="itemImage" jdbcType="VARCHAR" />
+		<result column="sell_address" property="sellAddress" jdbcType="VARCHAR" />
+		<result column="collect_num" property="collectNum" jdbcType="INTEGER" />
+		<result column="sell_qq" property="sellQq" jdbcType="VARCHAR" />
+		<result column="sell_phone" property="sellPhone" jdbcType="VARCHAR" />
+		<result column="sell_wechat" property="sellWechat" jdbcType="VARCHAR" />
+		<result column="buy_time" property="buyTime" jdbcType="TIMESTAMP" />
+		<result column="status" property="status" jdbcType="TINYINT" />
+		<result column="item_created" property="itemCreated" jdbcType="TIMESTAMP" />
+		<result column="item_update" property="itemUpdate" jdbcType="TIMESTAMP" />
+		<result column="item_down" property="itemDown" jdbcType="TIMESTAMP" />
+	</resultMap>
+	<sql id="Example_Where_Clause">
+		<where>
+			<foreach collection="oredCriteria" item="criteria" separator="or">
+				<if test="criteria.valid">
+					<trim prefix="(" suffix=")" prefixOverrides="and">
+						<foreach collection="criteria.criteria" item="criterion">
+							<choose>
+								<when test="criterion.noValue">
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue">
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue">
+									and ${criterion.condition} #{criterion.value}
+									and
+									#{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue">
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem"
+										open="(" close=")" separator=",">
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+	<sql id="Update_By_Example_Where_Clause">
+		<where>
+			<foreach collection="example.oredCriteria" item="criteria"
+				separator="or">
+				<if test="criteria.valid">
+					<trim prefix="(" suffix=")" prefixOverrides="and">
+						<foreach collection="criteria.criteria" item="criterion">
+							<choose>
+								<when test="criterion.noValue">
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue">
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue">
+									and ${criterion.condition} #{criterion.value}
+									and
+									#{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue">
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem"
+										open="(" close=")" separator=",">
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+	<sql id="Base_Column_List">
+		item_id, cat_id, openid, item_title, sell_point, price,
+		original_price,
+		newness_rate,
+		item_image, sell_address, collect_num,
+		sell_qq, sell_phone, sell_wechat,
+		buy_time,
+		status, item_created,
+		item_update, item_down
+	</sql>
+	<select id="selectByExample" resultMap="BaseResultMap"
+		parameterType="site.acacia.flea.pojo.TbItemExample">
+		select
+		<if test="distinct">
+			distinct
+		</if>
+		<include refid="Base_Column_List" />
+		from tb_item
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+		<if test="orderByClause != null">
+			order by ${orderByClause}
+		</if>
+	</select>
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from tb_item
+		where item_id = #{itemId,jdbcType=VARCHAR}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+		delete from
+		tb_item
+		where item_id = #{itemId,jdbcType=VARCHAR}
+	</delete>
+	<delete id="deleteByExample" parameterType="site.acacia.flea.pojo.TbItemExample">
+		delete from tb_item
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+	</delete>
+	<insert id="insert" parameterType="site.acacia.flea.pojo.TbItem">
+		insert into tb_item (item_id,
+		cat_id, openid,
+		item_title, sell_point, price,
+		original_price,
+		newness_rate, item_image,
+		sell_address, collect_num, sell_qq,
+		sell_phone, sell_wechat, buy_time,
+		status, item_created, item_update,
+		item_down)
+		values (#{itemId,jdbcType=VARCHAR},
+		#{catId,jdbcType=INTEGER},
+		#{openid,jdbcType=VARCHAR},
+		#{itemTitle,jdbcType=VARCHAR}, #{sellPoint,jdbcType=VARCHAR},
+		#{price,jdbcType=BIGINT},
+		#{originalPrice,jdbcType=BIGINT},
+		#{newnessRate,jdbcType=DOUBLE},
+		#{itemImage,jdbcType=VARCHAR},
+		#{sellAddress,jdbcType=VARCHAR}, #{collectNum,jdbcType=INTEGER},
+		#{sellQq,jdbcType=VARCHAR},
+		#{sellPhone,jdbcType=VARCHAR},
+		#{sellWechat,jdbcType=VARCHAR},
+		#{buyTime,jdbcType=TIMESTAMP},
+		#{status,jdbcType=TINYINT}, #{itemCreated,jdbcType=TIMESTAMP},
+		#{itemUpdate,jdbcType=TIMESTAMP},
+		#{itemDown,jdbcType=TIMESTAMP})
+	</insert>
+	<insert id="insertSelective" parameterType="site.acacia.flea.pojo.TbItem">
+		insert into tb_item
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="itemId != null">
+				item_id,
+			</if>
+			<if test="catId != null">
+				cat_id,
+			</if>
+			<if test="openid != null">
+				openid,
+			</if>
+			<if test="itemTitle != null">
+				item_title,
+			</if>
+			<if test="sellPoint != null">
+				sell_point,
+			</if>
+			<if test="price != null">
+				price,
+			</if>
+			<if test="originalPrice != null">
+				original_price,
+			</if>
+			<if test="newnessRate != null">
+				newness_rate,
+			</if>
+			<if test="itemImage != null">
+				item_image,
+			</if>
+			<if test="sellAddress != null">
+				sell_address,
+			</if>
+			<if test="collectNum != null">
+				collect_num,
+			</if>
+			<if test="sellQq != null">
+				sell_qq,
+			</if>
+			<if test="sellPhone != null">
+				sell_phone,
+			</if>
+			<if test="sellWechat != null">
+				sell_wechat,
+			</if>
+			<if test="buyTime != null">
+				buy_time,
+			</if>
+			<if test="status != null">
+				status,
+			</if>
+			<if test="itemCreated != null">
+				item_created,
+			</if>
+			<if test="itemUpdate != null">
+				item_update,
+			</if>
+			<if test="itemDown != null">
+				item_down,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="itemId != null">
+				#{itemId,jdbcType=VARCHAR},
+			</if>
+			<if test="catId != null">
+				#{catId,jdbcType=INTEGER},
+			</if>
+			<if test="openid != null">
+				#{openid,jdbcType=VARCHAR},
+			</if>
+			<if test="itemTitle != null">
+				#{itemTitle,jdbcType=VARCHAR},
+			</if>
+			<if test="sellPoint != null">
+				#{sellPoint,jdbcType=VARCHAR},
+			</if>
+			<if test="price != null">
+				#{price,jdbcType=BIGINT},
+			</if>
+			<if test="originalPrice != null">
+				#{originalPrice,jdbcType=BIGINT},
+			</if>
+			<if test="newnessRate != null">
+				#{newnessRate,jdbcType=DOUBLE},
+			</if>
+			<if test="itemImage != null">
+				#{itemImage,jdbcType=VARCHAR},
+			</if>
+			<if test="sellAddress != null">
+				#{sellAddress,jdbcType=VARCHAR},
+			</if>
+			<if test="collectNum != null">
+				#{collectNum,jdbcType=INTEGER},
+			</if>
+			<if test="sellQq != null">
+				#{sellQq,jdbcType=VARCHAR},
+			</if>
+			<if test="sellPhone != null">
+				#{sellPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="sellWechat != null">
+				#{sellWechat,jdbcType=VARCHAR},
+			</if>
+			<if test="buyTime != null">
+				#{buyTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="status != null">
+				#{status,jdbcType=TINYINT},
+			</if>
+			<if test="itemCreated != null">
+				#{itemCreated,jdbcType=TIMESTAMP},
+			</if>
+			<if test="itemUpdate != null">
+				#{itemUpdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="itemDown != null">
+				#{itemDown,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+	<select id="countByExample" parameterType="site.acacia.flea.pojo.TbItemExample"
+		resultType="java.lang.Integer">
+		select count(*) from tb_item
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+	</select>
+	<update id="updateByExampleSelective" parameterType="map">
+		update tb_item
+		<set>
+			<if test="record.itemId != null">
+				item_id = #{record.itemId,jdbcType=VARCHAR},
+			</if>
+			<if test="record.catId != null">
+				cat_id = #{record.catId,jdbcType=INTEGER},
+			</if>
+			<if test="record.openid != null">
+				openid = #{record.openid,jdbcType=VARCHAR},
+			</if>
+			<if test="record.itemTitle != null">
+				item_title = #{record.itemTitle,jdbcType=VARCHAR},
+			</if>
+			<if test="record.sellPoint != null">
+				sell_point = #{record.sellPoint,jdbcType=VARCHAR},
+			</if>
+			<if test="record.price != null">
+				price = #{record.price,jdbcType=BIGINT},
+			</if>
+			<if test="record.originalPrice != null">
+				original_price = #{record.originalPrice,jdbcType=BIGINT},
+			</if>
+			<if test="record.newnessRate != null">
+				newness_rate = #{record.newnessRate,jdbcType=DOUBLE},
+			</if>
+			<if test="record.itemImage != null">
+				item_image = #{record.itemImage,jdbcType=VARCHAR},
+			</if>
+			<if test="record.sellAddress != null">
+				sell_address = #{record.sellAddress,jdbcType=VARCHAR},
+			</if>
+			<if test="record.collectNum != null">
+				collect_num = #{record.collectNum,jdbcType=INTEGER},
+			</if>
+			<if test="record.sellQq != null">
+				sell_qq = #{record.sellQq,jdbcType=VARCHAR},
+			</if>
+			<if test="record.sellPhone != null">
+				sell_phone = #{record.sellPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="record.sellWechat != null">
+				sell_wechat = #{record.sellWechat,jdbcType=VARCHAR},
+			</if>
+			<if test="record.buyTime != null">
+				buy_time = #{record.buyTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.status != null">
+				status = #{record.status,jdbcType=TINYINT},
+			</if>
+			<if test="record.itemCreated != null">
+				item_created = #{record.itemCreated,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.itemUpdate != null">
+				item_update = #{record.itemUpdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.itemDown != null">
+				item_down = #{record.itemDown,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		<if test="_parameter != null">
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+	<update id="updateByExample" parameterType="map">
+		update tb_item
+		set item_id = #{record.itemId,jdbcType=VARCHAR},
+		cat_id =
+		#{record.catId,jdbcType=INTEGER},
+		openid =
+		#{record.openid,jdbcType=VARCHAR},
+		item_title =
+		#{record.itemTitle,jdbcType=VARCHAR},
+		sell_point =
+		#{record.sellPoint,jdbcType=VARCHAR},
+		price =
+		#{record.price,jdbcType=BIGINT},
+		original_price =
+		#{record.originalPrice,jdbcType=BIGINT},
+		newness_rate =
+		#{record.newnessRate,jdbcType=DOUBLE},
+		item_image =
+		#{record.itemImage,jdbcType=VARCHAR},
+		sell_address =
+		#{record.sellAddress,jdbcType=VARCHAR},
+		collect_num =
+		#{record.collectNum,jdbcType=INTEGER},
+		sell_qq =
+		#{record.sellQq,jdbcType=VARCHAR},
+		sell_phone =
+		#{record.sellPhone,jdbcType=VARCHAR},
+		sell_wechat =
+		#{record.sellWechat,jdbcType=VARCHAR},
+		buy_time =
+		#{record.buyTime,jdbcType=TIMESTAMP},
+		status =
+		#{record.status,jdbcType=TINYINT},
+		item_created =
+		#{record.itemCreated,jdbcType=TIMESTAMP},
+		item_update =
+		#{record.itemUpdate,jdbcType=TIMESTAMP},
+		item_down =
+		#{record.itemDown,jdbcType=TIMESTAMP}
+		<if test="_parameter != null">
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+	<update id="updateByPrimaryKeySelective" parameterType="site.acacia.flea.pojo.TbItem">
+		update tb_item
+		<set>
+			<if test="catId != null">
+				cat_id = #{catId,jdbcType=INTEGER},
+			</if>
+			<if test="openid != null">
+				openid = #{openid,jdbcType=VARCHAR},
+			</if>
+			<if test="itemTitle != null">
+				item_title = #{itemTitle,jdbcType=VARCHAR},
+			</if>
+			<if test="sellPoint != null">
+				sell_point = #{sellPoint,jdbcType=VARCHAR},
+			</if>
+			<if test="price != null">
+				price = #{price,jdbcType=BIGINT},
+			</if>
+			<if test="originalPrice != null">
+				original_price = #{originalPrice,jdbcType=BIGINT},
+			</if>
+			<if test="newnessRate != null">
+				newness_rate = #{newnessRate,jdbcType=DOUBLE},
+			</if>
+			<if test="itemImage != null">
+				item_image = #{itemImage,jdbcType=VARCHAR},
+			</if>
+			<if test="sellAddress != null">
+				sell_address = #{sellAddress,jdbcType=VARCHAR},
+			</if>
+			<if test="collectNum != null">
+				collect_num = #{collectNum,jdbcType=INTEGER},
+			</if>
+			<if test="sellQq != null">
+				sell_qq = #{sellQq,jdbcType=VARCHAR},
+			</if>
+			<if test="sellPhone != null">
+				sell_phone = #{sellPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="sellWechat != null">
+				sell_wechat = #{sellWechat,jdbcType=VARCHAR},
+			</if>
+			<if test="buyTime != null">
+				buy_time = #{buyTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="status != null">
+				status = #{status,jdbcType=TINYINT},
+			</if>
+			<if test="itemCreated != null">
+				item_created = #{itemCreated,jdbcType=TIMESTAMP},
+			</if>
+			<if test="itemUpdate != null">
+				item_update = #{itemUpdate,jdbcType=TIMESTAMP},
+			</if>
+			<if test="itemDown != null">
+				item_down = #{itemDown,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where item_id = #{itemId,jdbcType=VARCHAR}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="site.acacia.flea.pojo.TbItem">
+		update tb_item
+		set
+		cat_id = #{catId,jdbcType=INTEGER},
+		openid =
+		#{openid,jdbcType=VARCHAR},
+		item_title = #{itemTitle,jdbcType=VARCHAR},
+		sell_point = #{sellPoint,jdbcType=VARCHAR},
+		price =
+		#{price,jdbcType=BIGINT},
+		original_price =
+		#{originalPrice,jdbcType=BIGINT},
+		newness_rate =
+		#{newnessRate,jdbcType=DOUBLE},
+		item_image =
+		#{itemImage,jdbcType=VARCHAR},
+		sell_address =
+		#{sellAddress,jdbcType=VARCHAR},
+		collect_num =
+		#{collectNum,jdbcType=INTEGER},
+		sell_qq = #{sellQq,jdbcType=VARCHAR},
+		sell_phone = #{sellPhone,jdbcType=VARCHAR},
+		sell_wechat =
+		#{sellWechat,jdbcType=VARCHAR},
+		buy_time =
+		#{buyTime,jdbcType=TIMESTAMP},
+		status = #{status,jdbcType=TINYINT},
+		item_created = #{itemCreated,jdbcType=TIMESTAMP},
+		item_update =
+		#{itemUpdate,jdbcType=TIMESTAMP},
+		item_down =
+		#{itemDown,jdbcType=TIMESTAMP}
+		where item_id =
+		#{itemId,jdbcType=VARCHAR}
+	</update>
+
+	<resultMap id="G2" type="site.acacia.flea.vo.G2VoCopy">
+		<result column="ddate" property="x" />
+		<result column="y1" property="y1" />
+		<result column="y2" property="y2" />
+	</resultMap>
+
+	<resultMap id="G2Copy" type="site.acacia.flea.vo.G2Statistics">
+		<result column="item_count" property="count" />
+		<result column="item_today" property="today" />
+		<result column="item_yesterday" property="yesterday" />
+		<result column="item_week" property="week" />
+		<result column="item_last_week" property="lastWeek" />
+	</resultMap>
+
+
+	<select id="getItemG2" resultMap="G2">
+		SELECT up.ddate, up.num AS y1, down.num AS y2
+		FROM (
+		SELECT
+		DATE(dday) ddate,
+		COUNT(*) - 1 AS num
+		FROM
+		(SELECT
+		datelist AS dday
+		FROM
+		calendar
+		WHERE DATE(datelist) BETWEEN DATE_SUB(CURDATE(), INTERVAL 30
+		DAY) AND
+		CURDATE()
+		UNION
+		ALL
+		SELECT
+		item_created
+		FROM
+		tb_item) a
+		WHERE dday IS
+		NOT NULL
+		GROUP BY ddate
+		) up, (
+		SELECT
+		DATE(dday) ddate,
+		COUNT(*) - 1 AS num
+		FROM
+		(SELECT
+		datelist AS dday
+		FROM
+		calendar
+		WHERE DATE(datelist) BETWEEN DATE_SUB(CURDATE(), INTERVAL 30
+		DAY) AND
+		CURDATE()
+		UNION
+		ALL
+		SELECT
+		item_down
+		FROM
+		tb_item) a
+		WHERE dday IS
+		NOT NULL
+		GROUP BY ddate
+		) down
+		WHERE down.ddate = up.ddate
+	</select>
+
+
+	<select id="getItemData" resultMap="G2Copy">
+		SELECT t1.c AS item_count,
+		t2.c AS item_today, t3.c AS item_yesterday, t4.c
+		AS item_week, t5.c AS
+		item_last_week
+		FROM (
+		SELECT COUNT(*) c FROM tb_item
+		) t1,(
+		SELECT
+		COUNT(*) c FROM tb_item WHERE TO_DAYS(item_created) = TO_DAYS(NOW())
+		)
+		t2,(
+		SELECT COUNT(*) c FROM tb_item WHERE
+		TO_DAYS(NOW())-TO_DAYS(item_created) =1
+		) t3, (
+		SELECT COUNT(*) c FROM
+		tb_item WHERE YEARWEEK(DATE_FORMAT(item_created,
+		'%y-%m-%d'),
+		1)=YEARWEEK(NOW()) + 1
+		) t4, (
+		SELECT COUNT(*) c FROM tb_item WHERE
+		YEARWEEK(DATE_FORMAT(item_created,
+		'%y-%m-%d'), 1)-YEARWEEK(NOW()) = 0
+		) t5
+	</select>
+</mapper>

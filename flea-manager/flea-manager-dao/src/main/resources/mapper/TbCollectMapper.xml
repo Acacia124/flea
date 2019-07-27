@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.mapper.TbCollectMapper" >
+  <resultMap id="BaseResultMap" type="site.acacia.flea.pojo.TbCollect" >
+    <id column="collect_id" property="collectId" jdbcType="INTEGER" />
+    <result column="item_id" property="itemId" jdbcType="VARCHAR" />
+    <result column="openid" property="openid" jdbcType="VARCHAR" />
+    <result column="collect_name" property="collectName" jdbcType="VARCHAR" />
+    <result column="collect_image" property="collectImage" jdbcType="VARCHAR" />
+    <result column="collect_newness_rate" property="collectNewnessRate" jdbcType="DOUBLE" />
+    <result column="collect_sell_point" property="collectSellPoint" jdbcType="VARCHAR" />
+    <result column="collect_price" property="collectPrice" jdbcType="BIGINT" />
+    <result column="collect_original_price" property="collectOriginalPrice" jdbcType="BIGINT" />
+    <result column="collect_sell_school" property="collectSellSchool" jdbcType="VARCHAR" />
+    <result column="collect_status" property="collectStatus" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, 
+    collect_price, collect_original_price, collect_sell_school, collect_status
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="site.acacia.flea.pojo.TbCollectExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_collect
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_collect
+    where collect_id = #{collectId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tb_collect
+    where collect_id = #{collectId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="site.acacia.flea.pojo.TbCollectExample" >
+    delete from tb_collect
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="site.acacia.flea.pojo.TbCollect" >
+    insert into tb_collect (collect_id, item_id, openid, 
+      collect_name, collect_image, collect_newness_rate, 
+      collect_sell_point, collect_price, collect_original_price, 
+      collect_sell_school, collect_status)
+    values (#{collectId,jdbcType=INTEGER}, #{itemId,jdbcType=VARCHAR}, #{openid,jdbcType=VARCHAR}, 
+      #{collectName,jdbcType=VARCHAR}, #{collectImage,jdbcType=VARCHAR}, #{collectNewnessRate,jdbcType=DOUBLE}, 
+      #{collectSellPoint,jdbcType=VARCHAR}, #{collectPrice,jdbcType=BIGINT}, #{collectOriginalPrice,jdbcType=BIGINT}, 
+      #{collectSellSchool,jdbcType=VARCHAR}, #{collectStatus,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="site.acacia.flea.pojo.TbCollect" >
+    insert into tb_collect
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="collectId != null" >
+        collect_id,
+      </if>
+      <if test="itemId != null" >
+        item_id,
+      </if>
+      <if test="openid != null" >
+        openid,
+      </if>
+      <if test="collectName != null" >
+        collect_name,
+      </if>
+      <if test="collectImage != null" >
+        collect_image,
+      </if>
+      <if test="collectNewnessRate != null" >
+        collect_newness_rate,
+      </if>
+      <if test="collectSellPoint != null" >
+        collect_sell_point,
+      </if>
+      <if test="collectPrice != null" >
+        collect_price,
+      </if>
+      <if test="collectOriginalPrice != null" >
+        collect_original_price,
+      </if>
+      <if test="collectSellSchool != null" >
+        collect_sell_school,
+      </if>
+      <if test="collectStatus != null" >
+        collect_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="collectId != null" >
+        #{collectId,jdbcType=INTEGER},
+      </if>
+      <if test="itemId != null" >
+        #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="openid != null" >
+        #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="collectName != null" >
+        #{collectName,jdbcType=VARCHAR},
+      </if>
+      <if test="collectImage != null" >
+        #{collectImage,jdbcType=VARCHAR},
+      </if>
+      <if test="collectNewnessRate != null" >
+        #{collectNewnessRate,jdbcType=DOUBLE},
+      </if>
+      <if test="collectSellPoint != null" >
+        #{collectSellPoint,jdbcType=VARCHAR},
+      </if>
+      <if test="collectPrice != null" >
+        #{collectPrice,jdbcType=BIGINT},
+      </if>
+      <if test="collectOriginalPrice != null" >
+        #{collectOriginalPrice,jdbcType=BIGINT},
+      </if>
+      <if test="collectSellSchool != null" >
+        #{collectSellSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="collectStatus != null" >
+        #{collectStatus,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="site.acacia.flea.pojo.TbCollectExample" resultType="java.lang.Integer" >
+    select count(*) from tb_collect
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_collect
+    <set >
+      <if test="record.collectId != null" >
+        collect_id = #{record.collectId,jdbcType=INTEGER},
+      </if>
+      <if test="record.itemId != null" >
+        item_id = #{record.itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.openid != null" >
+        openid = #{record.openid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectName != null" >
+        collect_name = #{record.collectName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectImage != null" >
+        collect_image = #{record.collectImage,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectNewnessRate != null" >
+        collect_newness_rate = #{record.collectNewnessRate,jdbcType=DOUBLE},
+      </if>
+      <if test="record.collectSellPoint != null" >
+        collect_sell_point = #{record.collectSellPoint,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectPrice != null" >
+        collect_price = #{record.collectPrice,jdbcType=BIGINT},
+      </if>
+      <if test="record.collectOriginalPrice != null" >
+        collect_original_price = #{record.collectOriginalPrice,jdbcType=BIGINT},
+      </if>
+      <if test="record.collectSellSchool != null" >
+        collect_sell_school = #{record.collectSellSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="record.collectStatus != null" >
+        collect_status = #{record.collectStatus,jdbcType=TINYINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_collect
+    set collect_id = #{record.collectId,jdbcType=INTEGER},
+      item_id = #{record.itemId,jdbcType=VARCHAR},
+      openid = #{record.openid,jdbcType=VARCHAR},
+      collect_name = #{record.collectName,jdbcType=VARCHAR},
+      collect_image = #{record.collectImage,jdbcType=VARCHAR},
+      collect_newness_rate = #{record.collectNewnessRate,jdbcType=DOUBLE},
+      collect_sell_point = #{record.collectSellPoint,jdbcType=VARCHAR},
+      collect_price = #{record.collectPrice,jdbcType=BIGINT},
+      collect_original_price = #{record.collectOriginalPrice,jdbcType=BIGINT},
+      collect_sell_school = #{record.collectSellSchool,jdbcType=VARCHAR},
+      collect_status = #{record.collectStatus,jdbcType=TINYINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="site.acacia.flea.pojo.TbCollect" >
+    update tb_collect
+    <set >
+      <if test="itemId != null" >
+        item_id = #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="openid != null" >
+        openid = #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="collectName != null" >
+        collect_name = #{collectName,jdbcType=VARCHAR},
+      </if>
+      <if test="collectImage != null" >
+        collect_image = #{collectImage,jdbcType=VARCHAR},
+      </if>
+      <if test="collectNewnessRate != null" >
+        collect_newness_rate = #{collectNewnessRate,jdbcType=DOUBLE},
+      </if>
+      <if test="collectSellPoint != null" >
+        collect_sell_point = #{collectSellPoint,jdbcType=VARCHAR},
+      </if>
+      <if test="collectPrice != null" >
+        collect_price = #{collectPrice,jdbcType=BIGINT},
+      </if>
+      <if test="collectOriginalPrice != null" >
+        collect_original_price = #{collectOriginalPrice,jdbcType=BIGINT},
+      </if>
+      <if test="collectSellSchool != null" >
+        collect_sell_school = #{collectSellSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="collectStatus != null" >
+        collect_status = #{collectStatus,jdbcType=TINYINT},
+      </if>
+    </set>
+    where collect_id = #{collectId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="site.acacia.flea.pojo.TbCollect" >
+    update tb_collect
+    set item_id = #{itemId,jdbcType=VARCHAR},
+      openid = #{openid,jdbcType=VARCHAR},
+      collect_name = #{collectName,jdbcType=VARCHAR},
+      collect_image = #{collectImage,jdbcType=VARCHAR},
+      collect_newness_rate = #{collectNewnessRate,jdbcType=DOUBLE},
+      collect_sell_point = #{collectSellPoint,jdbcType=VARCHAR},
+      collect_price = #{collectPrice,jdbcType=BIGINT},
+      collect_original_price = #{collectOriginalPrice,jdbcType=BIGINT},
+      collect_sell_school = #{collectSellSchool,jdbcType=VARCHAR},
+      collect_status = #{collectStatus,jdbcType=TINYINT}
+    where collect_id = #{collectId,jdbcType=INTEGER}
+  </update>
+</mapper>

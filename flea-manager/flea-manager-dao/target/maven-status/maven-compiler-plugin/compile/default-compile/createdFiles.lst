@@ -1,0 +1,13 @@
+site\acacia\flea\mapper\TbInformationMapper.class
+site\acacia\flea\mapper\TbContentCatMapper.class
+site\acacia\flea\mapper\TbItemMapper.class
+site\acacia\flea\mapper\TbUserMapper.class
+site\acacia\flea\mapper\MessageInfoMapper.class
+site\acacia\flea\mapper\TbHistoryMapper.class
+site\acacia\flea\mapper\TbContentMapper.class
+site\acacia\flea\mapper\MessageUserMapper.class
+site\acacia\flea\mapper\TbItemSchoolMapper.class
+site\acacia\flea\mapper\TbMessageMapper.class
+site\acacia\flea\mapper\TbItemCatMapper.class
+site\acacia\flea\mapper\TbCollectMapper.class
+site\acacia\flea\mapper\TbItemDescMapper.class

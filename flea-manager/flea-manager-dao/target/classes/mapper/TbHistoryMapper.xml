@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.mapper.TbHistoryMapper" >
+  <resultMap id="BaseResultMap" type="site.acacia.flea.pojo.TbHistory" >
+    <id column="his_id" property="hisId" jdbcType="INTEGER" />
+    <result column="openid" property="openid" jdbcType="VARCHAR" />
+    <result column="item_id" property="itemId" jdbcType="VARCHAR" />
+    <result column="his_create" property="hisCreate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    his_id, openid, item_id, his_create
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="site.acacia.flea.pojo.TbHistoryExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_history
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_history
+    where his_id = #{hisId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tb_history
+    where his_id = #{hisId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="site.acacia.flea.pojo.TbHistoryExample" >
+    delete from tb_history
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="site.acacia.flea.pojo.TbHistory" >
+    insert into tb_history (his_id, openid, item_id, 
+      his_create)
+    values (#{hisId,jdbcType=INTEGER}, #{openid,jdbcType=VARCHAR}, #{itemId,jdbcType=VARCHAR}, 
+      #{hisCreate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="site.acacia.flea.pojo.TbHistory" >
+    insert into tb_history
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="hisId != null" >
+        his_id,
+      </if>
+      <if test="openid != null" >
+        openid,
+      </if>
+      <if test="itemId != null" >
+        item_id,
+      </if>
+      <if test="hisCreate != null" >
+        his_create,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="hisId != null" >
+        #{hisId,jdbcType=INTEGER},
+      </if>
+      <if test="openid != null" >
+        #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="itemId != null" >
+        #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="hisCreate != null" >
+        #{hisCreate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="site.acacia.flea.pojo.TbHistoryExample" resultType="java.lang.Integer" >
+    select count(*) from tb_history
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_history
+    <set >
+      <if test="record.hisId != null" >
+        his_id = #{record.hisId,jdbcType=INTEGER},
+      </if>
+      <if test="record.openid != null" >
+        openid = #{record.openid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.itemId != null" >
+        item_id = #{record.itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.hisCreate != null" >
+        his_create = #{record.hisCreate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_history
+    set his_id = #{record.hisId,jdbcType=INTEGER},
+      openid = #{record.openid,jdbcType=VARCHAR},
+      item_id = #{record.itemId,jdbcType=VARCHAR},
+      his_create = #{record.hisCreate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="site.acacia.flea.pojo.TbHistory" >
+    update tb_history
+    <set >
+      <if test="openid != null" >
+        openid = #{openid,jdbcType=VARCHAR},
+      </if>
+      <if test="itemId != null" >
+        item_id = #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="hisCreate != null" >
+        his_create = #{hisCreate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where his_id = #{hisId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="site.acacia.flea.pojo.TbHistory" >
+    update tb_history
+    set openid = #{openid,jdbcType=VARCHAR},
+      item_id = #{itemId,jdbcType=VARCHAR},
+      his_create = #{hisCreate,jdbcType=TIMESTAMP}
+    where his_id = #{hisId,jdbcType=INTEGER}
+  </update>
+  
+  <resultMap id="ChatMap" type="site.acacia.flea.vo.ChatVo" >
+    <result column="h_create" property="hCreate"  />
+    <result column="h_sum" property="val"  />
+  </resultMap>
+  
+  <resultMap id="ChatMapCopy" type="site.acacia.flea.vo.ChatVo" >
+    <result column="item_title" property="hCreate"  />
+    <result column="his_num" property="val"  />
+  </resultMap>
+  
+  <select id="getValByMonth" resultMap="ChatMap" >
+    SELECT MONTH(his_create) AS h_create, COUNT(*) AS h_sum
+	FROM tb_history
+	WHERE his_create BETWEEN #{start} AND #{end}
+	GROUP BY h_create
+	ORDER BY h_create
+  </select>
+  
+  <select id="getValByDay" resultMap="ChatMap" >
+    SELECT DATE(his_create) AS h_create, COUNT(*) AS h_sum
+	FROM tb_history
+	WHERE his_create BETWEEN #{start} AND #{end}
+	GROUP BY h_create
+	ORDER BY h_create
+  </select>
+  
+  <select id="getValByTime" resultMap="ChatMap" >
+    SELECT HOUR(his_create) AS h_create, COUNT(*) AS h_sum
+	FROM tb_history
+	WHERE his_create BETWEEN #{start} AND #{end}
+	GROUP BY h_create
+	ORDER BY h_create
+  </select>
+  
+  <select id="getTopByDate" resultMap="ChatMapCopy" >
+    SELECT item.`item_title`,  t.his_num
+	FROM tb_item item, (
+		SELECT item_id, COUNT(*) AS his_num
+		FROM tb_history
+		WHERE his_create BETWEEN #{start} AND #{end}
+		GROUP BY item_id
+		ORDER BY COUNT(*) DESC
+		LIMIT 0,10
+	) t
+	WHERE t.item_id = item.`item_id`
+  </select>
+  
+  <select id="getCountByToday" resultType="java.lang.Integer">
+    SELECT COUNT(*) c FROM tb_history WHERE TO_DAYS(his_create) = TO_DAYS(NOW())
+  </select>
+</mapper>

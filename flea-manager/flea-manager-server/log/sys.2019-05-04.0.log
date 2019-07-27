@@ -1,0 +1,1004 @@
+2019-05-04 15:31:48 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 8752 (G:\work-jsp\flea-manager\flea-manager-server\target\classes started by Administrator in G:\work-jsp\flea-manager\flea-manager-server)
+2019-05-04 15:31:48 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-04 15:31:48 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-04 15:32:14 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 28.906 seconds (JVM running for 32.843)
+2019-05-04 15:34:02 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 9056 (G:\work-jsp\flea-manager\flea-manager-server\target\classes started by Administrator in G:\work-jsp\flea-manager\flea-manager-server)
+2019-05-04 15:34:02 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-04 15:34:02 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-04 15:34:14 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 12.731 seconds (JVM running for 13.457)
+2019-05-04 16:58:33 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 8452 (G:\work-jsp\flea-manager\flea-manager-server\target\classes started by Administrator in G:\work-jsp\flea-manager\flea-manager-server)
+2019-05-04 16:58:33 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-04 16:58:33 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-04 16:58:45 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 12.54 seconds (JVM running for 13.096)
+2019-05-04 18:12:32 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-5][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:12:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-6][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:12:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-7][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-7][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-7][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-7][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-8][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-9][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-9][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-9][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:12:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-9][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 8
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-10][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-11][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-12][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==>  Preparing: SELECT u.`openid` openId, u.`nick_name` nickName, u.`avatar_url` imgUrl, t2.sum_msg msgNum, m.`content` lastMsg,m.`create_time` lastDate FROM tb_message AS m, (SELECT create_by, MAX(create_time) max_time FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t1, (SELECT create_by, COUNT(msg_id) sum_msg FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t2, tb_user u WHERE t1.create_by = m.create_by AND t1.create_by = t2.create_by AND t1.max_time = m.create_time AND u.`openid` = t1.create_by ORDER BY lastDate DESC 
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-12][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-12][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-13][ Class:site.acacia.flea.service.ItemService >> Method: 117 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-13][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-13][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:12:52 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-13][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:12:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-14][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:12:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-15][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:12:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-15][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:12:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-15][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:12:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-15][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:13:45 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-16][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(153692499625022)
+2019-05-04 18:13:46 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-17][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:13:46 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-18][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(153692499625022)
+2019-05-04 18:13:46 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-18][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:13:46 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-18][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 153692499625022(String)
+2019-05-04 18:13:46 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-18][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-19][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-20][ Class:site.acacia.flea.service.ItemService >> Method: 231 ]
+INFO:==> Request parameter: record(TbItem [itemId=153692499625022, catId=null, openid=o-RcB5YS1uHpo7XCwboVqE3yutAE, itemTitle=null, sellPoint=null, price=null, originalPrice=null, newnessRate=null, itemImage=null, sellAddress=null, collectNum=null, sellQq=null, sellPhone=null, sellWechat=null, buyTime=null, status=3, itemCreated=null, itemUpdate=null])
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-20][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET openid = ?, status = ?, item_update = ? where item_id = ? 
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-20][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 3(Byte), 2019-05-04 18:14:03.464(Timestamp), 153692499625022(String)
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-20][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-20][ Class:site.acacia.flea.mapper.TbCollectMapper.updateByExampleSelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_collect SET collect_status = ? WHERE ( item_id = ? ) 
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-20][ Class:site.acacia.flea.mapper.TbCollectMapper.updateByExampleSelective >> Method: 159 ]
+DEBUG:==> Parameters: 3(Byte), 153692499625022(String)
+2019-05-04 18:14:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-20][ Class:site.acacia.flea.mapper.TbCollectMapper.updateByExampleSelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:14:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-21][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:14:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-22][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:14:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-22][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:14:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-22][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:14:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-22][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 8
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-23][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(153692499625022)
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-23][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-23][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 153692499625022(String)
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-23][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-23][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select openid, nick_name, avatar_url, sdasd, gender, score, email, user_phone, user_school, user_status, user_created from tb_user where openid = ? 
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-23][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-23][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-24][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-25][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(153692499625022)
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-25][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-25][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 153692499625022(String)
+2019-05-04 18:14:39 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-25][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:15:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-26][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:15:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-27][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:15:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-28][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:15:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-28][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:15:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-28][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:15:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-28][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-29][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-30][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-31][ Class:site.acacia.flea.service.ItemService >> Method: 117 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-31][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-31][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-31][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-32][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==>  Preparing: SELECT u.`openid` openId, u.`nick_name` nickName, u.`avatar_url` imgUrl, t2.sum_msg msgNum, m.`content` lastMsg,m.`create_time` lastDate FROM tb_message AS m, (SELECT create_by, MAX(create_time) max_time FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t1, (SELECT create_by, COUNT(msg_id) sum_msg FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t2, tb_user u WHERE t1.create_by = m.create_by AND t1.create_by = t2.create_by AND t1.max_time = m.create_time AND u.`openid` = t1.create_by ORDER BY lastDate DESC 
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-32][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:15:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-32][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:15:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-33][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:15:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-34][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:15:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-34][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:15:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-34][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:15:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-34][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:17:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-35][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154229559344156)
+2019-05-04 18:17:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-36][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:17:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-37][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:17:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-37][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:17:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-37][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:17:14 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-37][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:17:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-38][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:17:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-39][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:17:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-39][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:17:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-39][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:17:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-39][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:17:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-39][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:17:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-39][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(1)
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==>  Preparing: delete from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 1(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:17:24 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:17:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-40][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154229559344156)
+2019-05-04 18:17:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-41][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:17:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-42][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:17:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-42][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:17:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-42][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:17:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-42][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:17:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-43][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:17:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-44][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:17:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-44][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:17:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-44][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:17:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-44][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:17:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-44][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:17:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-44][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(2)
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==>  Preparing: insert into tb_collect (collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==> Parameters: null, 154229559344156(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 100.0(Double), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 山西师范大学(String), 1(Byte)
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 2(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:17:57 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:18:10 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-45][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:18:10 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-46][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:18:10 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-46][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:18:10 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-46][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:18:10 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-46][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:18:10 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-46][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:18:10 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-46][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(1)
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==>  Preparing: delete from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 1(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:18:10 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:24 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-47][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154229559344156)
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-47][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-47][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-47][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-47][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select openid, nick_name, avatar_url, sdasd, gender, score, email, user_phone, user_school, user_status, user_created from tb_user where openid = ? 
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-47][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-47][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-48][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-49][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-49][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-49][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:25 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-49][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:20:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-50][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:20:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-51][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-51][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-51][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-51][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-51][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:20:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-51][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(2)
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==>  Preparing: insert into tb_collect (collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==> Parameters: null, 154229559344156(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 100.0(Double), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 山西师范大学(String), 1(Byte)
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 2(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:20:30 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-52][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:20:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-53][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-53][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-53][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-53][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-53][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-53][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(1)
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==>  Preparing: delete from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 1(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:20:42 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-54][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:20:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-55][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-55][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-55][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-55][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-55][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:20:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-55][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(2)
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==>  Preparing: insert into tb_collect (collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==> Parameters: null, 154229559344156(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 100.0(Double), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 山西师范大学(String), 1(Byte)
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 2(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:20:44 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-56][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154229559344156)
+2019-05-04 18:20:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-57][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:20:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-58][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-58][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-58][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-58][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-59][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:20:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-60][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-60][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:20:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-60][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-60][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-60][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-60][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(1)
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==>  Preparing: delete from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.deleteByExample >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 1(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:20:58 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-61][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-62][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-63][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-63][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-63][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-63][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-64][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-65][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-65][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-65][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:21:16 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-65][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:21:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-66][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:21:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-67][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:21:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-67][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:21:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-67][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:21:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-67][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:21:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-68][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:21:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-69][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:21:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-69][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:21:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-69][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:21:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-69][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 7
+2019-05-04 18:33:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-70][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:33:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-71][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:33:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-72][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:33:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-73][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:33:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-74][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:33:56 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-75][ Class:site.acacia.flea.service.ItemService >> Method: 117 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:33:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-72][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:33:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-72][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:33:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-72][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:33:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-75][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:33:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-75][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:33:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-75][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:33:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-76][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==>  Preparing: SELECT u.`openid` openId, u.`nick_name` nickName, u.`avatar_url` imgUrl, t2.sum_msg msgNum, m.`content` lastMsg,m.`create_time` lastDate FROM tb_message AS m, (SELECT create_by, MAX(create_time) max_time FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t1, (SELECT create_by, COUNT(msg_id) sum_msg FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t2, tb_user u WHERE t1.create_by = m.create_by AND t1.create_by = t2.create_by AND t1.max_time = m.create_time AND u.`openid` = t1.create_by ORDER BY lastDate DESC 
+2019-05-04 18:33:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-76][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:33:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-76][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:33:59 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-77][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:33:59 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-78][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:33:59 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-78][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:33:59 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-78][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:33:59 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-78][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 7
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-79][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-80][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-81][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-81][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-81][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-81][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-82][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-83][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-83][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-83][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:35:55 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-83][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 7
+2019-05-04 18:36:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-84][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:36:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-85][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:36:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-85][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:36:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-85][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:36:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-85][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 7
+2019-05-04 18:36:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-86][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154229559344156)
+2019-05-04 18:36:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-87][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:36:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-88][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:36:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-88][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:36:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-88][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:36:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-88][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:36:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-89][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:36:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-90][ Class:site.acacia.flea.service.ItemCollectService >> Method: 56 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:36:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-90][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154229559344156)
+2019-05-04 18:36:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-90][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:36:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-90][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154229559344156(String)
+2019-05-04 18:36:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-90][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:36:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-90][ Class:site.acacia.flea.service.ItemCollectService >> Method: 113 ]
+INFO:==> Request parameter: itemId(154229559344156),status(2)
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item where item_id = ? 
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: 154229559344156(String)
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==>  Preparing: insert into tb_collect (collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:==> Parameters: null, 154229559344156(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 100.0(Double), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 山西师范大学(String), 1(Byte)
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbCollectMapper.insert >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_item SET cat_id = ?, openid = ?, item_title = ?, sell_point = ?, price = ?, original_price = ?, newness_rate = ?, item_image = ?, sell_address = ?, collect_num = ?, sell_qq = ?, sell_phone = ?, sell_wechat = ?, buy_time = ?, status = ?, item_created = ?, item_update = ? where item_id = ? 
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 999(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 笑脸测试(String), 嘿嘿，爱笑的人运气往往不会差(String), 0(Long), 10000000(Long), 100.0(Double), https://upload.flea.store/group1/M00/00/00/rBAbJlvtj86ACO21AAAfGillUWI096.png(String), 山西师范大学(String), 2(Integer), 1252144568(String), (String), (String), 2016-08-01 00:00:00.0(Timestamp), 2(Byte), 2018-11-15 00:00:00.0(Timestamp), 2018-11-15 00:00:00.0(Timestamp), 154229559344156(String)
+2019-05-04 18:36:45 下午 [Thread: DefaultMessageListenerContainer-1][ Class:site.acacia.flea.mapper.TbItemMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:36:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-91][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:36:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-92][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:36:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-93][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:36:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-93][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:36:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-93][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:36:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-93][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:36:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-94][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:36:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-95][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:36:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-95][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:36:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-95][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:36:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-95][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 8
+2019-05-04 18:37:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-96][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:37:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-97][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:37:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-97][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:37:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-97][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:37:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-97][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:37:32 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-98][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:37:32 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-99][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select openid, nick_name, avatar_url, sdasd, gender, score, email, user_phone, user_school, user_status, user_created from tb_user where openid = ? 
+2019-05-04 18:37:32 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-99][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:37:32 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-99][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-100][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-101][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q9_QEAAP__.BiD95adSslt_-tKka_vx58qt48K8g2resxeQrxE8HZJkBpB9LnglNwzDAJrP4K7wr82SIqSHCIRV9cmunsgJRQ)
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-102][ Class:site.acacia.flea.service.UserService >> Method: 97 ]
+INFO:==> Request parameter: user(site.acacia.flea.pojo.TbUser@2b9891dd)
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-102][ Class:site.acacia.flea.mapper.TbUserMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==>  Preparing: update tb_user SET nick_name = ?, avatar_url = ?, sdasd = ?, gender = ?, score = ?, email = ?, user_phone = ?, user_school = ?, user_status = ?, user_created = ? where openid = ? 
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-102][ Class:site.acacia.flea.mapper.TbUserMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:==> Parameters: 带头学习(String), https://wx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEJXGoHSoYnWPecWRs6DZYjpeUpaIRnBGk9yzpias9dhzhhdffJTCqyavAQTvUTqdEZWic58r6DRF1WA/132(String), 与其临渊羡鱼，不如退而结网.(String), 1(Integer), 0(Integer), acaciazy@163.com(String), 13653598754(String), 太原理工大学(String), 3(Byte), 2018-09-14 00:00:00.0(Timestamp), o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-102][ Class:site.acacia.flea.mapper.TbUserMapper.updateByPrimaryKeySelective >> Method: 159 ]
+DEBUG:<==    Updates: 1
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-103][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-104][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select openid, nick_name, avatar_url, sdasd, gender, score, email, user_phone, user_school, user_status, user_created from tb_user where openid = ? 
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-104][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:37:42 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-104][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:38:05 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-105][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:38:05 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-106][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:38:05 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-107][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:38:05 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-107][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:38:05 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-107][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:38:05 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-107][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:38:11 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-108][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:38:11 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-109][ Class:site.acacia.flea.service.ItemCollectService >> Method: 85 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:38:11 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-109][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? ) 
+2019-05-04 18:38:11 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-109][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:38:11 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-109][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 8
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-110][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-111][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.service.ItemService >> Method: 117 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-113][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==>  Preparing: SELECT u.`openid` openId, u.`nick_name` nickName, u.`avatar_url` imgUrl, t2.sum_msg msgNum, m.`content` lastMsg,m.`create_time` lastDate FROM tb_message AS m, (SELECT create_by, MAX(create_time) max_time FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t1, (SELECT create_by, COUNT(msg_id) sum_msg FROM tb_message WHERE del_flag = '1' AND is_off_line = '2' AND send_to = ? GROUP BY create_by) t2, tb_user u WHERE t1.create_by = m.create_by AND t1.create_by = t2.create_by AND t1.max_time = m.create_time AND u.`openid` = t1.create_by ORDER BY lastDate DESC 
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-113][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:38:18 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-113][ Class:site.acacia.flea.mapper.TbMessageMapper.selectNoReadMsgList >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:38:19 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( message_user_status = ? and user_id = ? ) 
+2019-05-04 18:38:19 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: 0(Integer), B(String)
+2019-05-04 18:38:19 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:38:19 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageInfoMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_info_id, message_title, message_txt, message_url, message_push_time, message_operator, message_operator_nick, message_operator_avater, message_type from message_info WHERE ( message_info_id = ? and message_operator <> ? ) 
+2019-05-04 18:38:19 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageInfoMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: 9(Integer), o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:38:19 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-112][ Class:site.acacia.flea.mapper.MessageInfoMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:38:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-114][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:38:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-115][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==>  Preparing: select openid, nick_name, avatar_url, sdasd, gender, score, email, user_phone, user_school, user_status, user_created from tb_user where openid = ? 
+2019-05-04 18:38:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-115][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String)
+2019-05-04 18:38:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-115][ Class:site.acacia.flea.mapper.TbUserMapper.selectByPrimaryKey >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:38:35 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-116][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:38:35 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-117][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:38:35 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-117][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:38:35 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-117][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:38:35 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-117][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:47:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-118][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:47:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-119][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:47:36 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-120][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-121][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-122][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-122][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-122][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-122][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-120][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-120][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:47:38 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-120][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:48:12 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-123][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:48:12 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-124][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:48:12 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-125][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:48:12 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-125][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:48:12 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-125][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:48:12 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-125][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:48:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-126][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:48:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-127][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:48:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-127][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:48:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-127][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:48:13 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-127][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:49:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-128][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:49:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-129][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:49:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-130][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:49:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-130][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:49:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-130][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:49:43 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-130][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:49:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-131][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:49:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-132][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:49:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-132][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:49:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-132][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:49:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-132][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:49:59 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-133][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701605075469)
+2019-05-04 18:50:00 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-134][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:50:00 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-135][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701605075469)
+2019-05-04 18:50:00 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-135][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:50:00 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-135][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701605075469(String)
+2019-05-04 18:50:00 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-135][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:50:01 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-136][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:50:01 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-136][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:50:01 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-136][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:50:01 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-136][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:51:28 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-137][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:51:28 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-137][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:51:28 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-137][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:51:28 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-137][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:52:20 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-138][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701650925035)
+2019-05-04 18:52:20 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-139][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:52:20 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-140][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701650925035)
+2019-05-04 18:52:20 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-140][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:52:20 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-140][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701650925035(String)
+2019-05-04 18:52:20 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-140][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:52:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-141][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:52:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-141][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:52:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-141][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:52:21 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-141][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:54:28 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-142][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701650925035)
+2019-05-04 18:54:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-143][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:54:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-144][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701650925035)
+2019-05-04 18:54:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-144][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:54:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-144][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701650925035(String)
+2019-05-04 18:54:29 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-144][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:54:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-145][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:54:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-145][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:54:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-145][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:54:30 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-145][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:54:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-146][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:54:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-147][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:54:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-148][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 18:54:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-148][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 18:54:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-148][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 18:54:41 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-148][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:55:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-149][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701694433091)
+2019-05-04 18:55:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-150][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:55:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-151][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701694433091)
+2019-05-04 18:55:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-151][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:55:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-151][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701694433091(String)
+2019-05-04 18:55:03 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-151][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 18:55:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-152][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:55:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-152][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:55:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-152][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:55:04 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-152][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:56:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-153][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701650925035)
+2019-05-04 18:56:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-154][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:56:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-155][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701650925035)
+2019-05-04 18:56:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-155][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:56:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-155][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701650925035(String)
+2019-05-04 18:56:50 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-155][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 18:56:51 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-156][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:56:53 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-157][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 18:56:53 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-157][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 18:56:53 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-157][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 18:56:53 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-157][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 18:58:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-158][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701650925035)
+2019-05-04 18:58:57 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-159][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 18:58:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-160][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701650925035)
+2019-05-04 18:58:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-160][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 18:58:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-160][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701650925035(String)
+2019-05-04 18:58:58 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-160][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 19:00:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-161][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701650925035)
+2019-05-04 19:00:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-162][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 19:00:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-163][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701650925035)
+2019-05-04 19:00:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-163][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 19:00:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-163][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701650925035(String)
+2019-05-04 19:00:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-163][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 19:00:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-164][ Class:site.acacia.flea.service.ItemIssueService >> Method: 63 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),status(0)
+2019-05-04 19:00:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-164][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select item_id, cat_id, openid, item_title, sell_point, price, original_price, newness_rate, item_image, sell_address, collect_num, sell_qq, sell_phone, sell_wechat, buy_time, status, item_created, item_update from tb_item WHERE ( openid = ? and status in ( ? , ? , ? ) ) 
+2019-05-04 19:00:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-164][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 2(Byte), 1(Byte), 3(Byte)
+2019-05-04 19:00:49 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-164][ Class:site.acacia.flea.mapper.TbItemMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 18
+2019-05-04 19:01:47 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-165][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 19:01:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-166][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 19:01:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-167][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 19:01:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-167][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 19:01:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-167][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 19:01:48 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-167][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-05-04 19:05:33 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-168][ Class:site.acacia.flea.service.ItemService >> Method: 84 ]
+INFO:==> Request parameter: itemId(154701650925035)
+2019-05-04 19:05:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-169][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 19:05:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-170][ Class:site.acacia.flea.service.ItemCollectService >> Method: 96 ]
+INFO:==> Request parameter: userId(o-RcB5YS1uHpo7XCwboVqE3yutAE),itemId(154701650925035)
+2019-05-04 19:05:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-170][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select collect_id, item_id, openid, collect_name, collect_image, collect_newness_rate, collect_sell_point, collect_price, collect_original_price, collect_sell_school, collect_status from tb_collect WHERE ( openid = ? and item_id = ? ) 
+2019-05-04 19:05:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-170][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 154701650925035(String)
+2019-05-04 19:05:34 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-170][ Class:site.acacia.flea.mapper.TbCollectMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-05-04 19:05:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-171][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 19:05:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-172][ Class:site.acacia.flea.service.LoginService >> Method: 94 ]
+INFO:==> Request parameter: key(eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoUjkFTgkAYhv_LnssdZLT0Bkqah8YWCPHSfC0Yq7DfLiCKTv-lQ-OtW4f6P_E_2q7P-8w7z5mgSqVIyJjgNePuIPat_VzhzWpyeMEn7dntvnY8ckWggRrKsMyNmtW1qsaUHo49neMr9rikRfH_RBvxbPfpUsD26GuXgbdYzXDuYyyjZcojVg2n63ir0lDBPZPubDdqT0pANUqyU5Ylm80imOgWGucxaMJAJ946EnxwWw6n7M6KHGrZfRMjBd89QJGalu770n18dZ-X3593s5SYG2q__QEAAP__.0D-Ns9MLq6vffmeVNCu9-CxTKdpRlmrHgqxspxc1RZNbhOZN358avSLJxb71kvvzDMPvn_PhkiOt3jRwIu0Zlg)
+2019-05-04 19:05:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-173][ Class:site.acacia.flea.service.ItemService >> Method: 86 ]
+INFO:==> Request parameter:openId(o-RcB5YS1uHpo7XCwboVqE3yutAE)
+2019-05-04 19:05:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-173][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select message_user_id, message_type, user_id, message_info_id, message_user_status, message from message_user WHERE ( user_id = ? and message_user_status = ? ) 
+2019-05-04 19:05:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-173][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: o-RcB5YS1uHpo7XCwboVqE3yutAE(String), 0(Integer)
+2019-05-04 19:05:44 下午 [Thread: DubboServerHandler-169.254.151.206:20880-thread-173][ Class:site.acacia.flea.mapper.MessageUserMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0

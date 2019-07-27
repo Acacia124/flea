@@ -1,0 +1,32 @@
+2019-05-25 23:40:00 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6956 (G:\work-jsp\flea-manager\flea-manager-server\target\classes started by Administrator in G:\work-jsp\flea-manager\flea-manager-server)
+2019-05-25 23:40:00 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-25 23:40:00 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-25 23:47:46 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 2144 (G:\work-jsp\flea-manager\flea-manager-server\target\classes started by Administrator in G:\work-jsp\flea-manager\flea-manager-server)
+2019-05-25 23:47:46 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-25 23:47:46 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-25 23:51:30 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7448 (G:\work-jsp\flea-manager\flea-manager-server\target\classes started by Administrator in G:\work-jsp\flea-manager\flea-manager-server)
+2019-05-25 23:51:30 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-25 23:51:30 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-25 23:51:52 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 22.858 seconds (JVM running for 23.448)
+2019-05-25 23:52:28 下午 [Thread: http-nio-8080-exec-4][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 28 ]
+ERROR:Global exception interception: nested exception is org.apache.ibatis.binding.BindingException: Parameter '0' not found. Available parameters are [arg1, arg0, param1, param2]
+2019-05-25 23:57:40 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 4168 (G:\work-jsp\flea-manager\flea-manager-server\target\classes started by Administrator in G:\work-jsp\flea-manager\flea-manager-server)
+2019-05-25 23:57:40 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-05-25 23:57:40 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-05-25 23:57:53 下午 [Thread: main][ Class:site.acacia.flea.App >> Method: 57 ]
+INFO:Started App in 13.879 seconds (JVM running for 14.526)
+2019-05-25 23:57:54 下午 [Thread: http-nio-8080-exec-1][ Class:site.acacia.flea.exception.GlobalExceptionHandler >> Method: 28 ]
+ERROR:Global exception interception: nested exception is org.apache.ibatis.binding.BindingException: Parameter '0' not found. Available parameters are [arg1, arg0, param1, param2]

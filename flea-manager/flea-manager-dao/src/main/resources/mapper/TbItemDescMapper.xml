@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.mapper.TbItemDescMapper" >
+  <resultMap id="BaseResultMap" type="site.acacia.flea.pojo.TbItemDesc" >
+    <id column="item_desc_id" property="itemDescId" jdbcType="INTEGER" />
+    <result column="item_id" property="itemId" jdbcType="VARCHAR" />
+    <result column="desc_create" property="descCreate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="site.acacia.flea.pojo.TbItemDesc" extends="BaseResultMap" >
+    <result column="item_desc" property="itemDesc" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    item_desc_id, item_id, desc_create
+  </sql>
+  <sql id="Blob_Column_List" >
+    item_desc
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="site.acacia.flea.pojo.TbItemDescExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_item_desc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="site.acacia.flea.pojo.TbItemDescExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_item_desc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_item_desc
+    where item_desc_id = #{itemDescId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tb_item_desc
+    where item_desc_id = #{itemDescId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="site.acacia.flea.pojo.TbItemDescExample" >
+    delete from tb_item_desc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="site.acacia.flea.pojo.TbItemDesc" >
+    insert into tb_item_desc (item_desc_id, item_id, desc_create, 
+      item_desc)
+    values (#{itemDescId,jdbcType=INTEGER}, #{itemId,jdbcType=VARCHAR}, #{descCreate,jdbcType=TIMESTAMP}, 
+      #{itemDesc,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="site.acacia.flea.pojo.TbItemDesc" >
+    insert into tb_item_desc
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="itemDescId != null" >
+        item_desc_id,
+      </if>
+      <if test="itemId != null" >
+        item_id,
+      </if>
+      <if test="descCreate != null" >
+        desc_create,
+      </if>
+      <if test="itemDesc != null" >
+        item_desc,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="itemDescId != null" >
+        #{itemDescId,jdbcType=INTEGER},
+      </if>
+      <if test="itemId != null" >
+        #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="descCreate != null" >
+        #{descCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="itemDesc != null" >
+        #{itemDesc,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="site.acacia.flea.pojo.TbItemDescExample" resultType="java.lang.Integer" >
+    select count(*) from tb_item_desc
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_item_desc
+    <set >
+      <if test="record.itemDescId != null" >
+        item_desc_id = #{record.itemDescId,jdbcType=INTEGER},
+      </if>
+      <if test="record.itemId != null" >
+        item_id = #{record.itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.descCreate != null" >
+        desc_create = #{record.descCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.itemDesc != null" >
+        item_desc = #{record.itemDesc,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update tb_item_desc
+    set item_desc_id = #{record.itemDescId,jdbcType=INTEGER},
+      item_id = #{record.itemId,jdbcType=VARCHAR},
+      desc_create = #{record.descCreate,jdbcType=TIMESTAMP},
+      item_desc = #{record.itemDesc,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_item_desc
+    set item_desc_id = #{record.itemDescId,jdbcType=INTEGER},
+      item_id = #{record.itemId,jdbcType=VARCHAR},
+      desc_create = #{record.descCreate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="site.acacia.flea.pojo.TbItemDesc" >
+    update tb_item_desc
+    <set >
+      <if test="itemId != null" >
+        item_id = #{itemId,jdbcType=VARCHAR},
+      </if>
+      <if test="descCreate != null" >
+        desc_create = #{descCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="itemDesc != null" >
+        item_desc = #{itemDesc,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where item_desc_id = #{itemDescId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="site.acacia.flea.pojo.TbItemDesc" >
+    update tb_item_desc
+    set item_id = #{itemId,jdbcType=VARCHAR},
+      desc_create = #{descCreate,jdbcType=TIMESTAMP},
+      item_desc = #{itemDesc,jdbcType=LONGVARCHAR}
+    where item_desc_id = #{itemDescId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="site.acacia.flea.pojo.TbItemDesc" >
+    update tb_item_desc
+    set item_id = #{itemId,jdbcType=VARCHAR},
+      desc_create = #{descCreate,jdbcType=TIMESTAMP}
+    where item_desc_id = #{itemDescId,jdbcType=INTEGER}
+  </update>
+</mapper>

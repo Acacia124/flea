@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.mapper.TbContentCatMapper" >
+  <resultMap id="BaseResultMap" type="site.acacia.flea.pojo.TbContentCat" >
+    <id column="con_cat_id" property="conCatId" jdbcType="INTEGER" />
+    <result column="con_cat_name" property="conCatName" jdbcType="VARCHAR" />
+    <result column="con_cat_parent_id" property="conCatParentId" jdbcType="INTEGER" />
+    <result column="con_cat_sort_order" property="conCatSortOrder" jdbcType="INTEGER" />
+    <result column="con_cat_is_parent" property="conCatIsParent" jdbcType="TINYINT" />
+    <result column="con_cat_status" property="conCatStatus" jdbcType="TINYINT" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, 
+    con_cat_status, created
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="site.acacia.flea.pojo.TbContentCatExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_content_cat
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_content_cat
+    where con_cat_id = #{conCatId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tb_content_cat
+    where con_cat_id = #{conCatId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="site.acacia.flea.pojo.TbContentCatExample" >
+    delete from tb_content_cat
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="site.acacia.flea.pojo.TbContentCat" >
+    insert into tb_content_cat (con_cat_id, con_cat_name, con_cat_parent_id, 
+      con_cat_sort_order, con_cat_is_parent, con_cat_status, 
+      created)
+    values (#{conCatId,jdbcType=INTEGER}, #{conCatName,jdbcType=VARCHAR}, #{conCatParentId,jdbcType=INTEGER}, 
+      #{conCatSortOrder,jdbcType=INTEGER}, #{conCatIsParent,jdbcType=TINYINT}, #{conCatStatus,jdbcType=TINYINT}, 
+      #{created,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="site.acacia.flea.pojo.TbContentCat" >
+    insert into tb_content_cat
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="conCatId != null" >
+        con_cat_id,
+      </if>
+      <if test="conCatName != null" >
+        con_cat_name,
+      </if>
+      <if test="conCatParentId != null" >
+        con_cat_parent_id,
+      </if>
+      <if test="conCatSortOrder != null" >
+        con_cat_sort_order,
+      </if>
+      <if test="conCatIsParent != null" >
+        con_cat_is_parent,
+      </if>
+      <if test="conCatStatus != null" >
+        con_cat_status,
+      </if>
+      <if test="created != null" >
+        created,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="conCatId != null" >
+        #{conCatId,jdbcType=INTEGER},
+      </if>
+      <if test="conCatName != null" >
+        #{conCatName,jdbcType=VARCHAR},
+      </if>
+      <if test="conCatParentId != null" >
+        #{conCatParentId,jdbcType=INTEGER},
+      </if>
+      <if test="conCatSortOrder != null" >
+        #{conCatSortOrder,jdbcType=INTEGER},
+      </if>
+      <if test="conCatIsParent != null" >
+        #{conCatIsParent,jdbcType=TINYINT},
+      </if>
+      <if test="conCatStatus != null" >
+        #{conCatStatus,jdbcType=TINYINT},
+      </if>
+      <if test="created != null" >
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="site.acacia.flea.pojo.TbContentCatExample" resultType="java.lang.Integer" >
+    select count(*) from tb_content_cat
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_content_cat
+    <set >
+      <if test="record.conCatId != null" >
+        con_cat_id = #{record.conCatId,jdbcType=INTEGER},
+      </if>
+      <if test="record.conCatName != null" >
+        con_cat_name = #{record.conCatName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.conCatParentId != null" >
+        con_cat_parent_id = #{record.conCatParentId,jdbcType=INTEGER},
+      </if>
+      <if test="record.conCatSortOrder != null" >
+        con_cat_sort_order = #{record.conCatSortOrder,jdbcType=INTEGER},
+      </if>
+      <if test="record.conCatIsParent != null" >
+        con_cat_is_parent = #{record.conCatIsParent,jdbcType=TINYINT},
+      </if>
+      <if test="record.conCatStatus != null" >
+        con_cat_status = #{record.conCatStatus,jdbcType=TINYINT},
+      </if>
+      <if test="record.created != null" >
+        created = #{record.created,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_content_cat
+    set con_cat_id = #{record.conCatId,jdbcType=INTEGER},
+      con_cat_name = #{record.conCatName,jdbcType=VARCHAR},
+      con_cat_parent_id = #{record.conCatParentId,jdbcType=INTEGER},
+      con_cat_sort_order = #{record.conCatSortOrder,jdbcType=INTEGER},
+      con_cat_is_parent = #{record.conCatIsParent,jdbcType=TINYINT},
+      con_cat_status = #{record.conCatStatus,jdbcType=TINYINT},
+      created = #{record.created,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="site.acacia.flea.pojo.TbContentCat" >
+    update tb_content_cat
+    <set >
+      <if test="conCatName != null" >
+        con_cat_name = #{conCatName,jdbcType=VARCHAR},
+      </if>
+      <if test="conCatParentId != null" >
+        con_cat_parent_id = #{conCatParentId,jdbcType=INTEGER},
+      </if>
+      <if test="conCatSortOrder != null" >
+        con_cat_sort_order = #{conCatSortOrder,jdbcType=INTEGER},
+      </if>
+      <if test="conCatIsParent != null" >
+        con_cat_is_parent = #{conCatIsParent,jdbcType=TINYINT},
+      </if>
+      <if test="conCatStatus != null" >
+        con_cat_status = #{conCatStatus,jdbcType=TINYINT},
+      </if>
+      <if test="created != null" >
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where con_cat_id = #{conCatId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="site.acacia.flea.pojo.TbContentCat" >
+    update tb_content_cat
+    set con_cat_name = #{conCatName,jdbcType=VARCHAR},
+      con_cat_parent_id = #{conCatParentId,jdbcType=INTEGER},
+      con_cat_sort_order = #{conCatSortOrder,jdbcType=INTEGER},
+      con_cat_is_parent = #{conCatIsParent,jdbcType=TINYINT},
+      con_cat_status = #{conCatStatus,jdbcType=TINYINT},
+      created = #{created,jdbcType=TIMESTAMP}
+    where con_cat_id = #{conCatId,jdbcType=INTEGER}
+  </update>
+</mapper>

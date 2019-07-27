@@ -1,0 +1,25 @@
+server:
+ port: 8081
+logging:
+ config: classpath:logback-boot.xml
+
+spring:
+ http:
+  multipart:
+   maxFileSize: 5MB
+   maxRequestSize: 50MB
+  encoding:
+   force: true
+ mvc:
+  view:
+   prefix:
+   suffix: .html
+   
+jwt:
+ tokenHead: Authorization
+ 
+qiniu:
+ accessKey: kX3UVOc_m4Nzotqc7H3XJiLbWqmpmAFwZbnTZBsu
+ secretKey: asz4kfPmGje9L1LObaAH5_myUq6TwxT29ZkBRLRF
+ dns: http://pr9s4t444.bkt.clouddn.com/
+ bucket: chat

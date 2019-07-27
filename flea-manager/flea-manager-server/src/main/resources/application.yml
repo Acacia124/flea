@@ -1,0 +1,72 @@
+server:
+ port: 8080
+logging:
+ config: classpath:logback-boot.xml
+
+###################################
+###Mapper.xml
+################################### 
+mybatis:
+ config-location: /mapper/*.xml
+ type-aliases-package: site.acacia.flea.pojo
+pagehelper:
+ helperDialect: mysql
+ reasonable: true
+ supportMethodsArguments: true
+ params: count=countSql
+
+###################################
+###Mysql
+###################################
+spring:
+ http:
+  encoding:
+   force: true
+ mail:
+  host: smtp.qq.com
+  username: 1242155965@qq.com
+  password: **************
+  default-encoding: UTF-8
+  properties:
+   mail.smtp.ssl.trust: smtp.qq.com
+   mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+   mail.smtp.socketFactory.port: 465
+   mail.smtp.auth: true
+   mail.smtp.starttls.enable: true
+   mail.smtp.starttls.required: true
+ activemq:
+  brokerUrl: tcp://192.168.0.1:61616
+  pool:
+   enabled: false
+  in-memory: true
+ datasource:
+  username: root
+  password: root
+  url: jdbc:mysql://192.168.0.1:3306/flea?useUnicode=true&characterEncoding=utf-8
+  driver-class-name: com.mysql.jdbc.Driver
+  initialSize: 5
+  minIdle: 5
+  maxActive: 20 
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+ redis:
+   host: 192.168.0.1
+   port: 6379
+   database: 1
+   pool:
+    max-active: -1
+    max-wait: -1
+    max-idle: 10
+    min-idle: 0
+   timeout: 0
+
+###################################
+###\u81ea\u5b9a\u4e49\u5e38\u91cf\u503c
+###################################
+jwt:
+ secret: ZHANGYINYUANNILUCK124215136|-+
+ expiration: 604800
+
+##################################
+###\u90ae\u7bb1\u53d1\u9001
+##################################

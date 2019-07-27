@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.mapper.TbMessageMapper" >
+  <resultMap id="BaseResultMap" type="site.acacia.flea.pojo.TbMessage" >
+    <id column="msg_id" property="msgId" jdbcType="VARCHAR" />
+    <result column="msg_type" property="msgType" jdbcType="CHAR" />
+    <result column="send_to" property="sendTo" jdbcType="VARCHAR" />
+    <result column="create_by" property="createBy" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="del_flag" property="delFlag" jdbcType="CHAR" />
+    <result column="is_off_line" property="isOffLine" jdbcType="CHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="site.acacia.flea.pojo.TbMessage" extends="BaseResultMap" >
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    msg_id, msg_type, send_to, create_by, create_time, del_flag, is_off_line
+  </sql>
+  <sql id="Blob_Column_List" >
+    content
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="site.acacia.flea.pojo.TbMessageExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="site.acacia.flea.pojo.TbMessageExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from tb_message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_message
+    where msg_id = #{msgId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tb_message
+    where msg_id = #{msgId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="site.acacia.flea.pojo.TbMessageExample" >
+    delete from tb_message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="site.acacia.flea.pojo.TbMessage" >
+    insert into tb_message (msg_id, msg_type, send_to, 
+      create_by, create_time, del_flag, 
+      is_off_line, content)
+    values (#{msgId,jdbcType=VARCHAR}, #{msgType,jdbcType=CHAR}, #{sendTo,jdbcType=VARCHAR}, 
+      #{createBy,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{delFlag,jdbcType=CHAR}, 
+      #{isOffLine,jdbcType=CHAR}, #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="site.acacia.flea.pojo.TbMessage" >
+    insert into tb_message
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="msgId != null" >
+        msg_id,
+      </if>
+      <if test="msgType != null" >
+        msg_type,
+      </if>
+      <if test="sendTo != null" >
+        send_to,
+      </if>
+      <if test="createBy != null" >
+        create_by,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="delFlag != null" >
+        del_flag,
+      </if>
+      <if test="isOffLine != null" >
+        is_off_line,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="msgId != null" >
+        #{msgId,jdbcType=VARCHAR},
+      </if>
+      <if test="msgType != null" >
+        #{msgType,jdbcType=CHAR},
+      </if>
+      <if test="sendTo != null" >
+        #{sendTo,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null" >
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="delFlag != null" >
+        #{delFlag,jdbcType=CHAR},
+      </if>
+      <if test="isOffLine != null" >
+        #{isOffLine,jdbcType=CHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="site.acacia.flea.pojo.TbMessageExample" resultType="java.lang.Integer" >
+    select count(*) from tb_message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update tb_message
+    <set >
+      <if test="record.msgId != null" >
+        msg_id = #{record.msgId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.msgType != null" >
+        msg_type = #{record.msgType,jdbcType=CHAR},
+      </if>
+      <if test="record.sendTo != null" >
+        send_to = #{record.sendTo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createBy != null" >
+        create_by = #{record.createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.delFlag != null" >
+        del_flag = #{record.delFlag,jdbcType=CHAR},
+      </if>
+      <if test="record.isOffLine != null" >
+        is_off_line = #{record.isOffLine,jdbcType=CHAR},
+      </if>
+      <if test="record.content != null" >
+        content = #{record.content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update tb_message
+    set msg_id = #{record.msgId,jdbcType=VARCHAR},
+      msg_type = #{record.msgType,jdbcType=CHAR},
+      send_to = #{record.sendTo,jdbcType=VARCHAR},
+      create_by = #{record.createBy,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      del_flag = #{record.delFlag,jdbcType=CHAR},
+      is_off_line = #{record.isOffLine,jdbcType=CHAR},
+      content = #{record.content,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update tb_message
+    set msg_id = #{record.msgId,jdbcType=VARCHAR},
+      msg_type = #{record.msgType,jdbcType=CHAR},
+      send_to = #{record.sendTo,jdbcType=VARCHAR},
+      create_by = #{record.createBy,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      del_flag = #{record.delFlag,jdbcType=CHAR},
+      is_off_line = #{record.isOffLine,jdbcType=CHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="site.acacia.flea.pojo.TbMessage" >
+    update tb_message
+    <set >
+      <if test="msgType != null" >
+        msg_type = #{msgType,jdbcType=CHAR},
+      </if>
+      <if test="sendTo != null" >
+        send_to = #{sendTo,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null" >
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="delFlag != null" >
+        del_flag = #{delFlag,jdbcType=CHAR},
+      </if>
+      <if test="isOffLine != null" >
+        is_off_line = #{isOffLine,jdbcType=CHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where msg_id = #{msgId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="site.acacia.flea.pojo.TbMessage" >
+    update tb_message
+    set msg_type = #{msgType,jdbcType=CHAR},
+      send_to = #{sendTo,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      del_flag = #{delFlag,jdbcType=CHAR},
+      is_off_line = #{isOffLine,jdbcType=CHAR},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where msg_id = #{msgId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="site.acacia.flea.pojo.TbMessage" >
+    update tb_message
+    set msg_type = #{msgType,jdbcType=CHAR},
+      send_to = #{sendTo,jdbcType=VARCHAR},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      del_flag = #{delFlag,jdbcType=CHAR},
+      is_off_line = #{isOffLine,jdbcType=CHAR}
+    where msg_id = #{msgId,jdbcType=VARCHAR}
+  </update>
+  
+  
+  <select id="selectNoReadMsgList" parameterType="java.lang.String" resultType="site.acacia.flea.pojo.IMMessage" >
+    SELECT u.`openid` openId, u.`nick_name` nickName, u.`avatar_url` imgUrl, t2.sum_msg msgNum, m.`content` lastMsg,m.`create_time` lastDate
+	FROM tb_message AS m, (SELECT create_by, MAX(create_time) max_time
+	FROM tb_message
+	WHERE del_flag = '1'
+	AND is_off_line = '2'
+	AND send_to = #{openid}
+	GROUP BY create_by) t1,
+	(SELECT create_by, COUNT(msg_id) sum_msg
+	FROM tb_message
+	WHERE del_flag = '1'
+	AND is_off_line = '2'
+	AND send_to = #{openid}
+	GROUP BY create_by) t2,
+	tb_user u
+	WHERE t1.create_by = m.create_by
+	AND t1.create_by = t2.create_by 
+	AND t1.max_time = m.create_time
+	AND u.`openid` = t1.create_by
+	ORDER BY lastDate DESC
+  </select>
+</mapper>

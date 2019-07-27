@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="site.acacia.flea.mapper.TbUserMapper">
+	<resultMap id="BaseResultMap" type="site.acacia.flea.pojo.TbUser">
+		<id column="openid" property="openid" jdbcType="VARCHAR" />
+		<result column="nick_name" property="nickName" jdbcType="VARCHAR" />
+		<result column="avatar_url" property="avatarUrl" jdbcType="VARCHAR" />
+		<result column="sdasd" property="sdasd" jdbcType="VARCHAR" />
+		<result column="gender" property="gender" jdbcType="INTEGER" />
+		<result column="score" property="score" jdbcType="INTEGER" />
+		<result column="email" property="email" jdbcType="VARCHAR" />
+		<result column="user_phone" property="userPhone" jdbcType="VARCHAR" />
+		<result column="user_school" property="userSchool" jdbcType="VARCHAR" />
+		<result column="user_status" property="userStatus" jdbcType="TINYINT" />
+		<result column="user_created" property="userCreated" jdbcType="TIMESTAMP" />
+	</resultMap>
+	<sql id="Example_Where_Clause">
+		<where>
+			<foreach collection="oredCriteria" item="criteria" separator="or">
+				<if test="criteria.valid">
+					<trim prefix="(" suffix=")" prefixOverrides="and">
+						<foreach collection="criteria.criteria" item="criterion">
+							<choose>
+								<when test="criterion.noValue">
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue">
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue">
+									and ${criterion.condition} #{criterion.value}
+									and
+									#{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue">
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem"
+										open="(" close=")" separator=",">
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+	<sql id="Update_By_Example_Where_Clause">
+		<where>
+			<foreach collection="example.oredCriteria" item="criteria"
+				separator="or">
+				<if test="criteria.valid">
+					<trim prefix="(" suffix=")" prefixOverrides="and">
+						<foreach collection="criteria.criteria" item="criterion">
+							<choose>
+								<when test="criterion.noValue">
+									and ${criterion.condition}
+								</when>
+								<when test="criterion.singleValue">
+									and ${criterion.condition} #{criterion.value}
+								</when>
+								<when test="criterion.betweenValue">
+									and ${criterion.condition} #{criterion.value}
+									and
+									#{criterion.secondValue}
+								</when>
+								<when test="criterion.listValue">
+									and ${criterion.condition}
+									<foreach collection="criterion.value" item="listItem"
+										open="(" close=")" separator=",">
+										#{listItem}
+									</foreach>
+								</when>
+							</choose>
+						</foreach>
+					</trim>
+				</if>
+			</foreach>
+		</where>
+	</sql>
+	<sql id="Base_Column_List">
+		openid, nick_name, avatar_url, sdasd, gender, score, email,
+		user_phone,
+		user_school,
+		user_status, user_created
+	</sql>
+	<select id="selectByExample" resultMap="BaseResultMap"
+		parameterType="site.acacia.flea.pojo.TbUserExample">
+		select
+		<if test="distinct">
+			distinct
+		</if>
+		<include refid="Base_Column_List" />
+		from tb_user
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+		<if test="orderByClause != null">
+			order by ${orderByClause}
+		</if>
+	</select>
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.String">
+		select
+		<include refid="Base_Column_List" />
+		from tb_user
+		where openid = #{openid,jdbcType=VARCHAR}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+		delete from
+		tb_user
+		where openid = #{openid,jdbcType=VARCHAR}
+	</delete>
+	<delete id="deleteByExample" parameterType="site.acacia.flea.pojo.TbUserExample">
+		delete from tb_user
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+	</delete>
+	<insert id="insert" parameterType="site.acacia.flea.pojo.TbUser">
+		insert into tb_user (openid,
+		nick_name, avatar_url,
+		sdasd, gender, score,
+		email, user_phone,
+		user_school,
+		user_status, user_created)
+		values
+		(#{openid,jdbcType=VARCHAR}, #{nickName,jdbcType=VARCHAR},
+		#{avatarUrl,jdbcType=VARCHAR},
+		#{sdasd,jdbcType=VARCHAR},
+		#{gender,jdbcType=INTEGER}, #{score,jdbcType=INTEGER},
+		#{email,jdbcType=VARCHAR}, #{userPhone,jdbcType=VARCHAR},
+		#{userSchool,jdbcType=VARCHAR},
+		#{userStatus,jdbcType=TINYINT},
+		#{userCreated,jdbcType=TIMESTAMP})
+	</insert>
+	<insert id="insertSelective" parameterType="site.acacia.flea.pojo.TbUser">
+		insert into tb_user
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="openid != null">
+				openid,
+			</if>
+			<if test="nickName != null">
+				nick_name,
+			</if>
+			<if test="avatarUrl != null">
+				avatar_url,
+			</if>
+			<if test="sdasd != null">
+				sdasd,
+			</if>
+			<if test="gender != null">
+				gender,
+			</if>
+			<if test="score != null">
+				score,
+			</if>
+			<if test="email != null">
+				email,
+			</if>
+			<if test="userPhone != null">
+				user_phone,
+			</if>
+			<if test="userSchool != null">
+				user_school,
+			</if>
+			<if test="userStatus != null">
+				user_status,
+			</if>
+			<if test="userCreated != null">
+				user_created,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="openid != null">
+				#{openid,jdbcType=VARCHAR},
+			</if>
+			<if test="nickName != null">
+				#{nickName,jdbcType=VARCHAR},
+			</if>
+			<if test="avatarUrl != null">
+				#{avatarUrl,jdbcType=VARCHAR},
+			</if>
+			<if test="sdasd != null">
+				#{sdasd,jdbcType=VARCHAR},
+			</if>
+			<if test="gender != null">
+				#{gender,jdbcType=INTEGER},
+			</if>
+			<if test="score != null">
+				#{score,jdbcType=INTEGER},
+			</if>
+			<if test="email != null">
+				#{email,jdbcType=VARCHAR},
+			</if>
+			<if test="userPhone != null">
+				#{userPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="userSchool != null">
+				#{userSchool,jdbcType=VARCHAR},
+			</if>
+			<if test="userStatus != null">
+				#{userStatus,jdbcType=TINYINT},
+			</if>
+			<if test="userCreated != null">
+				#{userCreated,jdbcType=TIMESTAMP},
+			</if>
+		</trim>
+	</insert>
+	<select id="countByExample" parameterType="site.acacia.flea.pojo.TbUserExample"
+		resultType="java.lang.Integer">
+		select count(*) from tb_user
+		<if test="_parameter != null">
+			<include refid="Example_Where_Clause" />
+		</if>
+	</select>
+	<update id="updateByExampleSelective" parameterType="map">
+		update tb_user
+		<set>
+			<if test="record.openid != null">
+				openid = #{record.openid,jdbcType=VARCHAR},
+			</if>
+			<if test="record.nickName != null">
+				nick_name = #{record.nickName,jdbcType=VARCHAR},
+			</if>
+			<if test="record.avatarUrl != null">
+				avatar_url = #{record.avatarUrl,jdbcType=VARCHAR},
+			</if>
+			<if test="record.sdasd != null">
+				sdasd = #{record.sdasd,jdbcType=VARCHAR},
+			</if>
+			<if test="record.gender != null">
+				gender = #{record.gender,jdbcType=INTEGER},
+			</if>
+			<if test="record.score != null">
+				score = #{record.score,jdbcType=INTEGER},
+			</if>
+			<if test="record.email != null">
+				email = #{record.email,jdbcType=VARCHAR},
+			</if>
+			<if test="record.userPhone != null">
+				user_phone = #{record.userPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="record.userSchool != null">
+				user_school = #{record.userSchool,jdbcType=VARCHAR},
+			</if>
+			<if test="record.userStatus != null">
+				user_status = #{record.userStatus,jdbcType=TINYINT},
+			</if>
+			<if test="record.userCreated != null">
+				user_created = #{record.userCreated,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		<if test="_parameter != null">
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+	<update id="updateByExample" parameterType="map">
+		update tb_user
+		set openid = #{record.openid,jdbcType=VARCHAR},
+		nick_name = #{record.nickName,jdbcType=VARCHAR},
+		avatar_url =
+		#{record.avatarUrl,jdbcType=VARCHAR},
+		sdasd =
+		#{record.sdasd,jdbcType=VARCHAR},
+		gender =
+		#{record.gender,jdbcType=INTEGER},
+		score =
+		#{record.score,jdbcType=INTEGER},
+		email =
+		#{record.email,jdbcType=VARCHAR},
+		user_phone =
+		#{record.userPhone,jdbcType=VARCHAR},
+		user_school =
+		#{record.userSchool,jdbcType=VARCHAR},
+		user_status =
+		#{record.userStatus,jdbcType=TINYINT},
+		user_created =
+		#{record.userCreated,jdbcType=TIMESTAMP}
+		<if test="_parameter != null">
+			<include refid="Update_By_Example_Where_Clause" />
+		</if>
+	</update>
+	<update id="updateByPrimaryKeySelective" parameterType="site.acacia.flea.pojo.TbUser">
+		update tb_user
+		<set>
+			<if test="nickName != null">
+				nick_name = #{nickName,jdbcType=VARCHAR},
+			</if>
+			<if test="avatarUrl != null">
+				avatar_url = #{avatarUrl,jdbcType=VARCHAR},
+			</if>
+			<if test="sdasd != null">
+				sdasd = #{sdasd,jdbcType=VARCHAR},
+			</if>
+			<if test="gender != null">
+				gender = #{gender,jdbcType=INTEGER},
+			</if>
+			<if test="score != null">
+				score = #{score,jdbcType=INTEGER},
+			</if>
+			<if test="email != null">
+				email = #{email,jdbcType=VARCHAR},
+			</if>
+			<if test="userPhone != null">
+				user_phone = #{userPhone,jdbcType=VARCHAR},
+			</if>
+			<if test="userSchool != null">
+				user_school = #{userSchool,jdbcType=VARCHAR},
+			</if>
+			<if test="userStatus != null">
+				user_status = #{userStatus,jdbcType=TINYINT},
+			</if>
+			<if test="userCreated != null">
+				user_created = #{userCreated,jdbcType=TIMESTAMP},
+			</if>
+		</set>
+		where openid = #{openid,jdbcType=VARCHAR}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="site.acacia.flea.pojo.TbUser">
+		update tb_user
+		set
+		nick_name = #{nickName,jdbcType=VARCHAR},
+		avatar_url =
+		#{avatarUrl,jdbcType=VARCHAR},
+		sdasd = #{sdasd,jdbcType=VARCHAR},
+		gender = #{gender,jdbcType=INTEGER},
+		score = #{score,jdbcType=INTEGER},
+		email = #{email,jdbcType=VARCHAR},
+		user_phone =
+		#{userPhone,jdbcType=VARCHAR},
+		user_school =
+		#{userSchool,jdbcType=VARCHAR},
+		user_status =
+		#{userStatus,jdbcType=TINYINT},
+		user_created =
+		#{userCreated,jdbcType=TIMESTAMP}
+		where openid =
+		#{openid,jdbcType=VARCHAR}
+	</update>
+
+	<resultMap id="G2Copy" type="site.acacia.flea.vo.G2Statistics">
+		<result column="u_count" property="count" />
+		<result column="u_today" property="today" />
+		<result column="u_yesterday" property="yesterday" />
+		<result column="u_week" property="week" />
+		<result column="u_last_week" property="lastWeek" />
+	</resultMap>
+
+	<select id="getUserData" resultMap="G2Copy">
+		SELECT t1.c AS u_count, t2.c
+		AS u_today, t3.c AS u_yesterday, t4.c AS u_week, t5.c AS u_last_week
+		FROM (
+		SELECT COUNT(*) c FROM tb_user
+		) t1,(
+		SELECT COUNT(*) c FROM
+		tb_user WHERE TO_DAYS(user_created) = TO_DAYS(NOW())
+		) t2,(
+		SELECT
+		COUNT(*) c FROM tb_user WHERE TO_DAYS(NOW())-TO_DAYS(user_created) =1
+		) t3, (
+		SELECT COUNT(*) c FROM tb_user WHERE
+		YEARWEEK(DATE_FORMAT(user_created, '%y-%m-%d'), 1)=YEARWEEK(NOW()) + 1
+		)
+		t4, (
+		SELECT COUNT(*) c FROM tb_user WHERE
+		YEARWEEK(DATE_FORMAT(user_created, '%y-%m-%d'), 1)-YEARWEEK(NOW()) =
+		0
+		) t5
+	</select>
+</mapper>
