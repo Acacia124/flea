@@ -1,0 +1,134 @@
+2019-01-03 09:37:44,775 INFO (StartupInfoLogger.java:48)- Starting App on PC-20170415YQBG with PID 4392 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 09:37:44,793 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 09:37:44,794 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-01-03 09:37:58,385 INFO (StartupInfoLogger.java:57)- Started App in 15.081 seconds (JVM running for 16.948)
+2019-01-03 09:50:34,061 INFO (StartupInfoLogger.java:48)- Starting App on PC-20170415YQBG with PID 5772 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 09:50:34,068 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 09:50:34,068 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-01-03 09:50:57,150 INFO (StartupInfoLogger.java:57)- Started App in 23.925 seconds (JVM running for 24.681)
+2019-01-03 09:54:41,186 INFO (LogAspect.java:36)- ==> Request parameter: [0]
+2019-01-03 09:54:45,501 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 09:54:45,542 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2019-01-03 09:54:46,032 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-01-03 09:55:21,132 INFO (LogAspect.java:36)- ==> Request parameter: [1]
+2019-01-03 09:55:21,136 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 09:55:21,137 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-01-03 09:55:21,166 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-01-03 09:55:26,444 INFO (LogAspect.java:36)- ==> Request parameter: [22]
+2019-01-03 09:55:26,452 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 09:55:26,457 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Integer)
+2019-01-03 09:55:26,481 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-01-03 09:56:05,747 INFO (LogAspect.java:36)- ==> Request parameter: [22]
+2019-01-03 09:56:05,751 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 09:56:05,755 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 22(Integer)
+2019-01-03 09:56:05,777 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-01-03 10:18:33,555 INFO (StartupInfoLogger.java:48)- Starting App on PC-20170415YQBG with PID 2256 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 10:18:33,565 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 10:18:33,565 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2019-01-03 10:18:53,667 INFO (StartupInfoLogger.java:57)- Started App in 21.814 seconds (JVM running for 24.226)
+2019-01-03 10:30:07 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7828 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 10:30:07 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 10:30:07 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 10:30:18 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 57 ]
+INFO:Started App in 11.824 seconds (JVM running for 12.431)
+2019-01-03 10:52:00 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 7364 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 10:52:00 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 10:52:00 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 10:52:17 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 57 ]
+INFO:Started App in 18.823 seconds (JVM running for 21.673)
+2019-01-03 10:54:44 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 3824 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 10:54:44 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 10:54:44 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 10:54:54 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 57 ]
+INFO:Started App in 11.325 seconds (JVM running for 11.972)
+2019-01-03 11:24:42 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 1940 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 11:24:42 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 11:24:42 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 11:24:52 上午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 57 ]
+INFO:Started App in 10.928 seconds (JVM running for 11.659)
+2019-01-03 13:34:16 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 9192 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 13:34:17 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 13:34:17 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 13:34:40 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 57 ]
+INFO:Started App in 26.246 seconds (JVM running for 31.186)
+2019-01-03 13:37:31 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-2][ Class:site.acacia.flea.content.service.impl.ContentCategoryServiceImpl.getContentCatList >> Method: 36 ]
+INFO:==> Request parameter: [0]
+2019-01-03 13:37:35 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-2][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 13:37:35 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-2][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: 0(Integer)
+2019-01-03 13:37:35 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-2][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-01-03 13:37:58 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-3][ Class:site.acacia.flea.content.service.impl.ContentCategoryServiceImpl.getContentCatList >> Method: 36 ]
+INFO:==> Request parameter: [0]
+2019-01-03 13:37:58 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-3][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 13:37:58 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-3][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: 0(Integer)
+2019-01-03 13:37:58 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-3][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-01-03 13:38:26 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-4][ Class:site.acacia.flea.content.service.impl.ContentCategoryServiceImpl.getContentCatList >> Method: 36 ]
+INFO:==> Request parameter: [0]
+2019-01-03 13:38:26 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-4][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 13:38:26 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-4][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: 0(Integer)
+2019-01-03 13:38:26 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-4][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 1
+2019-01-03 13:38:37 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-5][ Class:site.acacia.flea.content.service.impl.ContentCategoryServiceImpl.getContentCatList >> Method: 36 ]
+INFO:==> Request parameter: [22]
+2019-01-03 13:38:37 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-5][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2019-01-03 13:38:37 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-5][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:==> Parameters: 22(Integer)
+2019-01-03 13:38:37 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-5][ Class:site.acacia.flea.mapper.TbContentCatMapper.selectByExample >> Method: 159 ]
+DEBUG:<==      Total: 0
+2019-01-03 14:23:32 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6596 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 14:23:32 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 14:23:32 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 14:23:42 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 57 ]
+INFO:Started App in 11.061 seconds (JVM running for 11.637)
+2019-01-03 14:32:18 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 48 ]
+INFO:Starting App on PC-20170415YQBG with PID 6564 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2019-01-03 14:32:18 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 51 ]
+DEBUG:Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2019-01-03 14:32:18 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 593 ]
+INFO:No active profile set, falling back to default profiles: default
+2019-01-03 14:32:35 下午 [Thread: main][ Class:site.acacia.flea.content.App >> Method: 57 ]
+INFO:Started App in 18.549 seconds (JVM running for 19.445)
+2019-01-03 14:34:36 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-2][ Class:site.acacia.flea.content.service.impl.LogContentServiceImpl.getLogList >> Method: 31 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:34:36 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-2][ Class:site.acacia.flea.content.service.LogContentService >> Method: 30 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:37:38 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-6][ Class:site.acacia.flea.content.service.impl.LogContentServiceImpl.getLogList >> Method: 31 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:37:38 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-6][ Class:site.acacia.flea.content.service.LogContentService >> Method: 30 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:37:44 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-7][ Class:site.acacia.flea.content.service.impl.LogContentServiceImpl.getLogList >> Method: 31 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:37:44 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-7][ Class:site.acacia.flea.content.service.LogContentService >> Method: 30 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:37:46 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-8][ Class:site.acacia.flea.content.service.impl.LogContentServiceImpl.getLogList >> Method: 31 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:37:46 下午 [Thread: DubboServerHandler-169.254.151.206:20882-thread-8][ Class:site.acacia.flea.content.service.LogContentService >> Method: 30 ]
+INFO:==> Request parameter Empty
+2019-01-03 14:39:15 下午 [Thread: http-nio-8082-exec-8][ Class:site.acacia.flea.content.controller.LogController >> Method: 41 ]
+INFO:==> fileName(Content.txt)

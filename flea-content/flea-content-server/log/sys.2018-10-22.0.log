@@ -1,0 +1,87 @@
+2018-10-22 17:11:21,837 INFO (StartupInfoLogger.java:48)- Starting App on PC-20170415YQBG with PID 9180 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2018-10-22 17:11:21,847 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-10-22 17:11:21,847 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-10-22 17:11:30,862 INFO (StartupInfoLogger.java:57)- Started App in 9.806 seconds (JVM running for 10.426)
+2018-10-22 17:23:55,387 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:23:55,387 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:23:56,286 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:23:58,314 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:23:58,671 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:23:58,671 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:23:58,671 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:23:58,671 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:03,232 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:03,234 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:03,383 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:03,384 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:03,385 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:03,385 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:03,677 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:03,678 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:03,708 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:03,709 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:03,965 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:03,968 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:03,996 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:03,999 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:14,659 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:14,796 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:14,661 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:14,798 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:20,079 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:20,095 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:24:20,387 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:24:20,389 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:28:23,179 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:28:23,207 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:28:23,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:28:23,687 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:31:45,295 INFO (StartupInfoLogger.java:48)- Starting App on PC-20170415YQBG with PID 7448 (G:\work-jsp\flea-content\flea-content-server\target\classes started by Administrator in G:\work-jsp\flea-content\flea-content-server)
+2018-10-22 17:31:45,371 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-10-22 17:31:45,371 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-10-22 17:32:31,358 INFO (StartupInfoLogger.java:57)- Started App in 62.02 seconds (JVM running for 66.752)
+2018-10-22 17:34:38,096 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:34:38,124 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:34:39,221 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:34:39,512 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:34:39,514 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:34:39,517 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:34:41,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:34:41,968 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2018-10-22 17:34:41,974 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-10-22 17:34:43,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:34:43,558 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Integer)
+2018-10-22 17:34:43,561 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-10-22 17:34:45,089 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:34:45,091 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Integer)
+2018-10-22 17:34:45,108 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2018-10-22 17:35:20,773 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: insert into tb_content_cat (con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created) values (?, ?, ?, ?, ?, ?, ?) 
+2018-10-22 17:35:20,776 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null, 图书大类(String), 33(Integer), 1(Integer), 0(Byte), 1(Byte), 2018-10-22 17:35:20.767(Timestamp)
+2018-10-22 17:35:21,133 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2018-10-22 17:35:21,135 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat where con_cat_id = ? 
+2018-10-22 17:35:21,136 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Integer)
+2018-10-22 17:35:21,141 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:35:37,345 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:35:37,349 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:35:37,354 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:35:37,382 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:35:37,383 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:35:37,386 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:35:38,510 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:35:38,511 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2018-10-22 17:35:38,512 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-10-22 17:35:39,387 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:35:39,388 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 33(Integer)
+2018-10-22 17:35:39,390 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:35:41,072 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:35:41,077 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 20(Integer)
+2018-10-22 17:35:41,082 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2018-10-22 17:39:20,705 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:39:20,706 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:39:20,708 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:39:20,719 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:39:20,719 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2018-10-22 17:39:20,723 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-10-22 17:39:22,451 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select con_cat_id, con_cat_name, con_cat_parent_id, con_cat_sort_order, con_cat_is_parent, con_cat_status, created from tb_content_cat WHERE ( con_cat_parent_id = ? ) 
+2018-10-22 17:39:22,457 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2018-10-22 17:39:22,461 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
