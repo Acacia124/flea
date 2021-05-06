@@ -43,7 +43,7 @@
     "core-js": "^2.5.4",
     "echarts": "^4.2.1",
     "editorconfig-tools": "^0.1.1",
-    "highcharts": "^7.0.3",
+    "highcharts": "^9.0.0",
     "highcharts-angular": "^2.4.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.2",
